@@ -2,7 +2,11 @@
 
 The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
 
+(*Source [Wikipedia](https://en.wikipedia.org/wiki/Apache_HTTP_Server)*)
+
 More info at https://httpd.apache.org/
+
+{% hint style="warning" %} This guide was written assuming you are using Ubuntu 20.04 as your main OS or any other Debian-based distribution. {% endhint %}
 
 ### Installing
 Before we proceed installing the Apache package, make sure you that everything is up to date:
