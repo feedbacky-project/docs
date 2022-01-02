@@ -5,6 +5,8 @@ NGINX is a web server that can also be used as a reverse proxy, load balance
 
 More info at https://nginx.org/
 
+{% hint style="warning" %} This guide was written assuming you are using Ubuntu 20.04 as your main OS or any other Debian-based distribution. {% endhint %}
+
 ### Installing
 Before we proceed installing the NGINX package, make sure you that everything is up to date:
 
