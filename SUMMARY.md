@@ -1,19 +1,33 @@
 # Table of contents
 
-* [Documentation Overview](README.md)
+## Project Overview
 
-## Self Hosting
+* [Introduction](README.md)
+* [Changelogs](project-overview/changelogs/README.md)
+  * [Version 0.2.0-beta released](project-overview/changelogs/version-0.2.0-beta-released.md)
+* [Support](project-overview/support.md)
+* [License](project-overview/license.md)
 
-* [Hosting Feedbacky Instance](self-hosting/hosting-feedbacky-instance.md)
-* [\[1.0.0 WIP\] Hosting Feedback Instance](self-hosting/1.0.0-wip-hosting-feedback-instance.md)
-* [Using Domain for Feedbacky Instance](self-hosting/using-domain-for-feedbacky-instance.md)
+## Self-Hosting
+
+* [Getting Started](self-hosting/hosting-feedbacky-instance.md)
+* [Using a Domain](self-hosting/using-domain-for-feedbacky-instance/README.md)
+  * [Reverse Proxy with Apache](self-hosting/using-domain-for-feedbacky-instance/reverse-proxy-with-apache.md)
+  * [Reverse Proxy with NGINX](self-hosting/using-domain-for-feedbacky-instance/reverse-proxy-with-nginx.md)
+
+## Self-Hosting (1.0.0)
+
+* [Getting Started (1.0.0)](self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md)
 
 ## How To
 
-* [Webhooks Setup](how-to/webhooks-setup.md)
+* [Setup Webhooks](how-to/webhooks-setup.md)
 
----
+## Maintenance
 
-* [Changelogs](changelogs/README.md)
-  * [Version 0.2.0-beta released](changelogs/version-0.2.0-beta-released.md)
+* [Migrating from 0.5.0](maintenance/migrating-from-0.5.0.md)
+* [Migrating from 0.2.0](maintenance/migrating-from-0.2.0.md)
 
+## Community Guide
+
+* [Self-hosting on Windows](community-guide/self-hosting-on-windows.md)

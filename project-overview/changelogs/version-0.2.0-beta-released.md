@@ -23,7 +23,7 @@ This version requires few changes in order to work. See [updating to 0.2.0](http
 
 From now on Feedbacky users can `Subscribe` to ideas to receive mail notifications. Users who create new ideas from now will automatically subscribe to their idea.
 
-![Mail notification example](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-10-22.478Z.png)
+![Mail notification example](../../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-10-22.478Z.png)
 
 Users can receive notifications about:
 
@@ -43,7 +43,7 @@ New feature called **Roadmaps** got implemented. Roadmaps serve the purpose of i
 
 By default every tag is visible in the roadmap but this can be edited so tags can be ignored from the roadmap view.
 
-![New roadmap feature preview](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-24-31.072Z.png)
+![New roadmap feature preview](../../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-24-31.072Z.png)
 
 ### SendGrid Mail Provider Support
 
@@ -54,7 +54,7 @@ Besides Mailgun and own SMTP server you can use [Twilio SendGrid](https://sendgr
 UI and dark mode received several small changes to ensure the best experience when using Feedbacky.\
 From more noticeable things Moderation comments icons were changed, board admin panel and profile page menus design got changed.
 
-![Board admin panel menu design update (old left, new right)](<../.gitbook/assets/ui change 1.png>)
+![Board admin panel menu design update (old left, new right)](<../../.gitbook/assets/ui change 1.png>)
 
 ### Bug Fixes for Stability and Other Changes!
 
@@ -74,4 +74,4 @@ And a bunch of other changes:
 * All dependencies of backend and frontend were updated to their latest stable versions
 * Server side messages when editing or updating stuff will now return more user friendly messages on failure
 
-![What user sees when app crashes, not a blank page anymore](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-52-37.296Z.png)
+![What user sees when app crashes, not a blank page anymore](../../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-52-37.296Z.png)
