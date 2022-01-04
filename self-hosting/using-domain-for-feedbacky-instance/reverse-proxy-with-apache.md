@@ -18,7 +18,7 @@ Next, we'll install Apache:
 sudo apt install apache2 -y
 ```
 
-#### Creating a new VirtualHost
+## Creating a new VirtualHost
 
 VirtualHosts allows you to run multiple website on a single web server (website1.com, website2.com, etc..) this is useful especially if you are also hosting other web services such as a website or store front.
 
@@ -65,7 +65,7 @@ TIP: When creating a file you can directly skip having to use `touch` by instead
 
 You can now save the file with `CTRL` + `S` and exit nano with `CTRL` + `C`.
 
-#### Enabling Reverse Proxy
+### Enabling Reverse Proxy
 
 By default Proxy is disabled in Apache, we can enable it by using the following command:
 
@@ -91,7 +91,7 @@ Is module.
 
 We are asking Apache to enable the proxy module which is located in the `/etc/apache2/available-modules` directory.
 
-#### Enabling the VirtualHost
+### Enabling the VirtualHost
 
 In order to create our Apache VirtualHost, type the following:
 

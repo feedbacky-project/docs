@@ -18,7 +18,7 @@ Next, we'll install Apache:
 sudo apt install nginx -y
 ```
 
-#### Creating a new VirtualHost
+## Creating a new VirtualHost
 
 VirtualHosts allows you to run multiple website on a single web server (website1.com, website2.com, etc..) this is useful especially if you are also hosting other web services such as a website or store front.
 
@@ -65,7 +65,7 @@ server {
 
 You can now save the file with `CTRL` + `S` and exit nano with `CTRL` + `C`.
 
-#### Creating a symlink
+### Creating a symlink
 
 A symlink or symbolic link, is a shortcut to another file. Each time you will edit your VirtualHost in `/etc/nginx/sites-available` it will also update the one created in `/etc/nginx/sites-enabled`.
 
@@ -73,7 +73,7 @@ A symlink or symbolic link, is a shortcut to another file. Each time you will ed
 sudo ln -s /etc/nginx/sites-available/{DOMAIN_NAME}.conf /etc/nginx/sites-enabled/{DOMAIN_NAME}.conf
 ```
 
-#### Enabling the VirtualHost
+### Enabling the VirtualHost
 
 To enable your VirtualHost we must reload NGINX:
 
