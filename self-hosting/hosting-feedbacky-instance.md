@@ -4,11 +4,21 @@ description: How to run Feedbacky on your own server.
 
 # Getting Started
 
-{% hint style="warning" %}
-This guide was written assuming you are using Ubuntu 20.04 as your main OS or any other Debian-based distribution.
-
-Windows user can follow our community guide, Mac OS users can self-host Feedbacky but no official support will be provided.
+{% hint style="info" %}
+You may consider using the development branch of the Feedbacky repository to receive the latest updates, be aware though that these are alpha updates and while used by many in their production servers they could lead to some instability or differ from the final product.
 {% endhint %}
+
+## Compatibility
+
+| Operating System | Version          | Status | Notes                                           |
+| ---------------- | ---------------- | :----: | ----------------------------------------------- |
+| **Ubuntu**       | 20.04            |    ✅   | Installation guide is based on this version.    |
+|                  | 18.04            |    ✅   |                                                 |
+| **Debian**       | 11               |    ✅   |                                                 |
+| **Windows**      | WSL2             |    ✅   |                                                 |
+|                  | Server 2022 / 11 |    ✅   | Confirmed working but not officially supported. |
+|                  | Server 2019 / 10 |    ✅   | Same as stated above.                           |
+| **Mac OS**       | -                |    ❔   | Unconfirmed if working.                         |
 
 ## Prerequisites
 

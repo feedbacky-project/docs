@@ -5,6 +5,7 @@
 * [Introduction](README.md)
 * [Changelogs](project-overview/changelogs/README.md)
   * [Version 0.2.0-beta released](project-overview/changelogs/version-0.2.0-beta-released.md)
+* [Frequently Asked Questions](project-overview/frequently-asked-questions.md)
 * [Support](project-overview/support.md)
 * [License](project-overview/license.md)
 
