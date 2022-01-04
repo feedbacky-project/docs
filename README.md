@@ -6,6 +6,6 @@
 
 {% page-ref page="how-to/webhooks-setup.md" %}
 
-{% page-ref page="suuport.md" %}
+{% page-ref page="support.md" %}
 
 
