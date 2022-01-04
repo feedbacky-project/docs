@@ -1,5 +1,5 @@
 ---
-description: 'June 5, 2020'
+description: June 5, 2020
 ---
 
 # Version 0.2.0-beta released
@@ -23,18 +23,18 @@ This version requires few changes in order to work. See [updating to 0.2.0](http
 
 From now on Feedbacky users can `Subscribe` to ideas to receive mail notifications. Users who create new ideas from now will automatically subscribe to their idea.
 
-![Mail notification example](../.gitbook/assets/firefox_screenshot_2020-06-05t19-10-22.478z.png)
+![Mail notification example](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-10-22.478Z.png)
 
 Users can receive notifications about:
 
 * New idea comments by moderators
-* Idea state change \(when idea gets closed or opened\)
+* Idea state change (when idea gets closed or opened)
 * Idea tags change
 
 ### Client App Recode
 
-Feedbacky client side app was fully recoded and no longer uses Material Design Bootstrap.  
-Code was recoded with functional components and was redesigned to be more lightweight.  
+Feedbacky client side app was fully recoded and no longer uses Material Design Bootstrap.\
+Code was recoded with functional components and was redesigned to be more lightweight.\
 Overall size of app should be much lower. CSS was reduced from 211kb to 154kb.
 
 ### Roadmaps Implemented
@@ -43,7 +43,7 @@ New feature called **Roadmaps** got implemented. Roadmaps serve the purpose of i
 
 By default every tag is visible in the roadmap but this can be edited so tags can be ignored from the roadmap view.
 
-![New roadmap feature preview](../.gitbook/assets/firefox_screenshot_2020-06-05t19-24-31.072z.png)
+![New roadmap feature preview](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-24-31.072Z.png)
 
 ### SendGrid Mail Provider Support
 
@@ -51,10 +51,10 @@ Besides Mailgun and own SMTP server you can use [Twilio SendGrid](https://sendgr
 
 ### Minor UI and Dark Mode changes
 
-UI and dark mode received several small changes to ensure the best experience when using Feedbacky.  
+UI and dark mode received several small changes to ensure the best experience when using Feedbacky.\
 From more noticeable things Moderation comments icons were changed, board admin panel and profile page menus design got changed.
 
-![Board admin panel menu design update \(old left, new right\)](../.gitbook/assets/ui-change-1.png)
+![Board admin panel menu design update (old left, new right)](<../.gitbook/assets/ui change 1.png>)
 
 ### Bug Fixes for Stability and Other Changes!
 
@@ -74,5 +74,4 @@ And a bunch of other changes:
 * All dependencies of backend and frontend were updated to their latest stable versions
 * Server side messages when editing or updating stuff will now return more user friendly messages on failure
 
-![What user sees when app crashes, not a blank page anymore](../.gitbook/assets/firefox_screenshot_2020-06-05t19-52-37.296z.png)
-
+![What user sees when app crashes, not a blank page anymore](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-52-37.296Z.png)
