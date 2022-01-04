@@ -1,7 +1,13 @@
-# Migrating from 0.2.0
+---
+description: Legacy guide.
+---
+
+# Updating to 0.2.0
+
+
 
 {% hint style="warning" %}
-This page exists to support people who are upgrading their Feedbacky instance from older versions. You are not concerned if you are doing a fresh installation.
+This is a legacy guide intended to provide support for people upgrading their Feedbacky instance from before 0.2.0. You can ignore this if doing a fresh installation.
 {% endhint %}
 
 ## Added

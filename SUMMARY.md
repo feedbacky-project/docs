@@ -3,18 +3,21 @@
 ## Project Overview
 
 * [Introduction](README.md)
-* [Changelogs](project-overview/changelogs/README.md)
-  * [Version 0.2.0-beta released](project-overview/changelogs/version-0.2.0-beta-released.md)
+* [Senior Hosting](project-overview/senior-hosting.md)
 * [Frequently Asked Questions](project-overview/frequently-asked-questions.md)
 * [Support](project-overview/support.md)
 * [License](project-overview/license.md)
+* [Changelogs](project-overview/changelogs/README.md)
+  * [Version 0.5.0-beta released](project-overview/changelogs/version-0.5.0-beta-released.md)
+  * [Version 0.3.1-beta released](project-overview/changelogs/version-0.3.1-beta-released.md)
+  * [Version 0.3.0-beta released](project-overview/changelogs/version-0.3.0-beta-released.md)
+  * [Version 0.2.0-beta released](project-overview/changelogs/version-0.2.0-beta-released.md)
 
 ## Self-Hosting
 
 * [Getting Started](self-hosting/hosting-feedbacky-instance.md)
-* [Using a Domain](self-hosting/using-domain-for-feedbacky-instance/README.md)
-  * [Reverse Proxy with Apache](self-hosting/using-domain-for-feedbacky-instance/reverse-proxy-with-apache.md)
-  * [Reverse Proxy with NGINX](self-hosting/using-domain-for-feedbacky-instance/reverse-proxy-with-nginx.md)
+* [Using a Domain](self-hosting/using-a-domain.md)
+* [Using TLS/SSL](self-hosting/using-tls-ssl.md)
 
 ## Self-Hosting (1.0.0)
 
@@ -22,12 +25,14 @@
 
 ## How To
 
-* [Setup Webhooks](how-to/webhooks-setup.md)
+* [Setup a Webhook](how-to/webhooks-setup.md)
+* [Add Metadata](how-to/add-metadata.md)
+* [Edit Mail Templates](how-to/edit-mail-templates.md)
 
 ## Maintenance
 
-* [Migrating from 0.5.0](maintenance/migrating-from-0.5.0.md)
-* [Migrating from 0.2.0](maintenance/migrating-from-0.2.0.md)
+* [Updating to 0.5.0](maintenance/updating-to-0.5.0.md)
+* [Updating to 0.2.0](maintenance/updating-to-0.2.0.md)
 
 ## Community Guide
 

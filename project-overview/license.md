@@ -1,3 +1,7 @@
+---
+description: Legal stuff.
+---
+
 # License
 
 Copyright © 2020 Plajer ([https://plajer.xyz](https://plajer.xyz))

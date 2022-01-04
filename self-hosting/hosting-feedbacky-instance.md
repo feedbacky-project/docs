@@ -4,11 +4,23 @@ description: How to run Feedbacky on your own server.
 
 # Getting Started
 
+{% hint style="success" %}
+**Are you looking for an affordable hosting provider?**
+
+Feedbacky is in partnership with Senior Hosting to offer you high-performance Virtual Private Servers and Minecraft/Discord bot hosting!
+
+[Check out the offer!](../project-overview/senior-hosting.md)
+{% endhint %}
+
 {% hint style="info" %}
-You may consider using the development branch of the Feedbacky repository to receive the latest updates, be aware though that these are alpha updates and while used by many in their production servers they could lead to some instability or differ from the final product.
+**Do you want to use the most recent features?**
+
+If so, consider using our [development branch](https://github.com/feedbacky-project/app/tree/development) as it is regularly updated. Be aware that while many uses this branch in their production servers (in fact [we do!](https://app.feedbacky.net/b/feedbacky-official)) using bleeding edge features can lead to some instability.
 {% endhint %}
 
 ## Compatibility
+
+Make sure that your operating system is compatible, if you can host Docker you should be able to host Feedbacky without any problem.
 
 | Operating System | Version          | Status | Notes                                           |
 | ---------------- | ---------------- | :----: | ----------------------------------------------- |
@@ -45,6 +57,8 @@ IP of server must be provided and MySQL must be configured to accept non localho
 To allow non localhost connections modify `bind-address` at `/etc/mysql/mysql.conf.d/mysqld.cnf` to `0.0.0.0,`restart mysql service with `service mysql restart` and create MySQL user with `%` login access eg. `'feedbacky'@'%'`.
 {% endhint %}
 
+\*Todo make MySQL tutorial
+
 * Fill `JWT_SECRET` with safely generated text at [https://www.grc.com/passwords.htm](https://www.grc.com/passwords.htm) or any other JWT secret token generator page online. **(Random ASCII characters recommended)**
 * If you have any other apps running on ports 8090 or 8095 replace `CLIENT_APP_PORT` and `SERVER_APP_PORT` with ports that won't collide.
 *   Replace `REACT_APP_SERVER_IP_ADDRESS` with your server IP and `CLIENT_APP_PORT`\
@@ -58,8 +72,8 @@ To allow non localhost connections modify `bind-address` at `/etc/mysql/mysql.co
     \
     Check link below if you want to configure Feedbacky to use your own domain name not numeric IP.
 
-{% content-ref url="using-domain-for-feedbacky-instance/" %}
-[using-domain-for-feedbacky-instance](using-domain-for-feedbacky-instance/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 * Configure mail server settings, set `MAIL_SENDER` to no reply email you wish to use. Set `MAIL_SERVICE_TYPE` to one of the following types:

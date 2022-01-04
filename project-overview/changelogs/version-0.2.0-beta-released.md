@@ -6,7 +6,7 @@ description: June 5, 2020
 
 Finally we've finally released beta version 0.2.0 of Feedbacky, see what's new below.
 
-**TL;DR version**
+**TL;DR:**
 
 * Added mail notifications for ideas
 * Recoded client side app, smaller size, more lightweight
@@ -15,9 +15,11 @@ Finally we've finally released beta version 0.2.0 of Feedbacky, see what's new b
 * Minor UI and Dark Mode changes
 * Some fixes...
 
+See raw changelog [here](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#020-beta-june-5-2020).
+
 ### Updating from older versions
 
-This version requires few changes in order to work. See [updating to 0.2.0](https://github.com/Plajer/feedbacky-project#updating-to-020) for more information.
+This version requires few changes in order to work. See [updating to 0.2.0](../../maintenance/updating-to-0.2.0.md) for more information.
 
 ### Mails Notification Feature
 
