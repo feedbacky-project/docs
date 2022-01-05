@@ -1,5 +1,5 @@
 ---
-description: Your question might be here.
+description: Your questions might be here.
 ---
 
 # Frequently Asked Questions

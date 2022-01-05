@@ -4,7 +4,7 @@ description: Using a cool domain with your Feedbacky instance.
 
 # Using a Domain
 
-In this guide we will show you how to use Apache or NGINX in order to point a domain to your Feedbacky instance by using reverse proxy.
+This guide will show you how to use the Apache or NGINX web server in order to point a domain to your Feedbacky instance by using reverse proxy.
 
 ## About
 
@@ -35,7 +35,7 @@ sudo apt update -y && sudo apt upgrade -y
 Than paste this in your terminal:
 
 ```
-sudo apt install apache2 -y
+sudo apt install -y apache2
 ```
 {% endtab %}
 
@@ -43,14 +43,44 @@ sudo apt install apache2 -y
 Than paste this in your terminal:
 
 ```
-sudo apt install nginx -y
+sudo apt install -y nginx
 ```
 {% endtab %}
 {% endtabs %}
 
+In order for the web server of your choice to work you will need to port forward the port 80, UFW is a firewall that will let you do so easily.&#x20;
+
+```
+sudo apt install -y ufw
+```
+
 ## DNS Provider
 
 For your domain to actually work use the DNS provider (Cloudflare, Namecheap, etc..) of your choice and create an **A Record** that points to your machine's public IP address.
+
+You can find your machine's public address by typing:
+
+```
+curl ipinfo.io/ip
+```
+
+If you use a VPS you will find your public IP address and more information in the dashboard of your provider.
+
+## Port Forwarding
+
+With UFW, use the following commands:
+
+* Enabling the firewall:
+
+```
+sudo ufw enable
+```
+
+* Forwarding Port 80:
+
+```
+sudo ufw allow 80/tcp
+```
 
 ## Creating a new VHost
 
@@ -66,15 +96,13 @@ cd /etc/apache2/sites-available
 
 
 
+2\. Create a new file with the name being the domain that you will use, be aware that the file name must end with ".conf".
+
 {% hint style="info" %}
 **TIP**
 
 When creating a file, you can directly skip having to use **touch** by instead using **nano**, it will create a new file for you and let you edit it at the same time.
 {% endhint %}
-
-
-
-2\. Create a new file with the name being the domain that you will use, be aware that the file name must end with ".conf".
 
 ```
 sudo touch {DOMAIN_NAME}.conf 
@@ -96,20 +124,19 @@ sudo touch feedbacky.cool.conf
 
 ```
 <VirtualHost *:80>
-      ServerName {DOMAIN_NAME}
-      ProxyPreserveHost On
-      ProxyRequests Off
-      ProxyVia Off
-      ProxyPass / {SERVER_IP}:{CLIENT_APP_PORT}/
-      ProxyPassReverse / {SERVER_IP}:{CLIENT_APP_PORT}/
-</VirtualHost>
+  ServerName {DOMAIN_NAME}
+  ProxyPreserveHost On
+  ProxyRequests Off
+  ProxyVia Off
+  ProxyPass / {SERVER_IP}:{CLIENT_APP_PORT}/
+  ProxyPassReverse / {SERVER_IP}:{CLIENT_APP_PORT}/
+</VirtualHost> 
 ```
 
 
 
-| Value               | Description                                                         |
-| ------------------- | ------------------------------------------------------------------- |
 | `{DOMAIN_NAME}`     | Your fully qualified domain domain, for example feedbacky.app.cool. |
+| ------------------- | ------------------------------------------------------------------- |
 | `{SERVER_UP}`       | The public IP address used by your hosting machine.                 |
 | `{CLIENT_APP_PORT}` | The client port located in your `.env` file, by default it is 8090. |
 
@@ -157,20 +184,17 @@ sudo touch feedbacky.cool.conf
 
 ```
 server {
-      listen 80;
-      server_name {DOMAIN_NAME};
+    listen 80;
+    server_name {DOMAIN_NAME};
 
-      location / {
-        proxy_pass http://{SERVER_IP}:{CLIENT_APP_PORT}:
-      }
+     location / {
+       proxy_pass {SERVER_IP}:{CLIENT_APP_PORT};
+  }
 }
 ```
 
-
-
-| Value               | Description                                                         |
-| ------------------- | ------------------------------------------------------------------- |
 | `{DOMAIN_NAME}`     | Your fully qualified domain domain, for example feedbacky.app.cool. |
+| ------------------- | ------------------------------------------------------------------- |
 | `{SERVER_IP}`       | The public IP address used by your hosting machine.                 |
 | `{CLIENT_APP_PORT}` | The client port located in your `.env` file, by default it is 8090. |
 

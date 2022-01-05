@@ -1,3 +1,7 @@
+---
+description: Our partner.
+---
+
 # Senior Hosting
 
 We have partnered with Senior Hosting to provide you with affordable, high-performance Virtual Private Servers and Minecraft/Discord bot hosting!
