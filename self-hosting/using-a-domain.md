@@ -10,13 +10,13 @@ This guide will show you how to use the Apache or NGINX web server in order to p
 
 {% tabs %}
 {% tab title="Apache" %}
-> The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.
+> <mark style="background-color:red;">The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.</mark>
 
 (_Source:_ [_Wikipedia_](https://en.wikipedia.org/wiki/Apache\_HTTP\_Server))
 {% endtab %}
 
 {% tab title="NGINX" %}
-> NGINX is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. The software was created by Igor Sysoev and publicly released in 2004. Nginx is free and open-source software, released under the terms of the 2-clause BSD license. A large fraction of web servers use NGINX, often as a load balancer.
+> <mark style="background-color:red;">NGINX is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. The software was created by Igor Sysoev and publicly released in 2004. Nginx is free and open-source software, released under the terms of the 2-clause BSD license. A large fraction of web servers use NGINX, often as a load balancer.</mark>
 
 (_Source:_ [_Wikipedia_](https://en.wikipedia.org/wiki/Nginx))
 {% endtab %}
@@ -122,7 +122,8 @@ sudo touch feedbacky.cool.conf
 
 3\. Edit your newly made Apache VirtualHost file and paste the configuration below:
 
-```
+{% code title="{DOMAIN_NAME}.conf" %}
+```apacheconf
 <VirtualHost *:80>
   ServerName {DOMAIN_NAME}
   ProxyPreserveHost On
@@ -132,6 +133,7 @@ sudo touch feedbacky.cool.conf
   ProxyPassReverse / {SERVER_IP}:{CLIENT_APP_PORT}/
 </VirtualHost> 
 ```
+{% endcode %}
 
 
 

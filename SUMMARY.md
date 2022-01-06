@@ -15,10 +15,9 @@
 
 ## Self-Hosting
 
-* [Getting Started (Rewrite)](self-hosting/getting-started-rewrite.md)
-* [Getting Started](self-hosting/hosting-feedbacky-instance.md)
+* [Getting Started](self-hosting/getting-started.md)
 * [Using a Domain](self-hosting/using-a-domain.md)
-* [Using TLS/SSL](self-hosting/using-tls-ssl.md)
+* [Using SSL](self-hosting/using-tls-ssl.md)
 
 ## Self-Hosting (1.0.0)
 

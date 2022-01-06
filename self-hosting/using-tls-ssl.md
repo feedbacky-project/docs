@@ -2,9 +2,9 @@
 description: Secure your board.
 ---
 
-# Using TLS/SSL
+# Using SSL
 
-This guide will show you how you can generate your own TLS/SSL certificate with Certbot.
+This guide will show you how you can generate your own SSL certificate with Certbot.
 
 ## Cloudflare
 
