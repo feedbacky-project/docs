@@ -6,54 +6,6 @@ description: Using a cool domain with your Feedbacky instance.
 
 This guide will show you how to use the Apache or NGINX web server in order to point a domain to your Feedbacky instance by using reverse proxy.
 
-## About
-
-{% tabs %}
-{% tab title="Apache" %}
-> <mark style="background-color:red;">The Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0. Apache is developed and maintained by an open community of developers under the auspices of the Apache Software Foundation.</mark>
-
-(_Source:_ [_Wikipedia_](https://en.wikipedia.org/wiki/Apache\_HTTP\_Server))
-{% endtab %}
-
-{% tab title="NGINX" %}
-> <mark style="background-color:red;">NGINX is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache. The software was created by Igor Sysoev and publicly released in 2004. Nginx is free and open-source software, released under the terms of the 2-clause BSD license. A large fraction of web servers use NGINX, often as a load balancer.</mark>
-
-(_Source:_ [_Wikipedia_](https://en.wikipedia.org/wiki/Nginx))
-{% endtab %}
-{% endtabs %}
-
-## Installing
-
-Before we proceed, make sure you that everything is up to date:
-
-```
-sudo apt update -y && sudo apt upgrade -y
-```
-
-{% tabs %}
-{% tab title="Apache" %}
-Than paste this in your terminal:
-
-```
-sudo apt install -y apache2
-```
-{% endtab %}
-
-{% tab title="NGINX" %}
-Than paste this in your terminal:
-
-```
-sudo apt install -y nginx
-```
-{% endtab %}
-{% endtabs %}
-
-In order for the web server of your choice to work you will need to port forward the port 80, UFW is a firewall that will let you do so easily.&#x20;
-
-```
-sudo apt install -y ufw
-```
-
 ## DNS Provider
 
 For your domain to actually work use the DNS provider (Cloudflare, Namecheap, etc..) of your choice and create an **A Record** that points to your machine's public IP address.
@@ -69,12 +21,6 @@ If you use a VPS you will find your public IP address and more information in th
 ## Port Forwarding
 
 With UFW, use the following commands:
-
-* Enabling the firewall:
-
-```
-sudo ufw enable
-```
 
 * Forwarding Port 80:
 
