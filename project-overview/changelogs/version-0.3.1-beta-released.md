@@ -4,7 +4,7 @@ description: July 6, 2020
 
 # Version 0.3.1-beta released
 
-TL;DR:
+**TL;DR:**
 
 * Added slugs to ideas
 

@@ -1,8 +1,8 @@
 ---
-description: Your questions might be here.
+description: Questions and Answers.
 ---
 
-# Frequently Asked Questions
+# FAQs
 
 ### How can I restart the Docker container?
 

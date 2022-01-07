@@ -4,7 +4,7 @@
 
 * [Introduction](README.md)
 * [Senior Hosting](project-overview/senior-hosting.md)
-* [Frequently Asked Questions](project-overview/frequently-asked-questions.md)
+* [FAQs](project-overview/frequently-asked-questions.md)
 * [Support](project-overview/support.md)
 * [License](project-overview/license.md)
 * [Changelogs](project-overview/changelogs/README.md)
@@ -15,12 +15,15 @@
 
 ## Self-Hosting
 
-* [Getting Started](self-hosting/getting-started.md)
-* [Using a Domain](self-hosting/using-a-domain.md)
-* [Using SSL](self-hosting/using-tls-ssl.md)
+* [Getting Started](self-hosting/getting-started/README.md)
+  * [Prerequisites](self-hosting/getting-started/prerequisites.md)
+  * [Installation](self-hosting/getting-started/installation.md)
+  * [Conclusion](self-hosting/getting-started/conclusion.md)
 
 ## Self-Hosting (1.0.0)
 
+* [Using a Domain](self-hosting-1.0.0/using-a-domain.md)
+* [Using SSL](self-hosting-1.0.0/using-tls-ssl.md)
 * [Getting Started (1.0.0)](self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md)
 
 ## How To
@@ -31,8 +34,7 @@
 
 ## Maintenance
 
-* [Updating to 0.5.0](maintenance/updating-to-0.5.0.md)
-* [Updating to 0.2.0](maintenance/updating-to-0.2.0.md)
+* [Legacy Updates](maintenance/legacy-updates.md)
 
 ## Community Guide
 

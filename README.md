@@ -18,23 +18,19 @@ In partnership with [Senior Hosting](project-overview/senior-hosting.md).
 
 ![Demo Board](<.gitbook/assets/image (1).png>)
 
-## Ready to self-host?
+## Features
 
-{% content-ref url="self-hosting/getting-started.md" %}
-[getting-started.md](self-hosting/getting-started.md)
+## Guides
+
+### Ready to self-host?
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
-## Customization
+### Customization
 
-{% content-ref url="self-hosting/using-a-domain.md" %}
-[using-a-domain.md](self-hosting/using-a-domain.md)
-{% endcontent-ref %}
-
-{% content-ref url="self-hosting/using-tls-ssl.md" %}
-[using-tls-ssl.md](self-hosting/using-tls-ssl.md)
-{% endcontent-ref %}
-
-## How To's
+### How To's
 
 {% content-ref url="how-to/webhooks-setup.md" %}
 [webhooks-setup.md](how-to/webhooks-setup.md)

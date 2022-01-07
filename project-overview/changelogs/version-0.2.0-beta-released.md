@@ -19,7 +19,7 @@ See raw changelog [here](https://github.com/feedbacky-project/app/blob/master/CH
 
 ### Updating from older versions
 
-This version requires few changes in order to work. See [updating to 0.2.0](../../maintenance/updating-to-0.2.0.md) for more information.
+This version requires few changes in order to work. See [updating to 0.2.0](broken-reference) for more information.
 
 ### Mails Notification Feature
 

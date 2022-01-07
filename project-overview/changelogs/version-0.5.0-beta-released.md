@@ -4,7 +4,7 @@ description: December 31, 2020
 
 # Version 0.5.0-beta released
 
-**TL;DR**
+**TL;DR:**
 
 * User suspension
 * Letter avatars
@@ -14,4 +14,4 @@ See raw changelog [here](https://github.com/feedbacky-project/app/blob/master/CH
 
 ### Updating from older versions
 
-This version requires few changes in order to work. See [updating to 0.5.0](../../maintenance/updating-to-0.5.0.md) for more information.
+This version requires few changes in order to work. See [updating to 0.5.0](broken-reference) for more information.
