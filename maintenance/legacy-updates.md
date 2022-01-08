@@ -1,7 +1,7 @@
 # Legacy Updates
 
 {% hint style="warning" %}
-The following are legacy guides intended to provide support for people upgrading their old Feedbacky instances and can be ignored if doing a fresh installation.
+The following are legacy guides intended to provide support for people upgrading their older Feedbacky instances and can be ignored if doing a fresh installation.
 {% endhint %}
 
 ## Updating to 0.5.0

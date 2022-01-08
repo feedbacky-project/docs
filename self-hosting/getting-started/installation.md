@@ -78,7 +78,7 @@ Edit the environment variable file.
 sudo nano .env
 ```
 
-Each variables already have their own descriptions but we have to go in further details for some.&#x20;
+Each variables already have their own descriptions but we will go into further details for some.&#x20;
 
 ### Networking
 
@@ -86,7 +86,7 @@ Each variables already have their own descriptions but we have to go in further 
 | ----------------------------- | -------------------------------------------------------- |
 
 {% hint style="danger" %}
-Use the correct format or else you won't be able to access your own instance. Let's say our IP address is 188.222.333.22, than the correct format will look like this;
+Use the correct format or else you won't be able to access your own instance. Let's say that our IP address is 188.222.333.22, than the correct format will look like this;
 
 #### Valid
 
@@ -135,26 +135,25 @@ Feedbacky is password-less, you will need an account on at least one of the foll
 
 {% tabs %}
 {% tab title="Discord" %}
-1\. Go to [https://discord.com/developers/applications](https://discord.com/developers/applications).
+1\. Access Discord's [Developer Portal](https://discord.com/developers/applications).
 
 2\. Create a new OAuth application.&#x20;
 
 {% embed url="https://cdn.feedbacky.net/static/mp4/discord-oauth-setup.mp4" %}
 
-3\. Create a new redirect with the IP address or domain set [here](installation.md#networking) and include `/auth/discord` at the end.
+3\. Add a new redirect with the IP address or domain set [here](installation.md#networking) and include `/auth/discord` at the end.
 
 4\. Fill the necessary variables with your newly created Discord OAuth application.
 
-|   |   |
-| - | - |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+| `OAUTH_DISCORD_ENABLED`      | Disabled by default, to use Discord OAuth change to `true`.    |
+| ---------------------------- | -------------------------------------------------------------- |
+| `OAUTH_DISCORD_REDIRECT_URI` | Your instance domain with `/auth/discord` included at the end. |
+| `OAUTH_DISCORD_CLIENT_ID`    | Your OAuth client ID.                                          |
+| `OAUTH_DISCORD_SECRET`       | Your OAuth client secret.                                      |
 {% endtab %}
 
 {% tab title="Github" %}
-1\. Go to [https://github.com/settings/developers](https://github.com/settings/developers).
+1\. Access GitHub's [Developer settings](https://github.com/settings/developers).
 
 2\. Create a new OAuth application.
 
@@ -164,12 +163,11 @@ Feedbacky is password-less, you will need an account on at least one of the foll
 
 4\. Fill the necessary variables with your newly created GitHub OAuth application.
 
-|   |                                                                  |
-| - | ---------------------------------------------------------------- |
-|   | Disabled by default, change to `true` if you want to use GitHub. |
-|   |                                                                  |
-|   |                                                                  |
-|   |                                                                  |
+| `OAUTH_GITHUB_ENABLED`       | Disabled by default, to use GitHub OAuth change to `true`.    |
+| ---------------------------- | ------------------------------------------------------------- |
+| `OAUTH_GITHUB_REDIRECT_URI`  | Your instance domain with `/auth/github` included at the end. |
+| `OAUTH_GITHUB_CLIENT_ID`     | Your OAuth client ID.                                         |
+| `OAUTH_GITHUB_CLIENT_SECRET` | Your OAuth client secret.                                     |
 {% endtab %}
 
 {% tab title="Google" %}
@@ -181,7 +179,60 @@ The Google OAuth guide is not yet available.
 
 ### Mail
 
+Feedbacky will send notifications to users who subscribes to an idea​.
 
+| `MAIL_SERVICE_TYPE` | Choose one of the options below. |
+| ------------------- | -------------------------------- |
+
+{% tabs %}
+{% tab title="SMTP" %}
+SMTP is used for custom mail server.
+
+
+
+|                      |   |
+| -------------------- | - |
+| `MAIL_SMTP_USERNAME` |   |
+| `MAIL_SMTP_PASSWORD` |   |
+| `MAIL_SMTP_HOST`     |   |
+| `MAIL_SMTP_PORT`     |   |
+{% endtab %}
+
+{% tab title="Mailgun" %}
+[Mailgun](https://www.mailgun.com) is a mail provider supported by Feedbacky.
+
+{% hint style="info" %}
+New users are limited to 5000 mails during a 3 months trial after you must pay $0.80 per 1000 mails.
+{% endhint %}
+
+{% hint style="warning" %}
+A credit card is required for sign up.
+{% endhint %}
+
+_Pricing included for your convenience and may be out of date._
+
+
+
+| `MAIL_MAILGUN_API_KEY`      |   |
+| --------------------------- | - |
+| `MAIL_MAILGUN_API_BASE_URL` |   |
+{% endtab %}
+
+{% tab title="SendGrid" %}
+{% embed url="https://sendgrid.com" %}
+
+
+
+|   |   |
+| - | - |
+|   |   |
+|   |   |
+{% endtab %}
+{% endtabs %}
+
+### Image Compression
+
+{% embed url="https://cheetaho.com" %}
 
 ### Extra
 
