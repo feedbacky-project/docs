@@ -19,11 +19,11 @@
   * [Prerequisites](self-hosting/getting-started/prerequisites.md)
   * [Installation](self-hosting/getting-started/installation.md)
   * [Conclusion](self-hosting/getting-started/conclusion.md)
+* [Using a Domain](self-hosting/using-a-domain.md)
+* [Using SSL](self-hosting/using-tls-ssl.md)
 
 ## Self-Hosting (1.0.0)
 
-* [Using a Domain](self-hosting-1.0.0/using-a-domain.md)
-* [Using SSL](self-hosting-1.0.0/using-tls-ssl.md)
 * [Getting Started (1.0.0)](self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md)
 
 ## How To

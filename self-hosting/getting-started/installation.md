@@ -103,8 +103,8 @@ Use the correct format or else you won't be able to access your own instance. Le
 
 Follow this guide if you want to use a domain;
 
-{% content-ref url="../../self-hosting-1.0.0/using-a-domain.md" %}
-[using-a-domain.md](../../self-hosting-1.0.0/using-a-domain.md)
+{% content-ref url="../using-a-domain.md" %}
+[using-a-domain.md](../using-a-domain.md)
 {% endcontent-ref %}
 
 ### Security
