@@ -24,8 +24,16 @@ Operating system compatibility and necessary dependencies.
 
 ## 2. Installation
 
-
+Cloning the repository and setting up the necessary configurations.
 
 {% content-ref url="installation.md" %}
 [installation.md](installation.md)
+{% endcontent-ref %}
+
+## 3. Conclusion
+
+Overview of the installation process.
+
+{% content-ref url="conclusion.md" %}
+[conclusion.md](conclusion.md)
 {% endcontent-ref %}
