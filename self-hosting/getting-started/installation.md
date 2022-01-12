@@ -131,10 +131,10 @@ For extra security, random ASCII characters are recommended. Remember **to not**
 
 ### OAuth
 
-Feedbacky is password-less, you will need an account on at least one of the following services;
-
 {% tabs %}
 {% tab title="Discord" %}
+Follow these steps to use the Discord OAuth.
+
 1\. Access Discord's [Developer Portal](https://discord.com/developers/applications).
 
 2\. Create a new OAuth application.&#x20;
@@ -153,6 +153,8 @@ Feedbacky is password-less, you will need an account on at least one of the foll
 {% endtab %}
 
 {% tab title="Github" %}
+Follow these steps to use the GitHub OAuth.
+
 1\. Access GitHub's [Developer settings](https://github.com/settings/developers).
 
 2\. Create a new OAuth application.
@@ -179,33 +181,24 @@ The Google OAuth guide is not yet available.
 
 ### Mail
 
-Feedbacky will send notifications to users who subscribes to an idea​.
-
 | `MAIL_SERVICE_TYPE` | Choose one of the options below. |
 | ------------------- | -------------------------------- |
 
 {% tabs %}
 {% tab title="SMTP" %}
-SMTP is used for custom mail server.
-
-
-
-|                      |   |
-| -------------------- | - |
-| `MAIL_SMTP_USERNAME` |   |
-| `MAIL_SMTP_PASSWORD` |   |
-| `MAIL_SMTP_HOST`     |   |
-| `MAIL_SMTP_PORT`     |   |
+| `MAIL_SMTP_USERNAME` | Your username.                         |
+| -------------------- | -------------------------------------- |
+| `MAIL_SMTP_PASSWORD` | The password.                          |
+| `MAIL_SMTP_HOST`     | A reachable domain or IP address.      |
+| `MAIL_SMTP_PORT`     | A reachable port, by default it is 25. |
 {% endtab %}
 
 {% tab title="Mailgun" %}
-[Mailgun](https://www.mailgun.com) is a mail provider supported by Feedbacky.
+Mailgun is a mail provider supported by Feedbacky.
 
 {% hint style="info" %}
-New users are limited to 5000 mails during a 3 months trial after you must pay $0.80 per 1000 mails.
-{% endhint %}
+New users are limited to 5000 mails during a 3 months trial, when expired you must pay $0.80 per 1000 mails.
 
-{% hint style="warning" %}
 A credit card is required for sign up.
 {% endhint %}
 
@@ -213,20 +206,37 @@ _Pricing included for your convenience and may be out of date._
 
 
 
-| `MAIL_MAILGUN_API_KEY`      |   |
-| --------------------------- | - |
-| `MAIL_MAILGUN_API_BASE_URL` |   |
+| `MAIL_MAILGUN_API_KEY`      | Your Mailgun API key.  |
+| --------------------------- | ---------------------- |
+| `MAIL_MAILGUN_API_BASE_URL` | Your Mailgun base URL. |
+
+{% hint style="warning" %}
+Your base URL should look something like this;
+
+`https://api.mailgun.net/<version>/<domain>/messages`
+{% endhint %}
 {% endtab %}
 
 {% tab title="SendGrid" %}
-{% embed url="https://sendgrid.com" %}
+SendGrid is a mail provider supported by Feedbacky.
+
+{% hint style="info" %}
+
+{% endhint %}
+
+_Pricing included for your convenience and may be out of date._
 
 
 
-|   |   |
-| - | - |
-|   |   |
-|   |   |
+| `MAIL_MAILGUN_API_KEY`      | Your Mailgun API key.  |
+| --------------------------- | ---------------------- |
+| `MAIL_MAILGUN_API_BASE_URL` | Your Mailgun base URL. |
+
+{% hint style="warning" %}
+Your base URL should look something like this;
+
+`https://api.mailgun.net/<version>/<domain>/messages`
+{% endhint %}
 {% endtab %}
 {% endtabs %}
 
