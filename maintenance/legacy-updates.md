@@ -1,12 +1,16 @@
+---
+description: Legacy updates for older releases.
+---
+
 # Legacy Updates
 
 {% hint style="warning" %}
-The following are legacy guides intended to provide support for people upgrading their older Feedbacky instances and can be ignored if doing a fresh installation.
+The content below is intended to provide support for those who are upgrading their legacy instances to a newer version of Feedbacky and can be ignored for new installations.
 {% endhint %}
 
 ## Updating to 0.5.0
 
-{% hint style="info" %}
+{% hint style="danger" %}
 If you update for example from 0.1.0 to 0.5.0 **you must** apply all changes from [0.2.0](broken-reference) and 0.5.0 not only 0.5.0!
 {% endhint %}
 

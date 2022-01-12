@@ -4,8 +4,10 @@
 This is a work in progress guide, some crucial information are currently missing!
 {% endhint %}
 
-{% hint style="warning" %}
-This is not an official guide nor is it an official way of self-hosting Feedbacky on Windows, if you encounter issues support will be limited.
+{% hint style="danger" %}
+This guide was made by someone who hosted Feedbacky on Windows and is not official in any capacity.&#x20;
+
+Please understand that support will be limited.
 {% endhint %}
 
 ## Prerequisites

@@ -4,8 +4,6 @@ description: Some resources if you need help with something.
 
 # Support
 
-<mark style="background-color:green;">Status</mark>
-
 ## Discord
 
 If you need any help with self-hosting, join our Discord server! Support is generally quick with friendly members that will help you.
@@ -17,6 +15,12 @@ If you need any help with self-hosting, join our Discord server! Support is gene
 If you have any suggestions you can submit them on the official board.
 
 {% embed url="https://app.feedbacky.net/b/feedbacky-official" %}
+
+## Status
+
+Check Feedbacky's backend status.
+
+{% embed url="https://status.feedbacky.net" %}
 
 ## Github
 

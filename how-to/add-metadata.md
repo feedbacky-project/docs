@@ -12,7 +12,7 @@ app
 │   └── ...
 ├── client
 │   ├── nginx
-│   │   └─ nginx.conf
+│   │   └── ...
 │   ├── public
 │   │   ├─ favicon.icio
 │   │   ├─ index.html
@@ -20,11 +20,8 @@ app
 │   │   ├─ logo512.png
 │   │   ├─ manifest.json
 │   │   └─ robots.txt
-│   ├── src
-│   │   └─ 
-├── server
-│   ├──
-│   ├──
-│   └──
-├── 
+│   └── src
+│       └─ ...
+└─── server
+     └── ...
 ```
