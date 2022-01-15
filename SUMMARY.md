@@ -19,18 +19,29 @@
   * [Prerequisites](self-hosting/getting-started/prerequisites.md)
   * [Installation](self-hosting/getting-started/installation.md)
   * [Conclusion](self-hosting/getting-started/conclusion.md)
-* [Using a Domain](self-hosting/using-a-domain.md)
-* [Using SSL](self-hosting/using-tls-ssl.md)
+* [Domain Setup](self-hosting/domain-setup.md)
 
 ## Self-Hosting (1.0.0)
 
 * [Getting Started (1.0.0)](self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md)
 
+## Administrating
+
+* [General](administrating/general.md)
+* [Tags](administrating/tags.md)
+* [Social Links](administrating/social-links.md)
+* [Webhooks](administrating/webhooks-setup.md)
+* [Moderators](administrating/moderators.md)
+* [Suspensions](administrating/suspensions.md)
+
 ## How To
 
-* [Setup a Webhook](how-to/webhooks-setup.md)
+* [Moderate Your Board](how-to/moderate-your-board.md)
 * [Add Metadata](how-to/add-metadata.md)
-* [Edit Mail Templates](how-to/edit-mail-templates.md)
+
+## Customizing
+
+* [Edit Mail Templates](customizing/edit-mail-templates.md)
 
 ## Maintenance
 

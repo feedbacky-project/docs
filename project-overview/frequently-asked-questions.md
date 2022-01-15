@@ -18,4 +18,4 @@ docker-compose up --build
 
 ### Is there a Pterodactyl egg?
 
-No, Feedbacky cannot be hosted using the Pterodactyl panel due that we use 2 images for both the client and the server.
+No, Feedbacky cannot be hosted using the Pterodactyl panel due that we use 2 images for both the client and the server while Pterodactyl eggs only support one image.

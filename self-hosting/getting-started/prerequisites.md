@@ -5,7 +5,7 @@ description: Things to keep in mind before installing Feedbacky.
 # Prerequisites
 
 {% hint style="warning" %}
-**Using a Virtual Private Server (VPS)?**
+<mark style="color:orange;">**Using a Virtual Private Server (VPS)?**</mark>
 
 Make sure that virtualization is supported as it is required for Docker. Additionally if you are limited to less than 2GB of memory you should assign some space for [Swap](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04).
 {% endhint %}

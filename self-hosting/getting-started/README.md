@@ -7,7 +7,7 @@ description: How to run Feedbacky on your own server.
 Thanks for your interest in using Feedbacky! Please follow each guide step by step to self-host your own instance!
 
 {% hint style="success" %}
-**Looking for an affordable hosting provider?**
+<mark style="color:green;">**Looking for an affordable hosting provider?**</mark>
 
 Feedbacky is in partnership with Senior Hosting to offer you high-performance Virtual Private Servers and Minecraft/Discord bot hosting!
 

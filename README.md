@@ -16,7 +16,7 @@ Collect feedback from people easily and improve your business with Free and Open
 
 In partnership with [Senior Hosting](project-overview/senior-hosting.md).
 
-![Demo Board](<.gitbook/assets/image (1).png>)
+![Demo Board](<.gitbook/assets/image (1) (1).png>)
 
 ## Features
 
@@ -24,20 +24,18 @@ In partnership with [Senior Hosting](project-overview/senior-hosting.md).
 
 ### Ready to self-host?
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="self-hosting/getting-started/" %}
+[getting-started](self-hosting/getting-started/)
 {% endcontent-ref %}
-
-### Customization
 
 ### How To's
 
-{% content-ref url="how-to/webhooks-setup.md" %}
-[webhooks-setup.md](how-to/webhooks-setup.md)
+{% content-ref url="administrating/webhooks-setup.md" %}
+[webhooks-setup.md](administrating/webhooks-setup.md)
 {% endcontent-ref %}
 
-{% content-ref url="how-to/edit-mail-templates.md" %}
-[edit-mail-templates.md](how-to/edit-mail-templates.md)
+{% content-ref url="customizing/edit-mail-templates.md" %}
+[edit-mail-templates.md](customizing/edit-mail-templates.md)
 {% endcontent-ref %}
 
 {% content-ref url="how-to/add-metadata.md" %}

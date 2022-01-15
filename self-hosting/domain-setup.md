@@ -1,12 +1,230 @@
----
-description: Using a cool domain with your Feedbacky instance.
----
+# Domain Setup
 
-# Using a Domain
+
+
+
+
+
+
+
+
+
+
+
+
+This guide will show you how you can generate your own SSL certificate with Certbot.
+
+#### Cloudflare
+
+An alternative method that you can follow instead of manually generating a certificate and adding additional values to your VHost is by using Cloudflare.
+
+In short by adding your website to Cloudflare you will be able to forward your board with Cloudflare's own proxy.
+
+You can read more [here](https://support.cloudflare.com/hc/en-us/articles/201720164).
+
+#### Installing
+
+Before we proceed, make sure you that everything is up to date:
+
+```
+sudo apt update -y && sudo apt upgrade -y
+```
+
+Installing Certbot:
+
+```
+sudo apt install -y certbot
+```
+
+Run the follow command for the web server you use:
+
+{% tabs %}
+{% tab title="Apache" %}
+```
+sudo apt install -y python3-certbot-apache
+```
+{% endtab %}
+
+{% tab title="NGINX" %}
+```
+sudo apt install -y python3-certbot-nginx
+```
+{% endtab %}
+{% endtabs %}
+
+#### Port Forwarding
+
+With UFW, use the following command:
+
+* Forwarding Port 443:
+
+```
+sudo ufw allow 443/tcp
+```
+
+#### Creating a Certificate
+
+In order to create a certificate you must use the domain that you previously created for your board in our domain guide.
+
+{% tabs %}
+{% tab title="Apache" %}
+```
+sudo certbot certonly --apache -d {DOMAIN_NAME}
+```
+
+{% hint style="success" %}
+**Example**
+
+This is how the correct format to use would look like:
+
+```
+sudo certbot certonly --apache -d feedbacky.cool.app
+```
+{% endhint %}
+{% endtab %}
+
+{% tab title="NGINX" %}
+```
+sudo certbot certonly --nginx -d {DOMAIN_NAME}
+```
+
+{% hint style="success" %}
+**Example**
+
+This is how the correct format to use would look like:
+
+```
+sudo certbot certonly --nginx -d feedbacky.cool.app
+```
+{% endhint %}
+{% endtab %}
+{% endtabs %}
+
+{% hint style="warning" %}
+**Standalone**
+
+If neither the Apache nor the NGINX command work, try using the standalone command:
+
+```
+sudo certbot certonly --standalone -d {DOMAIN_NAME}
+```
+{% endhint %}
+
+#### Renew your Certificate
+
+Certbot doesn't automatically renew your certificate, for that you would need [acme.sh](https://github.com/acmesh-official/acme.sh), in order to manually renew your certificate type:
+
+```
+certbot renew
+```
+
+{% hint style="warning" %}
+**Using NGINX?**
+
+When renewing your certificate make sure to stop the services before proceeding, else you will get an error.
+
+* Stop NGINX:
+
+```
+sudo systemctl stop nginx
+```
+
+* Renew:
+
+```
+sudo certbot renew
+```
+
+* Start NGINX:
+
+```
+sudo systemctl start nginx
+```
+{% endhint %}
+
+#### Updating your VHost
+
+Once you have generate your certificate you must update your VHost to take TLS/SSL in consideration.
+
+{% tabs %}
+{% tab title="Apache" %}
+{% hint style="danger" %}
+Do not change the `{SERVER_NAME}` value!
+{% endhint %}
+
+```
+<VirtualHost *:80>
+  ServerName {DOMAIN_NAME}
+  
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L] 
+</VirtualHost>
+
+<VirtualHost *:443>
+  ServerName {DOMAIN_NAME}
+  
+  SSLEngine on
+  SSLCertificateFile /etc/letsencrypt/live/{DOMAIN_NAME}/fullchain.pem
+  SSLCertificateKeyFile /etc/letsencrypt/live/{DOMAIN_NAME}/privkey.pem
+</VirtualHost> 
+```
+{% endtab %}
+
+{% tab title="NGINX" %}
+```
+server {
+    listen 80;
+    server_name {DOMAIN_NAME};
+
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl http2;
+    server_name {DOMAIN_NAME};
+
+    ssl_certificate /etc/letsencrypt/live/{DOMAIN_NAME}/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/{DOMAIN_NAME}/privkey.pem;
+    ssl_session_cache shared:SSL:10m;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1>
+    ssl_prefer_server_ciphers on;
+
+    http2_idle_timeout 5m; # up from 3m default
+    client_max_body_size 0;
+
+     location / {
+       proxy_pass {SERVER_IP}:{CLIENT_APP_PORT};
+  }
+}
+```
+{% endtab %}
+{% endtabs %}
+
+#### Additional steps
+
+{% tabs %}
+{% tab title="Apache" %}
+* By default SSL is disabled in Apache, we can enable it by using the following command:
+
+```
+sudo a2enmod ssl
+```
+
+* Restart your Apache service:
+
+```
+sudo systemctl restart apache2
+```
+{% endtab %}
+{% endtabs %}
+
+
 
 This guide will show you how to use the Apache or NGINX web server in order to point a domain to your Feedbacky instance by using reverse proxy.
 
-## DNS Provider
+#### DNS Provider
 
 For your domain to actually work use the DNS provider (Cloudflare, Namecheap, etc..) of your choice and create an **A Record** that points to your machine's public IP address.
 
@@ -18,7 +236,7 @@ curl ipinfo.io/ip
 
 If you use a VPS you will find your public IP address and more information in the dashboard of your provider.
 
-## Port Forwarding
+#### Port Forwarding
 
 With UFW, use the following commands:
 
@@ -28,7 +246,7 @@ With UFW, use the following commands:
 sudo ufw allow 80/tcp
 ```
 
-## Creating a new VHost
+#### Creating a new VHost
 
 A "VirtualHost" or "VHost" abridged, makes it possible to run multiple website on a single web server (website1.com, website2.com, etc..) this is useful especially if you are also hosting other web services such as a website or store front.
 
@@ -152,7 +370,7 @@ server {
 {% endtab %}
 {% endtabs %}
 
-### Additional steps
+#### Additional steps
 
 This sections contains some additional steps you need to follow before enabling your VHost.
 
@@ -192,7 +410,7 @@ Each time you will edit your VHost file in `/etc/nginx/sites-available` it will 
 {% endtab %}
 {% endtabs %}
 
-### Enabling your VHost
+#### Enabling your VHost
 
 Title self-explanatory, these steps will enable your newly made VHost file.
 
@@ -216,12 +434,12 @@ sudo service nginx reload
 
 Congratulation! 🎉, you've just created a VHost for your Feedbacky instance!
 
-## TLS/SSL
+#### TLS/SSL
 
 We only covered the basics but if you want to go one step further you can generate your own TLS/SSL certificate for your domain by following the guide below:
 
-{% content-ref url="using-tls-ssl.md" %}
-[using-tls-ssl.md](using-tls-ssl.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 &#x20;

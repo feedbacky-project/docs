@@ -59,7 +59,7 @@ exit
 Using `git`, clone the official [Feedbacky repository](https://github.com/feedbacky-project/app).
 
 {% hint style="info" %}
-**Want to use the most recent features?**
+<mark style="color:blue;">**Want to use the most recent features?**</mark>
 
 Consider using our [development branch](../../self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md) as it is regularly updated.&#x20;
 
@@ -88,7 +88,7 @@ Each variables already have their own descriptions but we will go into further d
 | `SERVER_APP_PORT`             | Port for the server application, by default it is 8095.  |
 
 {% hint style="danger" %}
-Use the correct format or else you won't be able to access your own instance. Let's say that our IP address is 188.222.333.22, than the correct format will look like this;
+Use the correct IP address format or else you won't be able to access your own instance. Let's say that our IP address is 188.222.333.22, than the correct format will look like this;
 
 #### Valid
 
@@ -105,8 +105,8 @@ Use the correct format or else you won't be able to access your own instance. Le
 
 Follow this guide if you want to use a domain;
 
-{% content-ref url="../using-a-domain.md" %}
-[using-a-domain.md](../using-a-domain.md)
+{% content-ref url="../domain-setup.md" %}
+[domain-setup.md](../domain-setup.md)
 {% endcontent-ref %}
 
 ### Security
@@ -291,7 +291,7 @@ Make sure that you also create a port forwarding rule in your router. If you are
 You are now ready to compile Feedbacky, with Docker Compose, start a new container.
 
 {% hint style="info" %}
-**Running in the background**
+<mark style="color:blue;">**Running in the background**</mark>
 
 tmux
 {% endhint %}
