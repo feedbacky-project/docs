@@ -63,7 +63,7 @@ Using `git`, clone the official [Feedbacky repository](https://github.com/feedba
 
 Consider using our [development branch](../../self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md) as it is regularly updated.&#x20;
 
-_Be aware that while many uses this branch in their production servers (in fact_ [_we do!_](https://app.feedbacky.net/b/feedbacky-official)_) using bleeding edge features can lead to some issues._
+_Be aware that while many uses this branch in their production servers (in fact_ [_we do!_](https://app.feedbacky.net/b/feedbacky-official)_) using bleeding edge features could lead to some issues._
 {% endhint %}
 
 ```
@@ -84,6 +84,8 @@ Each variables already have their own descriptions but we will go into further d
 
 | `REACT_APP_SERVER_IP_ADDRESS` | The IP address or domain where Feedbacky will be hosted. |
 | ----------------------------- | -------------------------------------------------------- |
+| `CLIENT_APP_PORT`             | Port for the client application, by default it is 8090.  |
+| `SERVER_APP_PORT`             | Port for the server application, by default it is 8095.  |
 
 {% hint style="danger" %}
 Use the correct format or else you won't be able to access your own instance. Let's say that our IP address is 188.222.333.22, than the correct format will look like this;
@@ -194,12 +196,12 @@ The Google OAuth guide is not yet available.
 {% endtab %}
 
 {% tab title="Mailgun" %}
-Mailgun is a mail provider supported by Feedbacky.
+[Mailgun](https://www.mailgun.com) is a mail provider supported by Feedbacky.
 
 {% hint style="info" %}
-New users are limited to 5000 mails during a 3 months trial, when expired you must pay $0.80 per 1000 mails.
+Send up to 5000 mails during a _3 month trial_ than _$0.80_ per 1000 mails.
 
-A credit card is required for sign up.
+A credit card is also required for sign up.
 {% endhint %}
 
 _Pricing included for your convenience and may be out of date._
@@ -218,37 +220,54 @@ Your base URL should look something like this;
 {% endtab %}
 
 {% tab title="SendGrid" %}
-SendGrid is a mail provider supported by Feedbacky.
+[SendGrid](https://sendgrid.com) is a mail provider supported by Feedbacky.
 
 {% hint style="info" %}
-
+Send up to 100 mails per day for _free_ and _forever_.&#x20;
 {% endhint %}
 
 _Pricing included for your convenience and may be out of date._
 
 
 
-| `MAIL_MAILGUN_API_KEY`      | Your Mailgun API key.  |
-| --------------------------- | ---------------------- |
-| `MAIL_MAILGUN_API_BASE_URL` | Your Mailgun base URL. |
+| `MAIL_SENDGRID_API_KEY`      | Your SendGrid API key.  |
+| ---------------------------- | ----------------------- |
+| `MAIL_SENDGRID_API_BASE_URL` | Your SendGrid base URL. |
 
 {% hint style="warning" %}
 Your base URL should look something like this;
 
-`https://api.mailgun.net/<version>/<domain>/messages`
+`https://api.sendgrid.com/v3/mail/send`
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
 ### Image Compression
 
-{% embed url="https://cheetaho.com" %}
+| `IMAGE_COMPRESSION_ENABLED` | If you wish to use an Image compression service, `false` by default. |
+| --------------------------- | -------------------------------------------------------------------- |
+| `IMAGE_COMPRESSION_TYPE`    | At the moment Feedbacky only supports one image compression service. |
 
-### Extra
+{% tabs %}
+{% tab title="CheetahO" %}
+[CheetahO](https://cheetaho.com) is an image compression service supported by Feedbacky.
+
+{% hint style="info" %}
+Compress up to 500 images for _free_ each months.
+{% endhint %}
+
+_Pricing included for your convenience and may be out of date._
+
+
+
+| `IMAGE_COMPRESSION_CHEETAHO_API_KEY` | Your CheetahO API key. |
+| ------------------------------------ | ---------------------- |
+{% endtab %}
+{% endtabs %}
 
 ## Firewall setup
 
-1\. Since Uncomplicated Firewall (UFW) is installed by default on Ubuntu 20.04, we only need to enable it.
+1\. By default, Uncomplicated Firewall (UFW) is installed on Ubuntu 20.04, you must enable it.
 
 ```
 sudo ufw enable
@@ -260,8 +279,8 @@ sudo ufw enable
 sudo ufw allow {SERVER_APP_PORT}/tcp
 ```
 
-| `{SERVER_APP_PORT}` | The server port located in your `.env` file, by default it is 8090. |
-| ------------------- | ------------------------------------------------------------------- |
+| `{SERVER_APP_PORT}` | Your client application port, if unsure check the [port configuration](installation.md#networking). |
+| ------------------- | --------------------------------------------------------------------------------------------------- |
 
 {% hint style="warning" %}
 Make sure that you also create a port forwarding rule in your router. If you are using a Virtual Private Server (VPS) check with your provider.
@@ -274,7 +293,7 @@ You are now ready to compile Feedbacky, with Docker Compose, start a new contain
 {% hint style="info" %}
 **Running in the background**
 
-
+tmux
 {% endhint %}
 
 ```
