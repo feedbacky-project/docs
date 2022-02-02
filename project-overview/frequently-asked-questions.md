@@ -22,10 +22,10 @@ While using the Linux terminal might be too uncomfortable for some, our guide co
 
 ### What about Pterodactyl?
 
-Even though Pterodactyl fully utilize Docker with [Wings](https://pterodactyl.io/wings/1.0/installing.html), it does not support two things;
+Even though Pterodactyl utilize Docker with [Wings](https://pterodactyl.io/wings/1.0/installing.html), it does not support two things;
 
 * Docker Compose
-* Multi-image eggs ([feedbacky-client](https://hub.docker.com/r/plajer/feedbacky-client) & [feedbacky-server](https://hub.docker.com/r/plajer/feedbacky-server))
+* Multi-image eggs (Both [feedbacky-client](https://hub.docker.com/r/plajer/feedbacky-client) & [feedbacky-server](https://hub.docker.com/r/plajer/feedbacky-server) must be ran together)
 
 Without those, Feedbacky can't be self-hosted using Pterodactyl panel.
 
