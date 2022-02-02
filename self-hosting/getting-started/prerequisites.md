@@ -10,7 +10,10 @@ description: Things to keep in mind before installing Feedbacky.
 Make sure that virtualization is supported as it is required for Docker. Additionally if you are limited to less than 2GB of memory you should assign some space for [Swap](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04).
 {% endhint %}
 
-*
+* Feedbacky itself requires at least 200MB of free space.
+
+
+
 * An SMTP server is required in order for Feedbacky to send notification to your users to an idea, you can also use one of the following Mail providers;
   * Mailgun
   * SendGrid
@@ -181,7 +184,7 @@ We have a guide for both Apache and Nginx, choose the one you prefer.&#x20;
 
 ### Apache
 
-Size;
+`Size; ~10MB`
 
 {% hint style="info" %}
 Apache will require further configuration to enable reverse proxy support.
@@ -213,7 +216,7 @@ sudo systemctl status apache2
 
 ### Nginx
 
-Size;
+`Size; ~2MB`
 
 {% hint style="info" %}
 Nginx supports reverse proxy out of the box.
