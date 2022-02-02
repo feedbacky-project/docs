@@ -10,7 +10,8 @@ description: Things to keep in mind before installing Feedbacky.
 Make sure that virtualization is supported as it is required for Docker. Additionally if you are limited to less than 2GB of memory you should assign some space for [Swap](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04).
 {% endhint %}
 
-* An SMTP server is required in order for Feedbacky to send notification if subscribed to an idea, you can also use one of the following Mail providers;
+*
+* An SMTP server is required in order for Feedbacky to send notification to your users to an idea, you can also use one of the following Mail providers;
   * Mailgun
   * SendGrid
 * Since Feedbacky is password-less (we use OAuth2), you will need an account on at least one of the following services;
@@ -19,6 +20,12 @@ Make sure that virtualization is supported as it is required for Docker. Additio
   * [Google](https://www.google.com)
 
 ## Compatibility
+
+{% hint style="danger" %}
+<mark style="color:red;">**Using a panel software?**</mark>
+
+Please check out our [FAQ section](../../project-overview/frequently-asked-questions.md#can-i-host-feedbacky-on-x-panel) on this.
+{% endhint %}
 
 | Operating System | Version                                        | Status | Notes                                 |
 | ---------------- | ---------------------------------------------- | :----: | ------------------------------------- |
@@ -31,6 +38,8 @@ Make sure that virtualization is supported as it is required for Docker. Additio
 | **Mac OS**       |                                                |    ❓   | Unknown and not officially supported. |
 
 ## Docker
+
+`Size; ~330MB`
 
 Both the [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) and [Docker Compose](https://docs.docker.com/compose/install/) are necessary dependencies for Feedbacky.
 
@@ -104,10 +113,12 @@ docker-compose --version
 
 ## MariaDB
 
+`Size; ~200MB`
+
 MariaDB is recommended over MySQL as it brings better performance but MySQL will still work with Feedbacky if you already have it installed.
 
 {% hint style="danger" %}
-Additional configuration needed, do not skip this part if you already have MariaDB or MySQL installed.
+Additional configuration needed, **do not** skip this part if you already have MariaDB installed.
 {% endhint %}
 
 <details>
@@ -134,7 +145,9 @@ sudo mysql_secure_installation
 
 The script will ask you to set a root password, press `N` to skip it. The root password is already tied to the system on Ubuntu and changing it could result in MariaDB breaking.
 
-Next we need to do some additional configuration, Docker will treat your container as a remote machine so we need to change the `bind-address` setting in order to accept non localhost connections.
+### Additional Configuration
+
+Docker will treat your container as a remote machine, we need to change the value of `bind-address`  in order to accept non localhost connections.
 
 4\. Edit your `50-server.cnf`.
 
@@ -164,13 +177,19 @@ sudo systemctl restart mariadb-server
 
 A webserver is needed in order to point a domain to your instance. Any will suffice as long as they support reverse proxy.
 
+We have a guide for both Apache and Nginx, choose the one you prefer.&#x20;
+
+### Apache
+
+Size;
+
 {% hint style="info" %}
-Reverse proxy is supported by NGINX out of the box while Apache will need some extra configuration.
+Apache will require further configuration to enable reverse proxy support.
 {% endhint %}
 
 <details>
 
-<summary>Installation Guide (Apache)</summary>
+<summary>Installation Guide</summary>
 
 1\. Update your system.
 
@@ -192,9 +211,17 @@ sudo systemctl status apache2
 
 </details>
 
+### Nginx
+
+Size;
+
+{% hint style="info" %}
+Nginx supports reverse proxy out of the box.
+{% endhint %}
+
 <details>
 
-<summary>Installation Guide (NGINX)</summary>
+<summary>Installation Guide</summary>
 
 1\. Update your system.
 
@@ -202,13 +229,13 @@ sudo systemctl status apache2
 sudo apt update -y
 ```
 
-2\. Install the NGINX package.
+2\. Install the Nginx package.
 
 ```
 sudo apt install -y nginx
 ```
 
-3\. Verify that NGINX is running.
+3\. Verify that Nginx is running.
 
 ```
 sudo systemctl status nginx
