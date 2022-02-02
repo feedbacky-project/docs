@@ -12,27 +12,27 @@ description: The main installation process.
 sudo mysql
 ```
 
-2\. Create a new user
+2\. Create a new user for Feedbacky.
 
 {% hint style="danger" %}
-As stated [previously](prerequisites.md#extra-configuration), we won't be able to create a `localhost` user, instead use the `%` wildcard instead.
+As stated [previously](prerequisites.md#extra-configuration), we won't be able to create a `localhost` user, instead we'll use the `%` wildcard instead.
 {% endhint %}
 
 ```sql
-CREATE USER '{MYSQL_USERNAME}'@'%' IDNTIFIED BY '{MYSQL_PASSWORD}';
+CREATE USER '{MYSQL_USERNAME}'@'%' IDENTIFIED BY '{MYSQL_PASSWORD}';
 ```
 
 | `{MYSQL_USERNAME}` | The username of your choice. |
 | ------------------ | ---------------------------- |
 | `{MYSQL_PASSWORD}` | The password of your choice. |
 
-3\. Create a new table
+3\. Create a new table for Feedbacky.
 
 ```sql
 CREATE DATABASE feedbacky;
 ```
 
-4\. Grant all privileges.
+4\. Grant all privileges to your MySQL user.
 
 ```sql
 GRANT ALL PRIVILEGES ON feedbacky.* TO '{MYSQL_USERNAME}'@'%';
@@ -45,7 +45,7 @@ FLUSH PRIVLEGES;
 ```
 
 {% hint style="info" %}
-Flush will reload the privileges without having the need to restart the MariaDB service.
+Flush will reload the privileges without having the need to restart the MariaDB daemon.
 {% endhint %}
 
 6\. Exit the SQL shell.
@@ -54,20 +54,28 @@ Flush will reload the privileges without having the need to restart the MariaDB 
 exit
 ```
 
-## Cloning the repository
+## Downloading
 
-Using `git`, clone the official [Feedbacky repository](https://github.com/feedbacky-project/app).
+Placeholder.
 
 {% hint style="info" %}
 <mark style="color:blue;">**Want to use the most recent features?**</mark>
 
-Consider using our [development branch](../../self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md) as it is regularly updated.&#x20;
+Consider using our [development branch](broken-reference) as it is regularly updated.&#x20;
 
 _Be aware that while many uses this branch in their production servers (in fact_ [_we do!_](https://app.feedbacky.net/b/feedbacky-official)_) using bleeding edge features could lead to some issues._
 {% endhint %}
 
+1\. Create a new directory named "feedbacky" in the `/etc` directory and access it.
+
 ```
-sudo git clone https://github.com/feedbacky-project/app /opt/feedbacky && cd /opt/feedbacky
+sudo mkdir /etc/feedbacky && cd /etc/feedbacky
+```
+
+2\. Run the command below to download the necessary files.
+
+```
+sudo curl -O "https://raw.githubusercontent.com/feedbacky-project/app/master/{.env,docker-compose.yml}"
 ```
 
 ## Configuring
@@ -120,7 +128,7 @@ Use this link to generate one yourself;
 You can also use any other JWT secret token generator.
 {% endembed %}
 
-{% hint style="success" %}
+{% hint style="warning" %}
 For extra security, random ASCII characters are recommended. Remember **to not** share your token with anyone else!
 {% endhint %}
 
@@ -178,6 +186,26 @@ Follow these steps to use the GitHub OAuth.
 {% hint style="danger" %}
 The Google OAuth guide is not yet available.
 {% endhint %}
+{% endtab %}
+
+{% tab title="GitLab" %}
+Follow these steps to use the GitLab OAuth.
+
+1\. Access GitLabs' [Developer Portal](https://gitlab.com/-/profile/applications).
+
+2\. Create a new OAuth application.&#x20;
+
+{% embed url="https://cdn.feedbacky.net/static/mp4/discord-oauth-setup.mp4" %}
+
+3\. Add a new redirect with the IP address or domain set [here](installation.md#networking) and include `/auth/gitlab` at the end.
+
+4\. Fill the necessary variables with your newly created Discord OAuth application.
+
+| `OAUTH_GITLAB_ENABLED`      | Disabled by default, to use GitLab OAuth change to `true`.    |
+| --------------------------- | ------------------------------------------------------------- |
+| `OAUTH_GITLAB_REDIRECT_URI` | Your instance domain with `/auth/gitlab` included at the end. |
+| `OAUTH_GITLAB_CLIENT_ID`    | Your OAuth client ID.                                         |
+| `OAUTH_GITLAB_SECRET`       | Your OAuth client secret.                                     |
 {% endtab %}
 {% endtabs %}
 
@@ -286,9 +314,9 @@ sudo ufw allow {SERVER_APP_PORT}/tcp
 Make sure that you also create a port forwarding rule in your router. If you are using a Virtual Private Server (VPS) check with your provider.
 {% endhint %}
 
-## Compiling
+## Installing
 
-You are now ready to compile Feedbacky, with Docker Compose, start a new container.
+You are now ready to install Feedbacky! Start a new container.
 
 {% hint style="info" %}
 <mark style="color:blue;">**Running in the background**</mark>

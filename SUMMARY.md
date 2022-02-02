@@ -22,10 +22,6 @@
   * [Conclusion](self-hosting/getting-started/conclusion.md)
 * [Domain Setup](self-hosting/domain-setup.md)
 
-## Self-Hosting (1.0.0)
-
-* [Getting Started (1.0.0)](self-hosting-1.0.0/1.0.0-wip-hosting-feedback-instance.md)
-
 ## Administrating
 
 * [General](administrating/general.md)

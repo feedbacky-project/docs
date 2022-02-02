@@ -12,7 +12,7 @@ If you need any help with self-hosting, join our Discord server! Support is gene
 
 ## Feedbacky
 
-If you have any suggestions you can submit them on the official board.
+If you have any suggestions you can submit them on our official board.
 
 {% embed url="https://app.feedbacky.net/b/feedbacky-official" %}
 

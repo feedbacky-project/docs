@@ -10,7 +10,7 @@ The answer for this question is **no**, it might work but Feedbacky was not desi
 
 #### Why?
 
-Web hosting managers such as CPanel or similar won't work since they do not completely support an integrated Docker manager;
+Web hosting managers such as cPanel or similar won't work since they do not completely support an integrated Docker manager;
 
 {% embed url="https://support.cpanel.net/hc/en-us/articles/360062418794-Can-I-run-docker-on-a-cPanel-server-" %}
 

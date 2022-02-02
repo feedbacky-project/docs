@@ -7,9 +7,8 @@ If everything went alright you completed the installation guide for self-hosting
 #### By following the self-host guide you should also have learned the basics of;
 
 * Using the `apt` package manager on Ubuntu or any other Debian-based Linux distribution.
-* Installing Docker with Compose, MariaDB and Apache or NGINX.
+* Installing Docker with Compose, MariaDB and Apache or Nginx.
 * Configuring a MySQL user and table.
-* Using the `git` clone tool.
 
 ## What's Next
 
