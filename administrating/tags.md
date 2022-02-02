@@ -40,4 +40,4 @@ Roadmap Ignored tag assigned to an idea;
 
 Roadmap doesn't show the idea;
 
-![](<../.gitbook/assets/image (3).png>)
+![](<../.gitbook/assets/image (3) (1).png>)

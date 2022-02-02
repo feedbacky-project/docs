@@ -10,34 +10,32 @@ coverY: 0
 
 _X: Users, Customers, Players.._
 
+![Looks of a board](<.gitbook/assets/image (3).png>)
+
 Collect feedback from people easily and improve your business with Free and Open Source Feedbacky software.
 
-* [**Website**](https://feedbacky.net)****
+{% embed url="https://feedbacky.net" %}
 
-In partnership with [Senior Hosting](project-overview/senior-hosting.md).
-
-![Demo Board](<.gitbook/assets/image (1) (1).png>)
+In partnership with ![Partner Logo](https://cdn.feedbacky.net/static/img/partner-logo.png) [Senior Hosting](project-overview/senior-hosting.md).
 
 ## Features
 
-## Guides
+#### Placeholder
 
-### Ready to self-host?
+* [x] Simple and intuitive page design with accessibility kept in mind.
+* [x] Automagical dark or light mode.
+* [x] Fully open source, modify or inspect Feedbacky's code if needed.
+* [x] Privacy focused, keep your email censored.
+* [x] No passworld storing hassle using OAuth.
+* [x] Keep your customers updated with changelogs.
+* [x] Use tags to sort your ideas and track them using the roadmap.
+* [x] &#x20;engaged with reactions.
+* [x] Enhanced idea searching and filtering.
+
+## Ready to self-host?
+
+Follow our self-hosting guide if you want to have your own Feedbacky instance.
 
 {% content-ref url="self-hosting/getting-started/" %}
 [getting-started](self-hosting/getting-started/)
-{% endcontent-ref %}
-
-### How To's
-
-{% content-ref url="administrating/webhooks-setup.md" %}
-[webhooks-setup.md](administrating/webhooks-setup.md)
-{% endcontent-ref %}
-
-{% content-ref url="customizing/edit-mail-templates.md" %}
-[edit-mail-templates.md](customizing/edit-mail-templates.md)
-{% endcontent-ref %}
-
-{% content-ref url="how-to/add-metadata.md" %}
-[add-metadata.md](how-to/add-metadata.md)
 {% endcontent-ref %}
