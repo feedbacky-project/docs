@@ -4,6 +4,12 @@ description: Things to keep in mind before installing Feedbacky.
 
 # Prerequisites
 
+{% hint style="danger" %}
+<mark style="color:red;">**Heads up!**</mark>
+
+If you plan on using a panel with Feedbacky, please read this [FAQ section](../../project-overview/frequently-asked-questions.md#can-i-host-feedbacky-on-x-panel).
+{% endhint %}
+
 {% hint style="warning" %}
 <mark style="color:orange;">**Using a Virtual Private Server (VPS)?**</mark>
 
@@ -21,12 +27,6 @@ Make sure that virtualization is supported as it is required for Docker. Additio
   * [SendGrid](https://sendgrid.com)
 
 ## Compatibility
-
-{% hint style="danger" %}
-<mark style="color:red;">**Using a panel software?**</mark>
-
-Please check out our [FAQ section](../../project-overview/frequently-asked-questions.md#can-i-host-feedbacky-on-x-panel) on this.
-{% endhint %}
 
 | Operating System | Version                                        | Status | Notes                                 |
 | ---------------- | ---------------------------------------------- | :----: | ------------------------------------- |
