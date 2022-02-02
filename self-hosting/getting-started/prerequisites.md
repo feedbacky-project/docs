@@ -10,17 +10,15 @@ description: Things to keep in mind before installing Feedbacky.
 Make sure that virtualization is supported as it is required for Docker. Additionally if you are limited to less than 2GB of memory you should assign some space for [Swap](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04).
 {% endhint %}
 
-* Feedbacky itself requires at least 200MB of free space.
-
-
-
-* An SMTP server is required in order for Feedbacky to send notification to your users to an idea, you can also use one of the following Mail providers;
-  * Mailgun
-  * SendGrid
-* Since Feedbacky is password-less (we use OAuth2), you will need an account on at least one of the following services;
+* You need at least 200MB of free space for Feedbacky itself.
+* Feedbacky is password-less (we use OAuth), you will need an account with at least one of these services;
   * [Discord](https://discord.com)
   * [GitHub](https://github.com)
   * [Google](https://www.google.com)
+  * [GitLab](https://about.gitlab.com)
+* In order for your users to be notified when their subscribed content is updated, you will need an SMTP server or use one of the following mail providers;
+  * [Mailgun](https://www.mailgun.com)
+  * [SendGrid](https://sendgrid.com)
 
 ## Compatibility
 
