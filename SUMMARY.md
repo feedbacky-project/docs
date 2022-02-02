@@ -8,6 +8,7 @@
 * [Support](project-overview/support.md)
 * [License](project-overview/license.md)
 * [Changelogs](project-overview/changelogs/README.md)
+  * [Version 1.0.0-rc.0 released](project-overview/changelogs/version-1.0.0-rc.0-released.md)
   * [Version 0.5.0-beta released](project-overview/changelogs/version-0.5.0-beta-released.md)
   * [Version 0.3.1-beta released](project-overview/changelogs/version-0.3.1-beta-released.md)
   * [Version 0.3.0-beta released](project-overview/changelogs/version-0.3.0-beta-released.md)

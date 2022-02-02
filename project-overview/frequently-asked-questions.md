@@ -18,11 +18,16 @@ And while some plugins might add a full Docker support they won't be official an
 
 Feedbacky is best intended to be ran on it's own on a VPS or dedicated hardware, it can and will co-exists with other Docker containers.
 
-While using the Linux terminal might be too unconfortable for some, our guide fully covers the commands needed and can be generally followed without additional effort.
+While using the Linux terminal might be too uncomfortable for some, our guide covers the necessary commands and can be generally followed without any additional efforts.
 
 ### What about Pterodactyl?
 
-Even though Pterodactyl fully utilize Docker with [Wings](https://pterodactyl.io/wings/1.0/installing.html) it does not support Docker Compose which is required for Feedbacky, there is also the fact that we use 2 images, both the client and the server while Pterodactyl eggs only support one image.
+Even though Pterodactyl fully utilize Docker with [Wings](https://pterodactyl.io/wings/1.0/installing.html), it does not support two things;
+
+* Docker Compose
+* Multi-image eggs ([feedbacky-client](https://hub.docker.com/r/plajer/feedbacky-client) & [feedbacky-server](https://hub.docker.com/r/plajer/feedbacky-server))
+
+Without those, Feedbacky can't be self-hosted using Pterodactyl panel.
 
 ## How can I restart the Docker container?
 

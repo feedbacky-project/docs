@@ -54,11 +54,7 @@ Flush will reload the privileges without having the need to restart the MariaDB 
 exit
 ```
 
-## Installing Feedbacky
-
-1\.&#x20;
-
-Cloning the repository
+## Cloning the repository
 
 Using `git`, clone the official [Feedbacky repository](https://github.com/feedbacky-project/app).
 

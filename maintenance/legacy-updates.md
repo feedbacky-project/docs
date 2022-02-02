@@ -5,7 +5,7 @@ description: Legacy updates for older releases.
 # Legacy Updates
 
 {% hint style="warning" %}
-The content below is intended to provide support for those who are upgrading their legacy instances to a newer version of Feedbacky and can be ignored for new installations.
+The content below is intended to provide support for those who are upgrading their legacy instances to a newer version of Feedbacky and can be ignored for new installations (1.0.0-rc.0 and up).
 {% endhint %}
 
 ## Updating to 0.5.0

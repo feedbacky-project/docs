@@ -4,6 +4,12 @@ description: Configure your board base settings here.
 
 # General
 
+{% hint style="info" %}
+<mark style="color:blue;">**Work in progress!**</mark>
+
+This section is currently being worked on!
+{% endhint %}
+
 This is the main page for customizing your board looks and feel.
 
 ![Overview](../.gitbook/assets/admin\_general\_overview.png)

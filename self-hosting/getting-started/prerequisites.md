@@ -32,7 +32,7 @@ Please check out our [FAQ section](../../project-overview/frequently-asked-quest
 | **Ubuntu**       | "Focal" 20.04                                  |    ✅   | Installation guide based on Focal.    |
 |                  | "Bionic" 18.04                                 |    ✅   |                                       |
 | **Debian**       | "Bullseye" 11                                  |    ✅   |                                       |
-| **Windows**      | WSL2                                           |    ✅   |                                       |
+| **Windows**      | WSL2                                           |    ✅   | _Should work, not tested!_            |
 |                  | <p>​Server 2022 </p><p><em>Windows 11</em></p> |   🔧   | Working but not officially supported. |
 |                  | <p>​Server 2019</p><p><em>Windows 10</em></p>  |   🔧   | Working but not officially supported. |
 | **Mac OS**       |                                                |    ❓   | Unknown and not officially supported. |

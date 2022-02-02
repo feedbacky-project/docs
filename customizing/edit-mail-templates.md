@@ -4,6 +4,12 @@ description: Change the looks of Feedbacky's mails.
 
 # Edit Mail Templates
 
+{% hint style="info" %}
+<mark style="color:blue;">**Work in progress!**</mark>
+
+This section is currently being worked on!
+{% endhint %}
+
 The mail template directory is situated in `app/server/src/main/ressources/mail_templates`.
 
 ### Directory Tree
