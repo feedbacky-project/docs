@@ -24,7 +24,7 @@ Operating system compatibility and necessary dependencies.
 
 ## 2. Installation
 
-Cloning the repository and setting up the necessary configurations.
+Database configuration, downloading the necessary files and editing the environement variables.
 
 {% content-ref url="installation.md" %}
 [installation.md](installation.md)
