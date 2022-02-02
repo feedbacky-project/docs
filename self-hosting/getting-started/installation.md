@@ -14,7 +14,7 @@ sudo mysql
 
 2\. Create a new user for Feedbacky.
 
-{% hint style="danger" %}
+{% hint style="info" %}
 As stated [previously](prerequisites.md#extra-configuration), we won't be able to create a `localhost` user, instead we'll use the `%` wildcard instead.
 {% endhint %}
 
@@ -316,7 +316,7 @@ Make sure that you also create a port forwarding rule in your router. If you are
 
 ## Installing
 
-You are now ready to install Feedbacky! Start a new container.
+You are now ready to install Feedbacky, start a new container.
 
 {% hint style="info" %}
 <mark style="color:blue;">**Running in the background**</mark>
@@ -325,9 +325,7 @@ tmux
 {% endhint %}
 
 ```
-sudo docker-compose up --build
+sudo docker-compose up
 ```
 
-This will take a few minutes depending on your hardware capabilities, your CPU usage will also be high during this process.&#x20;
-
-If the compiling was successful, your Feedbacky instance should be ready.
+This will take a few minutes depending on your hardware capabilities, your CPU usage will also peak during this process.

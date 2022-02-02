@@ -38,6 +38,6 @@ Type in your terminal the `docker container stop`
 If you are using screen and have Feedbacky in the background, connect to that session are end it by doing `CTRL` + `C`, to start Feedbacky again type the following below.
 
 ```
-docker-compose up --build
+docker-compose up
 ```
 

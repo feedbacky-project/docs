@@ -2,7 +2,7 @@
 
 ## Congratulations! 🎉&#x20;
 
-If everything went alright you completed the installation guide for self-hosting Feedbacky, check our [support](../../project-overview/support.md) resources if you encountered an issue along the way.&#x20;
+If everything went alright you completed the installation guide for self-hosting Feedbacky and should have your own instance ready, check our [support](../../project-overview/support.md) resources if you encountered any issue along the way.&#x20;
 
 #### By following the self-host guide you should also have learned the basics of;
 
@@ -12,7 +12,7 @@ If everything went alright you completed the installation guide for self-hosting
 
 ## What's Next
 
-Check out our other guides to customize Feedbacky even further.
+Read our administrating Feedbacky guide to get started after installing.
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
