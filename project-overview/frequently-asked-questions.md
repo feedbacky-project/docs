@@ -41,15 +41,12 @@ docker-compose up
 
 ## Why can't I further customize my instance?
 
-Before the release of `1.0.0-rc.0` you could customize your Feedbacky instance a little more further.
+With versions before [`1.0.0-rc.0`](changelogs/version-1.0.0-rc.0-released.md), you had to download the whole Feedbacky repository and manually compile it on your Virtual Private Server (VPS) or dedicated hardware, thus making it really easy to customize elements of Feedbacky out of the box.
 
-Feedbacky used to be manually compiled on your VPS or hardware&#x20;
+All of this changed and we are instead relying on Docker images which are automatically compiled in the project repository thanks to the contribution of [xMikux](https://github.com/feedbacky-project/app/pull/59).&#x20;
 
-* Customize meta tags (eg. for Discord) Edit [this file](https://github.com/feedbacky-project/app/blob/master/client/public/index.html)
-*   Customize email templates Head over [to this folder](https://github.com/feedbacky-project/app/tree/master/server/src/main/resources/mail\_templates) and edit HTML of files as you wish.
+Unless you make a fork, implement your own edits and compile the necessary Docker images yourself, you won't be able to further customize your Feedbacky instance.
 
-    **Be careful not to replace any placeholders like `${host.address}`**
-*   Customize/add new OAuth2 providers Check out [this file](https://github.com/feedbacky-project/app/blob/master/server/src/main/resources/oauth\_providers.yml)
+Please keep in mind that those customization elements might make a come back in the future via the Admin Panel itself!
 
-    There is no official documentation on this file so please contact developers if you want to add or change anything here.
-
+## Cloud hosted vs Self-hosted

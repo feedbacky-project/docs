@@ -4,6 +4,20 @@ description: The main installation process.
 
 # Installation
 
+## Initial setup
+
+1\. Create a new directory named "feedbacky" in the `/etc` directory and access it.
+
+```
+sudo mkdir /etc/feedbacky && cd /etc/feedbacky
+```
+
+2\. Run the command below to download the necessary files.
+
+```
+sudo curl -O "https://raw.githubusercontent.com/feedbacky-project/app/master/{.env,docker-compose.yml}"
+```
+
 ## Database setup
 
 1\. Start the SQL shell.
@@ -54,39 +68,19 @@ Flush will reload the privileges without having the need to restart the MariaDB 
 exit
 ```
 
-## Downloading
-
-Placeholder.
-
-{% hint style="info" %}
-<mark style="color:blue;">**Want to use the most recent features?**</mark>
-
-Consider using our [development branch](broken-reference) as it is regularly updated.&#x20;
-
-_Be aware that while many uses this branch in their production servers (in fact_ [_we do!_](https://app.feedbacky.net/b/feedbacky-official)_) using bleeding edge features could lead to some issues._
-{% endhint %}
-
-1\. Create a new directory named "feedbacky" in the `/etc` directory and access it.
-
-```
-sudo mkdir /etc/feedbacky && cd /etc/feedbacky
-```
-
-2\. Run the command below to download the necessary files.
-
-```
-sudo curl -O "https://raw.githubusercontent.com/feedbacky-project/app/master/{.env,docker-compose.yml}"
-```
-
 ## Configuring
 
-Edit the environment variable file.
+Environment variables must be edited in order for your instance to properly work.
+
+{% hint style="info" %}
+Each variables already have their own descriptions but we will go into further details for some.&#x20;
+{% endhint %}
+
+1\. Edit the `.env` file.
 
 ```
 sudo nano .env
 ```
-
-Each variables already have their own descriptions but we will go into further details for some.&#x20;
 
 ### Networking
 
@@ -95,41 +89,73 @@ Each variables already have their own descriptions but we will go into further d
 | `CLIENT_APP_PORT`             | Port for the client application, by default it is 8090.  |
 | `SERVER_APP_PORT`             | Port for the server application, by default it is 8095.  |
 
-{% hint style="danger" %}
-Use the correct IP address format or else you won't be able to access your own instance. Let's say that our IP address is 188.222.333.22, than the correct format will look like this;
-
-#### Valid
-
-✅ `http://188.222.333.22:8090`
-
-#### Invalid
-
-❌ `http://188.222.333.22:8090/` _<mark style="color:red;">Do not leave a trailing slash</mark> <mark style="color:red;"></mark><mark style="color:red;">**/**</mark> <mark style="color:red;"></mark><mark style="color:red;">at the end.</mark>_
-
-❌ `88.222.333.22:8090` _<mark style="color:red;">The http protocol is missing.</mark>_
-
-❌ `http://188.222.333.22` _<mark style="color:red;">The port is required if you aren't using a domain.</mark>_
-{% endhint %}
-
 Follow this guide if you want to use a domain;
 
 {% content-ref url="../domain-setup.md" %}
 [domain-setup.md](../domain-setup.md)
 {% endcontent-ref %}
 
+{% hint style="info" %}
+<mark style="color:blue;">**Address Format**</mark>
+
+Using an invalid IP address format will stop you from accessing your own instance.&#x20;
+
+Let's say that our IP address is `188.222.333.22`, the valid format will look like this; ``&#x20;
+
+#### ****
+
+{% hint style="success" %}
+#### <mark style="color:green;">**Valid**</mark>
+
+The protocol and port are present, there is no trailing slash<mark style="color:green;">**;**</mark>
+
+`http://188.222.333.22:8090`
+{% endhint %}
+
+****
+
+{% hint style="danger" %}
+#### <mark style="color:red;">**Invalid**</mark>
+
+A trailing slash (**/**) should not be present;
+
+`http://188.222.333.22:8090/`&#x20;
+{% endhint %}
+
+{% hint style="danger" %}
+#### <mark style="color:red;">**Invalid**</mark>
+
+The protocol (http) is missing;
+
+`88.222.333.22:8090`
+{% endhint %}
+
+{% hint style="danger" %}
+#### <mark style="color:red;">**Invalid**</mark>
+
+The port is required if you aren't using a domain;
+
+`http://188.222.333.22`
+{% endhint %}
+{% endhint %}
+
 ### Security
 
 | `JWT_SECRET` | A random generated token used for authentication purposes. |
 | ------------ | ---------------------------------------------------------- |
 
+{% tabs %}
+{% tab title="GRC" %}
 Use this link to generate one yourself;
 
 {% embed url="https://www.grc.com/passwords.htm" %}
-You can also use any other JWT secret token generator.
-{% endembed %}
+
+Any other JWT secret token generation can also be used.
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
-For extra security, random ASCII characters are recommended. Remember **to not** share your token with anyone else!
+For extra security, random ASCII characters are recommended. Remember, **do not share** your token with anyone else!
 {% endhint %}
 
 ### Database
@@ -191,7 +217,7 @@ The Google OAuth guide is not yet available.
 {% tab title="GitLab" %}
 Follow these steps to use the GitLab OAuth.
 
-1\. Access GitLabs' [Developer Portal](https://gitlab.com/-/profile/applications).
+1\. Access GitLab's [Developer Portal](https://gitlab.com/-/profile/applications).
 
 2\. Create a new OAuth application.&#x20;
 
@@ -295,13 +321,15 @@ _Pricing included for your convenience and may be out of date._
 
 ## Firewall setup
 
-1\. By default, Uncomplicated Firewall (UFW) is installed on Ubuntu 20.04, you must enable it.
+Uncomplicated Firewall (UFW) is the default Firewall on Ubuntu 20.04, it is disabled by default.
+
+1\. Enable Uncomplicated Firewall (UFW).
 
 ```
 sudo ufw enable
 ```
 
-2\. Finally, forward the Feedbacky server port.&#x20;
+2\. Forward the Feedbacky server port.&#x20;
 
 ```
 sudo ufw allow {SERVER_APP_PORT}/tcp
@@ -314,15 +342,15 @@ sudo ufw allow {SERVER_APP_PORT}/tcp
 Make sure that you also create a port forwarding rule in your router. If you are using a Virtual Private Server (VPS) check with your provider.
 {% endhint %}
 
-## Installing
-
-You are now ready to install Feedbacky, start a new container.
+## Starting
 
 {% hint style="info" %}
 <mark style="color:blue;">**Running in the background**</mark>
 
 tmux
 {% endhint %}
+
+1\. Start a new Docker container with Docker Compose.
 
 ```
 sudo docker-compose up

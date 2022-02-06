@@ -4,7 +4,7 @@
 
 If everything went alright you completed the installation guide for self-hosting Feedbacky and should have your own instance ready.
 
-You can reach us with one of the support links If you encountered any issue along the way.
+You can reach us with one of the support links if you encountered any issue along the way.
 
 #### By following the self-host guide you should also have learned the basics of;
 

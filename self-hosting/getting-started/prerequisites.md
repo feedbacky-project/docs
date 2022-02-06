@@ -28,8 +28,6 @@ Make sure that virtualization is supported as it is required for Docker. Additio
 
 ## Compatibility
 
-<mark style="background-color:blue;">TODO; Confirm WSL2 & check out Ubuntu 21.01</mark>
-
 | Operating System | Version                                        | Status | Notes                                 |
 | ---------------- | ---------------------------------------------- | :----: | ------------------------------------- |
 | **Ubuntu**       | "Focal" 20.04                                  |    ✅   | Installation guide based on Focal.    |
