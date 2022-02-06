@@ -12,7 +12,7 @@ This section is currently being worked on!
 
 This is the main page for customizing your board looks and feel.
 
-![Overview](../.gitbook/assets/admin\_general\_overview.png)
+![Overview](../../.gitbook/assets/admin\_general\_overview.png)
 
 ## Customization
 

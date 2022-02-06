@@ -24,7 +24,7 @@ Operating system compatibility and necessary dependencies.
 
 ## 2. Installation
 
-Database configuration, downloading the necessary files and editing the environement variables.
+Database configuration, downloading the necessary files and editing the environment variables.
 
 {% content-ref url="installation.md" %}
 [installation.md](installation.md)
