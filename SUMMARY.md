@@ -3,9 +3,7 @@
 ## Project Overview
 
 * [Introduction](README.md)
-* [Introduction](<README (1).md>)
 * [Senior Hosting](project-overview/senior-hosting.md)
-* [Support](project-overview/support.md)
 * [FAQs](project-overview/frequently-asked-questions.md)
 * [License](project-overview/license.md)
 * [Changelogs](project-overview/changelogs/README.md)
@@ -14,6 +12,13 @@
   * [Version 0.3.1-beta released](project-overview/changelogs/version-0.3.1-beta-released.md)
   * [Version 0.3.0-beta released](project-overview/changelogs/version-0.3.0-beta-released.md)
   * [Version 0.2.0-beta released](project-overview/changelogs/version-0.2.0-beta-released.md)
+
+## Support
+
+* [Discord](https://discord.com/invite/6qCnKh5)
+* [Feedbacky Feedback](https://app.feedbacky.net/b/feedbacky-official)
+* [Github](https://github.com/feedbacky-project/app)
+* [Status](https://status.feedbacky.net)
 
 ## Admin's Handbook
 
