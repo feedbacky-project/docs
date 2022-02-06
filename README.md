@@ -1,6 +1,6 @@
 ---
-description: Welcome to the official documentation!
-cover: .gitbook/assets/official.png
+description: Official Feedbacky documentation.
+cover: .gitbook/assets/feedbacky_header.png
 coverY: 0
 ---
 
