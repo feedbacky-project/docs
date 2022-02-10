@@ -102,22 +102,12 @@ Using an invalid IP address format will stop you from accessing your own instanc
 
 Let's say that our IP address is `188.222.333.22`, the valid format will look like this; ``&#x20;
 
-#### ****
-
-{% hint style="success" %}
-#### <mark style="color:green;">**Valid**</mark>
-
-The protocol and port are present, there is no trailing slash<mark style="color:green;">**;**</mark>
-
-`http://188.222.333.22:8090`
-{% endhint %}
-
 ****
 
 {% hint style="danger" %}
 #### <mark style="color:red;">**Invalid**</mark>
 
-A trailing slash (**/**) should not be present;
+_Do not leave a trailing (**/**) slash at the end;_
 
 `http://188.222.333.22:8090/`&#x20;
 {% endhint %}
@@ -125,7 +115,7 @@ A trailing slash (**/**) should not be present;
 {% hint style="danger" %}
 #### <mark style="color:red;">**Invalid**</mark>
 
-The protocol (http) is missing;
+_The protocol (**http**) is missing;_
 
 `88.222.333.22:8090`
 {% endhint %}
@@ -133,9 +123,19 @@ The protocol (http) is missing;
 {% hint style="danger" %}
 #### <mark style="color:red;">**Invalid**</mark>
 
-The port is required if you aren't using a domain;
+_The port is missing (can be skipped if you use a domain);_
 
 `http://188.222.333.22`
+{% endhint %}
+
+
+
+{% hint style="success" %}
+#### <mark style="color:green;">**Valid**</mark>
+
+_The protocol and port are present with no trailing slash;_
+
+`http://188.222.333.22:8090`
 {% endhint %}
 {% endhint %}
 
