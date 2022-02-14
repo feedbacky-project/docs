@@ -1,11 +1,14 @@
 # Table of contents
 
+* [Senior Hosting](README.md)
+
 ## Project Overview
 
-* [Introduction](README.md)
-* [Senior Hosting](project-overview/senior-hosting.md)
-* [FAQs](project-overview/frequently-asked-questions.md)
-* [License](project-overview/license.md)
+* [Introduction](<README (1).md>)
+* [Case Studies](project-overview/case-studies.md)
+* [FAQ](project-overview/faq.md)
+* [Credits](project-overview/credits.md)
+* [Funding](project-overview/funding.md)
 * [Changelogs](project-overview/changelogs/README.md)
   * [Version 1.0.0-rc.0 released](project-overview/changelogs/version-1.0.0-rc.0-released.md)
   * [Version 0.5.0-beta released](project-overview/changelogs/version-0.5.0-beta-released.md)
@@ -13,50 +16,66 @@
   * [Version 0.3.0-beta released](project-overview/changelogs/version-0.3.0-beta-released.md)
   * [Version 0.2.0-beta released](project-overview/changelogs/version-0.2.0-beta-released.md)
 
-## Support
+## Community
 
+* [Contributing](community/contributing.md)
 * [Discord](https://discord.com/invite/6qCnKh5)
 * [Feedbacky Feedback](https://app.feedbacky.net/b/feedbacky-official)
 * [Github](https://github.com/feedbacky-project/app)
 * [Status](https://status.feedbacky.net)
 
-## Admin's Handbook
+## Getting Started
 
-* [Your First Board](admins-handbook/your-first-board.md)
-* [Admin Panel](admins-handbook/admin-panel/README.md)
-  * [General](admins-handbook/admin-panel/general.md)
-  * [Tags](admins-handbook/admin-panel/tags.md)
-  * [Social Links](admins-handbook/admin-panel/social-links.md)
-  * [Webhooks](admins-handbook/admin-panel/webhooks-setup.md)
-  * [Moderators](admins-handbook/admin-panel/moderators.md)
-  * [Suspensions](admins-handbook/admin-panel/suspensions.md)
+* [Installation](getting-started/installation/README.md)
+  * [Initial Setup](getting-started/installation/initial-setup.md)
+  * [Configuring](getting-started/installation/configuring.md)
+  * [Conclusion](getting-started/installation/conclusion.md)
+* [Domain Setup](getting-started/domain-setup.md)
+* [Updating/Upgrading](getting-started/updating-upgrading.md)
+
+## Handbook
+
+* [Quick Start](handbook/quick-start.md)
+* [Features](handbook/features/README.md)
+  * [Customizing](handbook/features/customizing.md)
+  * [Roadmaps](handbook/features/roadmaps.md)
+  * [Changelogs](handbook/features/changelogs.md)
+  * [Tags](handbook/features/tags.md)
+  * [Social Links](handbook/features/social-links.md)
+  * [Webhooks](handbook/features/webhooks.md)
+  * [Custom Roles](handbook/features/custom-roles.md)
+  * [Suspensions](handbook/features/suspensions.md)
+  * [Integrations](handbook/features/integrations.md)
 
 ## How To
 
-* [Moderation 101](how-to/moderation-101.md)
+* [Moderate your board](how-to/moderate-your-board.md)
+* [Add OAuth Providers](how-to/add-oauth-providers.md)
 
-## Self-Hosting
+## Reference
 
-* [Getting Started](self-hosting/getting-started/README.md)
-  * [Prerequisites](self-hosting/getting-started/prerequisites.md)
-  * [Installation](self-hosting/getting-started/installation.md)
-  * [Conclusion](self-hosting/getting-started/conclusion.md)
-* [Domain Setup](self-hosting/domain-setup.md)
+* [Upgrading to 0.5.0](reference/upgrading-to-0.5.0.md)
+* [Upgrading to 0.2.0](reference/upgrading-to-0.2.0.md)
 
-## Advanced Customization
+## Developer
 
-* [Metadata](advanced-customization/add-metadata.md)
-* [Mail Templates](advanced-customization/edit-mail-templates.md)
-* [OAuth](advanced-customization/oauth.md)
-
-## Maintenance
-
-* [Updating & Upgrading](maintenance/updating-and-upgrading.md)
-* [Legacy Versions](maintenance/legacy-versions.md)
+* [API Usage](developer/api-usage.md)
 
 ## Community Guide
 
-* [Self-hosting on Windows](community-guide/self-hosting-on-windows/README.md)
-  * [Prerequisites](community-guide/self-hosting-on-windows/prerequisites.md)
-  * [Installation](community-guide/self-hosting-on-windows/installation.md)
-  * [Conclusion](community-guide/self-hosting-on-windows/conclusion.md)
+* [Installation (Windows)](community-guide/installation-windows.md)
+
+## Temporary Archival
+
+* [Installation](temporary-archival/getting-started/README.md)
+  * [Prerequisites](temporary-archival/getting-started/prerequisites.md)
+  * [Installation](temporary-archival/getting-started/installation.md)
+  * [Conclusion](temporary-archival/getting-started/conclusion.md)
+* [.env](temporary-archival/.env.md)
+* [Your First Board](temporary-archival/your-first-board.md)
+* [General](temporary-archival/general.md)
+* [Tags](temporary-archival/tags.md)
+* [Webhooks](temporary-archival/webhooks-setup.md)
+* [Domain Setup](temporary-archival/domain-setup.md)
+* [Mail Templates](temporary-archival/edit-mail-templates.md)
+* [Meta tags](temporary-archival/add-metadata.md)

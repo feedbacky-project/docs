@@ -8,7 +8,7 @@ description: February 1, 2022
 
 *
 
-See raw changelog [here](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#020-beta-june-5-2020).
+See raw changelog [here](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#100rc0).
 
 ### Updating from older versions
 
