@@ -2,15 +2,13 @@
 description: Support the development of Feedbacky.
 ---
 
-# Funding
+# Donating
 
-## Donating
-
-### PayPal
+## PayPal
 
 {% embed url="https://www.paypal.com/paypalme/plajer" %}
 
-### Patreon
+## Patreon
 
 {% embed url="https://www.patreon.com/plugily" %}
 

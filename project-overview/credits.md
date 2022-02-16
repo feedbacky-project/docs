@@ -13,19 +13,25 @@ Thank you to everyone who contributed to Feedbacky!
 
 ## Donors
 
+{% hint style="success" %}
+Consider [supporting](donating.md) the development of Feedbacky!
+{% endhint %}
+
 * Matou0014
 
 ## Service Staff
 
-| User   | Role           | Link                                   |
-| ------ | -------------- | -------------------------------------- |
-| Plajer | Core Developer | [↪ GitHub ](https://github.com/Plajer) |
+The staff behind Feedbacky, ranging from developers to contributors.
+
+| Plajer    | [↪ GitHub ](https://github.com/Plajer)    |
+| --------- | ----------------------------------------- |
+| Matou0014 | [↪ GitHub ](https://github.com/Matou0014) |
 
 ## Sponsors
 
-| Sponsor                                                                                                 | About                                                                                   |
-| ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | ![Partner Logo](https://cdn.feedbacky.net/static/img/partner-logo.png) __ [**Senior Hosting**](../)**** | Affordable, high-performance Virtual Private Servers and Minecraft/Discord bot hosting. |
+| ------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| ![](<../.gitbook/assets/image (4).png>) [**Plugily Projects**](https://plugily.xyz)****                 | Creating a better future by developing something beneficial for everyone.               |
 
 ## License
 

@@ -8,13 +8,7 @@
 * [Case Studies](project-overview/case-studies.md)
 * [FAQ](project-overview/faq.md)
 * [Credits](project-overview/credits.md)
-* [Funding](project-overview/funding.md)
-* [Changelogs](project-overview/changelogs/README.md)
-  * [Version 1.0.0-rc.0 released](project-overview/changelogs/version-1.0.0-rc.0-released.md)
-  * [Version 0.5.0-beta released](project-overview/changelogs/version-0.5.0-beta-released.md)
-  * [Version 0.3.1-beta released](project-overview/changelogs/version-0.3.1-beta-released.md)
-  * [Version 0.3.0-beta released](project-overview/changelogs/version-0.3.0-beta-released.md)
-  * [Version 0.2.0-beta released](project-overview/changelogs/version-0.2.0-beta-released.md)
+* [Donating](project-overview/donating.md)
 
 ## Community
 
@@ -40,9 +34,10 @@
   * [Customizing](handbook/features/customizing.md)
   * [Roadmaps](handbook/features/roadmaps.md)
   * [Changelogs](handbook/features/changelogs.md)
-  * [Tags](handbook/features/tags.md)
+  * [Anonymity](handbook/features/anonymity.md)
   * [Social Links](handbook/features/social-links.md)
-  * [Webhooks](handbook/features/webhooks.md)
+  * [Tags](handbook/features/tags.md)
+  * [Webhooks](handbook/features/webhooks-setup.md)
   * [Custom Roles](handbook/features/custom-roles.md)
   * [Suspensions](handbook/features/suspensions.md)
   * [Integrations](handbook/features/integrations.md)
@@ -56,6 +51,7 @@
 
 * [Upgrading to 0.5.0](reference/upgrading-to-0.5.0.md)
 * [Upgrading to 0.2.0](reference/upgrading-to-0.2.0.md)
+* [Older Releases](reference/changelogs.md)
 
 ## Developer
 
@@ -71,11 +67,4 @@
   * [Prerequisites](temporary-archival/getting-started/prerequisites.md)
   * [Installation](temporary-archival/getting-started/installation.md)
   * [Conclusion](temporary-archival/getting-started/conclusion.md)
-* [.env](temporary-archival/.env.md)
-* [Your First Board](temporary-archival/your-first-board.md)
-* [General](temporary-archival/general.md)
-* [Tags](temporary-archival/tags.md)
-* [Webhooks](temporary-archival/webhooks-setup.md)
 * [Domain Setup](temporary-archival/domain-setup.md)
-* [Mail Templates](temporary-archival/edit-mail-templates.md)
-* [Meta tags](temporary-archival/add-metadata.md)

@@ -1,8 +1,8 @@
 ---
-description: Receive board notifications in your Discord server or elsewhere.
+description: Enable user anonymity features.
 ---
 
-# Webhooks
+# Anonymity
 
 {% hint style="info" %}
 <mark style="color:blue;">**Work in Progress!**</mark>

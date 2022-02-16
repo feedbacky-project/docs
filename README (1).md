@@ -34,9 +34,9 @@ Create your own board now;
 
 ## Sponsors
 
-| Sponsor                                                                                                | About                                                                                   |
-| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | ![Partner Logo](https://cdn.feedbacky.net/static/img/partner-logo.png) __ [**Senior Hosting**](./)**** | Affordable, high-performance Virtual Private Servers and Minecraft/Discord bot hosting. |
+| ------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| ![](<.gitbook/assets/image (4).png>) [**Plugily Projects**](https://plugily.xyz)****                   | Creating a better future by developing something beneficial for everyone.               |
 
 ## Features
 

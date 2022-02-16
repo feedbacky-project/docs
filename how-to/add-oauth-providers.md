@@ -96,6 +96,6 @@ gitlab:
     email: email
     username: username
     avatar: avatar_url
-    email-verified: nully
+    email-verified: null
 ```
 {% endcode %}

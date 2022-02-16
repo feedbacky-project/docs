@@ -1,31 +1,59 @@
 ---
-description: June 5, 2020
+description: Changelogs for legacy versions.
 ---
 
-# Version 0.2.0-beta released
+# Older Releases
 
-Finally we've finally released beta version 0.2.0 of Feedbacky, see what's new below.
+{% hint style="info" %}
+<mark style="color:blue;">**Deprecation notice**</mark>
 
-**TL;DR:**
+This section will be preserved for historical purposes but will no longer be updated with current Feedbacky releases.&#x20;
+
+You can follow up to date [changelogs](https://app.feedbacky.net/b/feedbacky-official/changelog) on our official board.
+{% endhint %}
+
+## Version `0.5.0-beta`
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#020-beta-june-5-2020).
+
+* User suspension
+* Letter avatars
+* Comment on closed ideas
+
+## Version `0.3.1-beta`
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#031-beta-july-6-2020).
+
+* Added slugs to ideas
+
+## Version `0.3.0-beta`
+
+This version was Initially planned to be released as 0.2.1 but since we removed Private Boards it should be marked as a bigger release.&#x20;
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#030-beta-june-9-2020).
+
+* Removed private boards
+* UI improvements
+
+### The removal of Private Boards
+
+Private Boards feature was removed due to being unpopular and unused feature and contained security exploit. This version also aims to fix regressions caused by previous update.
+
+## Version `0.2.0-beta`
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#020-beta-june-5-2020).
 
 * Added mail notifications for ideas
-* Recoded client side app, smaller size, more lightweight
+* Re-coded client side app, smaller size, more lightweight
 * Added roadmaps feature
 * SendGrid mail provider support
 * Minor UI and Dark Mode changes
-* Some fixes...
-
-See raw changelog [here](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#020-beta-june-5-2020).
-
-### Updating from older versions
-
-This version requires few changes in order to work. See [updating to 0.2.0](broken-reference) for more information.
 
 ### Mails Notification Feature
 
 From now on Feedbacky users can `Subscribe` to ideas to receive mail notifications. Users who create new ideas from now will automatically subscribe to their idea.
 
-![Mail notification example](../../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-10-22.478Z.png)
+![Mail notification example](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-10-22.478Z.png)
 
 Users can receive notifications about:
 
@@ -45,7 +73,7 @@ New feature called **Roadmaps** got implemented. Roadmaps serve the purpose of i
 
 By default every tag is visible in the roadmap but this can be edited so tags can be ignored from the roadmap view.
 
-![New roadmap feature preview](../../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-24-31.072Z.png)
+![New roadmap feature preview](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-24-31.072Z.png)
 
 ### SendGrid Mail Provider Support
 
@@ -56,7 +84,7 @@ Besides Mailgun and own SMTP server you can use [Twilio SendGrid](https://sendgr
 UI and dark mode received several small changes to ensure the best experience when using Feedbacky.\
 From more noticeable things Moderation comments icons were changed, board admin panel and profile page menus design got changed.
 
-![Board admin panel menu design update (old left, new right)](<../../.gitbook/assets/ui change 1.png>)
+![Board admin panel menu design update (old left, new right)](<../.gitbook/assets/ui change 1.png>)
 
 ### Bug Fixes for Stability and Other Changes!
 
@@ -76,4 +104,4 @@ And a bunch of other changes:
 * All dependencies of backend and frontend were updated to their latest stable versions
 * Server side messages when editing or updating stuff will now return more user friendly messages on failure
 
-![What user sees when app crashes, not a blank page anymore](../../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-52-37.296Z.png)
+![What user sees when app crashes, not a blank page anymore](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-52-37.296Z.png)

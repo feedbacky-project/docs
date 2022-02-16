@@ -4,6 +4,12 @@ description: Questions and Answers.
 
 # FAQ
 
+{% hint style="info" %}
+<mark style="color:blue;">**Work in Progress!**</mark>
+
+Content for this section is currently being written!
+{% endhint %}
+
 ## Can I host Feedbacky on _X_ panel?
 
 The answer for this question is **no**, it might work but Feedbacky was not designed in mind for that.&#x20;
@@ -27,6 +33,8 @@ Even though Pterodactyl utilize Docker with [Wings](https://pterodactyl.io/wings
 
 Without those, Feedbacky can't be self-hosted using Pterodactyl panel.
 
+## Is the Feedbacky cloud instance free?
+
 ## Cloud hosted vs Self-hosted
 
 ## How can I restart the Docker container?
@@ -43,7 +51,7 @@ docker-compose up
 
 ## Why can't I further customize my instance?
 
-With versions before [`1.0.0-rc.0`](changelogs/version-1.0.0-rc.0-released.md), you had to download the whole Feedbacky repository and manually compile it on your Virtual Private Server (VPS) or dedicated hardware, thus making it really easy to customize elements of Feedbacky out of the box.
+With versions before [`1.0.0-rc.0`](broken-reference), you had to download the whole Feedbacky repository and manually compile it on your Virtual Private Server (VPS) or dedicated hardware, thus making it really easy to customize elements of Feedbacky out of the box.
 
 All of this changed and we are instead relying on Docker images which are automatically compiled in the project repository thanks to the contribution of [xMikux](https://github.com/feedbacky-project/app/pull/59).&#x20;
 

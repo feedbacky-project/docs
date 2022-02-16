@@ -1,13 +1,13 @@
 ---
-description: Receive board notification in your Discord server.
+description: Receive board notifications in your Discord server or elsewhere.
 ---
 
 # Webhooks
 
 {% hint style="info" %}
-<mark style="color:blue;">**Work in progress!**</mark>
+<mark style="color:blue;">**Work in Progress!**</mark>
 
-This section is currently being worked on!
+Content for this section is currently being written!
 {% endhint %}
 
 Currently supported webhook types:
