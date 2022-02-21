@@ -10,13 +10,13 @@ description: >-
 
 1\. Create a new directory named "feedbacky" in the `/etc` directory and access it.
 
-```
+```bash
 sudo mkdir /etc/feedbacky && cd /etc/feedbacky
 ```
 
 2\. Run the command below to download the necessary files.
 
-```
+```bash
 sudo curl -O "https://raw.githubusercontent.com/feedbacky-project/app/master/{.env,docker-compose.yml}"
 ```
 
@@ -27,7 +27,7 @@ sudo curl -O "https://raw.githubusercontent.com/feedbacky-project/app/master/{.e
 
 1\. Start the SQL shell.
 
-```
+```bash
 sudo mysql
 ```
 
@@ -79,13 +79,13 @@ Uncomplicated Firewall (UFW) is the default Firewall on Ubuntu 20.04, it is disa
 
 1\. Enable Uncomplicated Firewall (UFW).
 
-```
+```bash
 sudo ufw enable
 ```
 
 2\. Forward the Feedbacky server port.&#x20;
 
-```
+```bash
 sudo ufw allow 8095/tcp
 ```
 

@@ -1,5 +1,5 @@
 ---
-description: Guide to use your own domain with Feedbacky with SSL as a bonus.
+description: Use your own domain with Feedbacky.
 ---
 
 # Domain Setup
@@ -14,7 +14,7 @@ Before going into details, you must have your server pointed to your domain.
 
 3\. Find your public IP address.
 
-```
+```bash
 curl ipinfo.io/ip
 ```
 
@@ -24,120 +24,70 @@ curl ipinfo.io/ip
 
 Your webserver also needs to be accessible over the internet.&#x20;
 
-1\. Forward port 80 with Uncomplicated Firewall (UFW).&#x20;
+1\. Forward port `80`.&#x20;
 
-```
+```bash
 sudo ufw allow 80/tcp
+```
+
+2\. Forward port `443`.
+
+```bash
+sudo ufw allow 443/tcp
 ```
 
 ## Virtual Hosts
 
-### Creating a new Virtual Host
+### Creating
 
 Virtual Hosts enables you to run multiple website on a single webserver, this is useful if you are also hosting other services such as a store front, documentation site, etc..
 
 1\. Access your webserver's Virtual Host directory.
 
-* **Apache**
-
+{% tabs %}
+{% tab title="Apache" %}
 ```bash
-$ cd /etc/apache2/sites-available
+cd /etc/apache2/sites-available
 ```
+{% endtab %}
 
-* **Nginx**
-
+{% tab title="Nginx" %}
 ```bash
-$ cd /etc/nginx/sites-available
+cd /etc/nginx/sites-available
 ```
+{% endtab %}
+{% endtabs %}
 
 2\. Create a new file with the name being your domain, the file name must end with ".conf".
 
 ```
-# nano {DOMAIN}.conf
+sudo nano {feedbacky.yourdomain}.conf
 ```
 
-| `{DOMAIN}` | Your domain including the subdomain, exemple; **feedbacky.cool.conf**. |
-| ---------- | ---------------------------------------------------------------------- |
+| `{feedbacky.yourdomain}.conf` | Your domain including the subdomain, example; **feedbacky.myapp.conf**. |
+| ----------------------------- | ----------------------------------------------------------------------- |
 
-
-
-****
-
-3\. Edit your newly made Apache VirtualHost file and paste the configuration below:
-
-{% code title="{DOMAIN_NAME}.conf" %}
-```apacheconf
-<VirtualHost *:80>
-  ServerName {DOMAIN_NAME}
-  ProxyPreserveHost On
-  ProxyRequests Off
-  ProxyVia Off
-  ProxyPass / {SERVER_IP}:{CLIENT_APP_PORT}/
-  ProxyPassReverse / {SERVER_IP}:{CLIENT_APP_PORT}/
-</VirtualHost> 
-```
-{% endcode %}
-
-| `{DOMAIN_NAME}`     | Your fully qualified domain domain, for example feedbacky.app.cool. |
-| ------------------- | ------------------------------------------------------------------- |
-| `{SERVER_UP}`       | The public IP address used by your hosting machine.                 |
-| `{CLIENT_APP_PORT}` | The client port located in your `.env` file, by default it is 8090. |
-
-4\. You can now save the file with `CTRL` + `S` and exit nano with `CTRL` + `C`.
+3\. Add the following content to your newly created Virtual Host file.
 
 {% tabs %}
 {% tab title="Apache" %}
-1\. Access Apache's VHost directory:
-
-
-
+{% code title="{feedbacky.yourdomain}.conf" %}
+```apacheconf
+<VirtualHost *:80>
+    ServerName {DOMAIN_NAME}
+    ProxyPreserveHost On
+    ProxyRequests Off
+    ProxyVia Off
+    ProxyPass / {SERVER_IP}:{CLIENT_APP_PORT}/
+    ProxyPassReverse / {SERVER_IP}:{CLIENT_APP_PORT}/
+</VirtualHost>
 ```
-sudo touch {DOMAIN_NAME}.conf 
-```
-
-
-
-
-
-
+{% endcode %}
 {% endtab %}
 
 {% tab title="Nginx" %}
-1\. Access Nginx's VHost directory:
-
-```
-cd /etc/nginx/sites-available
-```
-
-
-
-2\. Create a new file with the name being the domain that you will use, be aware that the file name must end with ".conf".
-
-```
-sudo touch {DOMAIN_NAME}.conf 
-```
-
-{% hint style="info" %}
-<mark style="color:blue;">**Tip**</mark>
-
-When creating a file, you can directly skip having to use `touch` by instead using `nano`, it will create a new file for you and let you edit it at the same time.
-{% endhint %}
-
-{% hint style="success" %}
-<mark style="color:green;">**Usage**</mark>
-
-Let's say that our domain name is **cool.app** and that we want to use the subdomain **feedbacky**, the correct format to use would look like this:
-
-```
-sudo touch feedbacky.cool.conf 
-```
-{% endhint %}
-
-
-
-3\. Edit your newly made VirtualHost file and paste the configuration below:
-
-```
+{% code title="{feedbacky.yourdomain}.conf" %}
+```nginx
 server {
     listen 80;
     server_name {DOMAIN_NAME};
@@ -147,32 +97,31 @@ server {
   }
 }
 ```
-
-| `{DOMAIN_NAME}`     | Your fully qualified domain domain, for example feedbacky.app.cool. |
-| ------------------- | ------------------------------------------------------------------- |
-| `{SERVER_IP}`       | The public IP address used by your hosting machine.                 |
-| `{CLIENT_APP_PORT}` | The client port located in your `.env` file, by default it is 8090. |
-
-
-
-4\. You can now save the file with `CTRL` + `S` and exit nano with `CTRL` + `C`.
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
-### Additional steps
+| `{DOMAIN_NAME}`     | Your fully qualified domain domain, example; **feedbacky.app.cool**.                    |
+| ------------------- | --------------------------------------------------------------------------------------- |
+| `{SERVER_IP}`       | The IP address (not public) of your Virtual Private Server (VPS) or dedicated hardware. |
+| `{CLIENT_APP_PORT}` | The client port located in your `.env` file, by default it is 8090.                     |
 
-This sections contains some additional steps you need to follow before enabling your VHost.
+4\. Save the file with `CTRL` + `S` and exit nano with `CTRL` + `C`.
+
+### Additional steps
 
 {% tabs %}
 {% tab title="Apache" %}
-5\. By default Proxy is disabled in Apache, we can enable it by using the following command:
+5\. By default proxy is disabled in Apache, enable it.
 
-```
+```bash
 sudo a2enmod proxy
 ```
 
-{% hint style="success" %}
-**Breakdown**
+****
+
+{% hint style="info" %}
+<mark style="color:blue;">**Breakdown**</mark>
 
 To understand what this command does, we can break it down like this,
 
@@ -184,52 +133,50 @@ We are asking Apache to enable the proxy module which is located in the`/etc/apa
 {% endhint %}
 {% endtab %}
 
-{% tab title="NGINX" %}
-5\. NGINX will only enable your VHost if you create a symbolic link (symlink in short), it is a shortcut to another file
+{% tab title="Nginx" %}
+5\. A symbolic link (symlink) must be created for making your Virtual Host work.
 
-```
+```bash
 sudo ln -s /etc/nginx/sites-available/{DOMAIN_NAME}.conf /etc/nginx/sites-enabled/{DOMAIN_NAME}.conf
 ```
 
-{% hint style="success" %}
-**Breakdown**
 
-Each time you will edit your VHost file in `/etc/nginx/sites-available` it will also update the one created in `/etc/nginx/sites-enabled`.&#x20;
+
+{% hint style="info" %}
+<mark style="color:blue;">**Breakdown**</mark>
+
+Each time you will edit your Virtual Host located in `/etc/nginx/sites-available` it will also update the one created in `/etc/nginx/sites-enabled`.&#x20;
 {% endhint %}
 {% endtab %}
 {% endtabs %}
 
-### Enabling your VHost
-
-Title self-explanatory, these steps will enable your newly made VHost file.
+### Enabling
 
 {% tabs %}
 {% tab title="Apache" %}
-6\. For Apache to enable your VHost type this:
-
-```
-sudo a2ensite {DOMAIN_NAME}.conf
+```bash
+sudo a2ensite {feedbacky.yourdomain}.conf
 ```
 {% endtab %}
 
-{% tab title=" NGINX" %}
-6\. For NGINX to enable your VHost type this:
-
+{% tab title=" Nginx" %}
 ```
 sudo service nginx reload
 ```
 {% endtab %}
 {% endtabs %}
 
-Congratulation! 🎉, you've just created a VHost for your Feedbacky instance!
+## Certificate
 
-## SSL
+### Generating
 
-We only covered the basics but if you want to go one step further you can generate your own TLS/SSL certificate for your domain by following the guide below:
+### Updating Virtual Host
 
-This guide will show you how you can generate your own SSL certificate with Certbot.
+### Additional Steps
 
-#### Cloudflare
+### Renewing
+
+## SSL Alternative
 
 An alternative method that you can follow instead of manually generating a certificate and adding additional values to your VHost is by using Cloudflare.
 
@@ -237,45 +184,13 @@ In short by adding your website to Cloudflare you will be able to forward your b
 
 You can read more [here](https://support.cloudflare.com/hc/en-us/articles/201720164).
 
-#### Installing
 
-Before we proceed, make sure you that everything is up to date:
 
-```
-sudo apt update -y && sudo apt upgrade -y
-```
 
-Installing Certbot:
 
-```
-sudo apt install -y certbot
-```
+####
 
-Run the follow command for the web server you use:
 
-{% tabs %}
-{% tab title="Apache" %}
-```
-sudo apt install -y python3-certbot-apache
-```
-{% endtab %}
-
-{% tab title="NGINX" %}
-```
-sudo apt install -y python3-certbot-nginx
-```
-{% endtab %}
-{% endtabs %}
-
-#### Port Forwarding
-
-With UFW, use the following command:
-
-* Forwarding Port 443:
-
-```
-sudo ufw allow 443/tcp
-```
 
 #### Creating a Certificate
 

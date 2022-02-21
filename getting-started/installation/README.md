@@ -61,25 +61,25 @@ Both the [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) and [Do
 
 1\. Make sure that your system is up to date.
 
-```
+```bash
 sudo apt update -y
 ```
 
 2\. Docker requires some dependencies to be installed on your system.
 
-```
+```bash
  sudo apt install -y ca-certificates curl gnupg lsb-release
 ```
 
 3\. Add Docker's official GPG key.
 
-```
+```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 ```
 
 4\. Use Docker's stable repository.
 
-```
+```bash
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
@@ -87,37 +87,37 @@ echo \
 
 5\. Update your system.
 
-```
+```bash
 sudo apt update -y
 ```
 
 6\. Install Docker Engine and it's related packages.
 
-```
+```bash
 sudo apt install -y docker-ce docker-ce-cli containerd.io
 ```
 
 7\. Test that the Docker Engine was successfully installed.
 
-```
+```bash
 sudo docker run hello-world
 ```
 
 8\. Download the Docker Compose repository.
 
-```
+```bash
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 9\. Change the permission of downloaded Docker Compose binaries.
 
-```
+```bash
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 10\. Test that Docker Compose was successfully installed.&#x20;
 
-```
+```bash
 docker-compose --version
 ```
 
@@ -139,19 +139,19 @@ Additional configuration needed, **do not** skip this part if you already have M
 
 1\. Update your system.
 
-```
+```bash
 sudo apt update -y
 ```
 
 2\. Install the MariaDB server package.
 
-```
+```bash
 sudo apt install -y mariadb-server
 ```
 
 3\. Run and go through the security script.
 
-```
+```bash
 sudo mysql_secure_installation
 ```
 
@@ -163,7 +163,7 @@ Docker will treat your container as a remote machine, we need to change the valu
 
 4\. Edit your `50-server.cnf`.
 
-```
+```bash
 sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
 ```
 
@@ -179,7 +179,7 @@ bind-address            = 0.0.0.0
 
 7\. Restart MariaDB.
 
-```
+```bash
 sudo systemctl restart mariadb-server
 ```
 
@@ -205,19 +205,19 @@ Apache will require further configuration to enable reverse proxy support.
 
 1\. Update your system.
 
-```
+```bash
 sudo apt update -y
 ```
 
 2\. Install the Apache package.
 
-```
+```bash
 sudo apt install -y apache2
 ```
 
 3\. Verify that Apache is running.
 
-```
+```bash
 sudo systemctl status apache2
 ```
 
@@ -237,20 +237,58 @@ Nginx supports reverse proxy out of the box.
 
 1\. Update your system.
 
-```
+```bash
 sudo apt update -y
 ```
 
 2\. Install the Nginx package.
 
-```
+```bash
 sudo apt install -y nginx
 ```
 
 3\. Verify that Nginx is running.
 
-```
+```bash
 sudo systemctl status nginx
+```
+
+</details>
+
+## Certbot
+
+`Size; ~2MB`
+
+Certbot is a tool to generate SSL certificates, which we are covering in our [Domain Setup](../domain-setup.md#ssl) guide.
+
+<details>
+
+<summary>Installation Guide</summary>
+
+1\. Update your system.
+
+```bash
+sudo apt update -y
+```
+
+2\. Install the certbot package.
+
+```bash
+sudo apt install -y certbot
+```
+
+3\. Install the dependencies for your webserver.
+
+**For Apache**;
+
+```bash
+sudo apt install -y python3-certbot-apache
+```
+
+**For Nginx**;
+
+```bash
+sudo apt install -y python3-certbot-nginx
 ```
 
 </details>
@@ -273,13 +311,13 @@ The solution to this is by using a terminal multiplexer, allowing you to run mul
 
 1\. Update your system.
 
-```
+```bash
 sudo apt update -y
 ```
 
 2\. Install the tmux package.
 
-```
+```bash
 sudo apt install -y tmux
 ```
 
@@ -295,13 +333,13 @@ sudo apt install -y tmux
 
 1\. Update your system.
 
-```
+```bash
 sudo apt update -y
 ```
 
 2\. Install the Screen package.
 
-```
+```bash
 sudo apt install -y screen
 ```
 
