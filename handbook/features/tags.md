@@ -36,7 +36,7 @@ Ticking this setting will enable the use of public tag, board users will be able
 
 Ticking this setting will disable the display of ideas with a tag having the option enabled in the Roadmap page of your board.
 
-![](<../../.gitbook/assets/image (4) (1) (1).png>)
+![](<../../.gitbook/assets/image (4) (1) (1) (1).png>)
 
 Roadmap Ignored tag assigned to an idea;
 

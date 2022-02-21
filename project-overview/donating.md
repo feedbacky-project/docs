@@ -4,13 +4,17 @@ description: Support the development of Feedbacky.
 
 # Donating
 
-## PayPal
+Your financial support would be greatly appreciated for covering hosting and development costs.
 
 {% embed url="https://www.paypal.com/paypalme/plajer" %}
 
-## Patreon
-
 {% embed url="https://www.patreon.com/plugily" %}
+
+## Donors
+
+Thank you to these people for donating;
+
+* Matou0014
 
 ## Sponsoring
 

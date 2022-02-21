@@ -7,31 +7,22 @@ description: Self-hosting your own Feedbacky instance.
 {% hint style="success" %}
 <mark style="color:green;">**Looking for an affordable hosting provider?**</mark>
 
-Feedbacky is in partnership with Senior Hosting to offer you high-performance Virtual Private Servers and Minecraft/Discord bot hosting!
+Feedbacky is in parternship with Senior Hosting to offer you affordable, high-performance VPS with Minecraft/Discord bot hosting.
 
-[Check out the offer!](../../)
+_Get 10% off using code `FEEDBACKY`_
+
+[Check out the offer!](https://billing.senior-host.com/link.php?id=1)
 {% endhint %}
 
-Thank you for your interest in using Feedbacky! Follow this guide step by step in order to self-host your own instance.
+Thank you for your interest in using Feedbacky, follow this guide step by step in order to self-host your own instance, we have made this guide beginner friendly specifically for Linux newbies.
 
-Please also consider [supporting](broken-reference) the development of Feedbacky!
+Please consider [donating](../../project-overview/donating.md) to Feedbacky!
 
 ## Prerequisites
 
-{% hint style="danger" %}
-<mark style="color:red;">**Heads up!**</mark>
-
-If you plan on using a panel with Feedbacky, please read this [FAQ section](broken-reference).
-{% endhint %}
-
-{% hint style="warning" %}
-<mark style="color:orange;">**Using a Virtual Private Server (VPS)?**</mark>
-
-Make sure that virtualization is supported as it is required for Docker. Additionally if you are limited to less than 2GB of memory you should assign some space for [Swap](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04).
-{% endhint %}
-
-* You need at least 200MB of free space for Feedbacky itself.
-* Feedbacky is password-less (we use OAuth), you will need an account with at least one of these services;
+* Feedbacky will consume approximately 300MB of memory when running.
+* At least 200MB of free space is needed for Feedbacky itself.
+* Feedbacky is passwordless (we use OAuth), you will need an account with at least one of these services;
   * [Discord](https://discord.com)
   * [GitHub](https://github.com)
   * [Google](https://www.google.com)
@@ -42,13 +33,19 @@ Make sure that virtualization is supported as it is required for Docker. Additio
 
 ### Operating System
 
+{% hint style="danger" %}
+<mark style="color:red;">**Heads up!**</mark>
+
+If you plan on using a panel with Feedbacky, please read this [FAQ section](../../project-overview/faq.md#can-i-host-feedbacky-on-x-panel).
+{% endhint %}
+
 | Operating System | Version                                        | Status | Notes                                 |
 | ---------------- | ---------------------------------------------- | :----: | ------------------------------------- |
 | **Ubuntu**       | "Focal" 20.04                                  |    ✅   | Installation guide based on Focal.    |
 |                  | "Bionic" 18.04                                 |    ✅   |                                       |
 | **Debian**       | "Bullseye" 11                                  |    ✅   |                                       |
 | **Windows**      | WSL2                                           |    ✅   | _Should work, not tested!_            |
-|                  | <p>​Server 2022 </p><p><em>Windows 11</em></p> |   🔧   | Working but not officially supported. |
+|                  | <p>​Server 2022 </p><p><em>Windows 10</em></p> |   🔧   | Working but not officially supported. |
 |                  | <p>​Server 2019</p><p><em>Windows 10</em></p>  |   🔧   | Working but not officially supported. |
 | **Mac OS**       |                                                |    ❓   | Unknown and not officially supported. |
 
@@ -254,6 +251,58 @@ sudo apt install -y nginx
 
 ```
 sudo systemctl status nginx
+```
+
+</details>
+
+## Terminal Multiplexer
+
+_**Optional**_
+
+During the startup process Feedbacky will use your current terminal window and unless you SSH again in your server with a new session, you won't be able to do anything else.&#x20;
+
+The solution to this is by using a terminal multiplexer, allowing you to run multiple sessions under a single window.
+
+### tmux
+
+`Size; ~940KB`
+
+<details>
+
+<summary>Installation Guide</summary>
+
+1\. Update your system.
+
+```
+sudo apt update -y
+```
+
+2\. Install the tmux package.
+
+```
+sudo apt install -y tmux
+```
+
+</details>
+
+### Screen
+
+`Size; ~840KB`
+
+<details>
+
+<summary>Installation Guide</summary>
+
+1\. Update your system.
+
+```
+sudo apt update -y
+```
+
+2\. Install the Screen package.
+
+```
+sudo apt install -y screen
 ```
 
 </details>

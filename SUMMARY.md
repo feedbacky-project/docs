@@ -1,20 +1,19 @@
 # Table of contents
 
-* [Senior Hosting](README.md)
-
 ## Project Overview
 
-* [Introduction](<README (1).md>)
-* [Case Studies](project-overview/case-studies.md)
+* [Introduction](README.md)
+* [Features](project-overview/features.md)
 * [FAQ](project-overview/faq.md)
+* [Case Studies](project-overview/case-studies.md)
 * [Credits](project-overview/credits.md)
 * [Donating](project-overview/donating.md)
 
-## Community
+## Links
 
-* [Contributing](community/contributing.md)
 * [Discord](https://discord.com/invite/6qCnKh5)
 * [Feedbacky Feedback](https://app.feedbacky.net/b/feedbacky-official)
+* [Demo Board](https://app.feedbacky.net/b/feedbacky-demo)
 * [Github](https://github.com/feedbacky-project/app)
 * [Status](https://status.feedbacky.net)
 
@@ -63,8 +62,4 @@
 
 ## Temporary Archival
 
-* [Installation](temporary-archival/getting-started/README.md)
-  * [Prerequisites](temporary-archival/getting-started/prerequisites.md)
-  * [Installation](temporary-archival/getting-started/installation.md)
-  * [Conclusion](temporary-archival/getting-started/conclusion.md)
 * [Domain Setup](temporary-archival/domain-setup.md)
