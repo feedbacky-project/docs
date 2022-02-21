@@ -59,7 +59,3 @@
 ## Community Guide
 
 * [Installation (Windows)](community-guide/installation-windows.md)
-
-## Temporary Archival
-
-* [Domain Setup](temporary-archival/domain-setup.md)
