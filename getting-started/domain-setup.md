@@ -18,9 +18,7 @@ Before going into details, you must have your server pointed to your domain.
 curl ipinfo.io/ip
 ```
 
-4\. Insert a subdomain, for example; **feedbacky**.
-
-5\. Put your public IP address in the address field.
+4\. Put your public IP address in the address field.
 
 ## Port Forwarding
 
@@ -170,12 +168,121 @@ sudo service nginx reload
 
 ## Certificate
 
-### Updating your Virtual Host
+### Generating
+
+### Updating Virtual Host
+
+### Additional Steps
+
+### Renewing
+
+## SSL Alternative
+
+An alternative method that you can follow instead of manually generating a certificate and adding additional values to your VHost is by using Cloudflare.
+
+In short by adding your website to Cloudflare you will be able to forward your board with Cloudflare's own proxy.
+
+You can read more [here](https://support.cloudflare.com/hc/en-us/articles/201720164).
+
+
+
+
+
+####
+
+
+
+#### Creating a Certificate
+
+In order to create a certificate you must use the domain that you previously created for your board in our domain guide.
 
 {% tabs %}
 {% tab title="Apache" %}
-{% code title="{feedbacky.yourdomain}.conf" %}
-```apacheconf
+```
+sudo certbot certonly --apache -d {DOMAIN_NAME}
+```
+
+{% hint style="success" %}
+**Example**
+
+This is how the correct format to use would look like:
+
+```
+sudo certbot certonly --apache -d feedbacky.cool.app
+```
+{% endhint %}
+{% endtab %}
+
+{% tab title="NGINX" %}
+```
+sudo certbot certonly --nginx -d {DOMAIN_NAME}
+```
+
+{% hint style="success" %}
+**Example**
+
+This is how the correct format to use would look like:
+
+```
+sudo certbot certonly --nginx -d feedbacky.cool.app
+```
+{% endhint %}
+{% endtab %}
+{% endtabs %}
+
+{% hint style="warning" %}
+**Standalone**
+
+If neither the Apache nor the NGINX command work, try using the standalone command:
+
+```
+sudo certbot certonly --standalone -d {DOMAIN_NAME}
+```
+{% endhint %}
+
+#### Renew your Certificate
+
+Certbot doesn't automatically renew your certificate, for that you would need [acme.sh](https://github.com/acmesh-official/acme.sh), in order to manually renew your certificate type:
+
+```
+certbot renew
+```
+
+{% hint style="warning" %}
+**Using NGINX?**
+
+When renewing your certificate make sure to stop the services before proceeding, else you will get an error.
+
+* Stop NGINX:
+
+```
+sudo systemctl stop nginx
+```
+
+* Renew:
+
+```
+sudo certbot renew
+```
+
+* Start NGINX:
+
+```
+sudo systemctl start nginx
+```
+{% endhint %}
+
+#### Updating your VHost
+
+Once you have generate your certificate you must update your VHost to take TLS/SSL in consideration.
+
+{% tabs %}
+{% tab title="Apache" %}
+{% hint style="danger" %}
+Do not change the `{SERVER_NAME}` value!
+{% endhint %}
+
+```
 <VirtualHost *:80>
   ServerName {DOMAIN_NAME}
   
@@ -192,12 +299,10 @@ sudo service nginx reload
   SSLCertificateKeyFile /etc/letsencrypt/live/{DOMAIN_NAME}/privkey.pem
 </VirtualHost> 
 ```
-{% endcode %}
 {% endtab %}
 
-{% tab title="Nginx" %}
-{% code title="{feedbacky.yourdomain}.conf" %}
-```nginx
+{% tab title="NGINX" %}
+```
 server {
     listen 80;
     server_name {DOMAIN_NAME};
@@ -224,71 +329,23 @@ server {
   }
 }
 ```
-{% endcode %}
 {% endtab %}
 {% endtabs %}
 
-| `{DOMAIN_NAME}`             | Your fully qualified domain domain, example; **feedbacky.app.cool**. |
-| --------------------------- | -------------------------------------------------------------------- |
-| `{SERVER_IP}` (Nginx)       |                                                                      |
-| `{CLIENT_APP_PORT}` (Nginx) |                                                                      |
-
-### Additional steps&#x20;
+#### Additional steps
 
 {% tabs %}
 {% tab title="Apache" %}
-1\. By default, SSL is disabled with Apache and must be enabled.
+* By default SSL is disabled in Apache, we can enable it by using the following command:
 
 ```
 sudo a2enmod ssl
 ```
 
-2\. Restart the Apache service.
+* Restart your Apache service:
 
 ```
 sudo systemctl restart apache2
 ```
 {% endtab %}
 {% endtabs %}
-
-### Generating
-
-{% tabs %}
-{% tab title="Apache" %}
-```
-sudo certbot certonly --apache -d {DOMAIN_NAME}
-```
-{% endtab %}
-
-{% tab title="Nginx" %}
-```
-sudo certbot certonly --nginx -d {DOMAIN_NAME}
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="warning" %}
-<mark style="color:orange;">**Standalone**</mark>
-
-If neither the Apache nor the Nginx command worked, try using the standalone command.
-
-```
-sudo certbot certonly --standalone -d {DOMAIN_NAME}
-```
-{% endhint %}
-
-That's all! If everything went well, your domain should work.
-
-## Certificate Alternative
-
-### Cloudflare
-
-An alternative method that you can follow instead of manually generating a certificate and adding additional values to your Virtual Host file is by using Cloudflare.
-
-In short by adding your website to Cloudflare, you will be able to forward your board with Cloudflare's own proxy.
-
-You can read more [here](https://support.cloudflare.com/hc/en-us/articles/201720164).
-
-{% hint style="warning" %}
-The normal domain setup without SSL is still required!
-{% endhint %}

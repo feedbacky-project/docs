@@ -55,7 +55,7 @@ Come chat with the Feedbacky community in our Discord server, follow official an
 
 We encourage everyone to contribute, thus making Feedbacky better with the help of our community.&#x20;
 
-Follow our _<mark style="background-color:blue;">Contributing guidelines</mark>_ if you are interested!
+Follow our [Contributing guidelines](https://github.com/feedbacky-project/app/blob/master/CONTRIBUTING.md) if you are interested!
 
 ### Donating
 
