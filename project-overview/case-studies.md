@@ -60,6 +60,10 @@ Agarwalpiryank uses Feedbacky to **get staff feedback**;
 
 Case studies from people who self-host their own Feedbacky instance.
 
-{% hint style="info" %}
-None at the moment!
-{% endhint %}
+### ![](<../.gitbook/assets/image (4).png>)Exvoid Network
+
+&#x20;Matou0014 uses Feedbacky to **power their community**;
+
+> Planning a gaming community and managing game servers as well is not always an easy feat. With Feedbacky, my team can keep track of each suggestions and bug reports, enabling us to always improve our work.&#x20;
+
+* [Official instance](https://feedback.exvoid.net/b/project)
