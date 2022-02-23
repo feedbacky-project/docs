@@ -1,23 +1,53 @@
 ---
-description: June 5, 2020
+description: Changelogs for legacy versions.
 ---
 
-# Version 0.2.0-beta released
+# Older Releases
 
-Finally we've finally released beta version 0.2.0 of Feedbacky, see what's new below.
+{% hint style="info" %}
+<mark style="color:blue;">**Deprecation notice**</mark>
 
-**TL;DR version**
+This section will be preserved for historical purposes but will no longer be updated with current Feedbacky releases.&#x20;
+
+You can follow up to date [changelogs](https://app.feedbacky.net/b/feedbacky-official/changelog) on our official board.
+{% endhint %}
+
+## Version `0.5.0-beta`
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#020-beta-june-5-2020).
+
+* User suspension
+* Letter avatars
+* Comment on closed ideas
+
+## Version `0.3.1-beta`
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#031-beta-july-6-2020).
+
+* Added slugs to ideas
+
+## Version `0.3.0-beta`
+
+This version was Initially planned to be released as 0.2.1 but since we removed Private Boards it should be marked as a bigger release.&#x20;
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#030-beta-june-9-2020).
+
+* Removed private boards
+* UI improvements
+
+### The removal of Private Boards
+
+Private Boards feature was removed due to being unpopular and unused feature and contained security exploit. This version also aims to fix regressions caused by previous update.
+
+## Version `0.2.0-beta`
+
+**TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#020-beta-june-5-2020).
 
 * Added mail notifications for ideas
-* Recoded client side app, smaller size, more lightweight
+* Re-coded client side app, smaller size, more lightweight
 * Added roadmaps feature
 * SendGrid mail provider support
 * Minor UI and Dark Mode changes
-* Some fixes...
-
-### Updating from older versions
-
-This version requires few changes in order to work. See [updating to 0.2.0](https://github.com/Plajer/feedbacky-project#updating-to-020) for more information.
 
 ### Mails Notification Feature
 
