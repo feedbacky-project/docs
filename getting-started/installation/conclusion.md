@@ -12,22 +12,32 @@ You have completed the Feedbacky self-hosting installation guide! You can start 
 sudo docker-compose up
 ```
 
-{% hint style="info" %}
-<mark style="color:blue;">**Running in the background**</mark>
-
-With tmux;
-
-```
-tmux 
-```
-{% endhint %}
-
 This will take a few minutes depending on your hardware capabilities, your CPU usage will also peak during this process.
 
 You can reach us with one of the support links if you encountered any issue along the way.&#x20;
 
+{% hint style="info" %}
+<mark style="color:blue;">**Running in the background**</mark>
+
+1\. Create a new session. ****&#x20;
+
+```
+tmux new -S feedbacky
+```
+
+2\. Detach from the session.
+
+`CTRL` + `B` than press`D`.
+
+3\. Reattach to the session.
+
+```
+tmux attach-session -t feedbacky
+```
+{% endhint %}
+
 {% hint style="success" %}
-Please consider [donating](../../project-overview/donating.md) and/or leaving a ⭐️ in our [repository](https://github.com/feedbacky-project/app) to support Feedbacky!
+Please consider [donating](../../project-overview/donating.md) to Feedbacky!
 {% endhint %}
 
 ## What you've learned

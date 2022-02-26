@@ -26,13 +26,13 @@ Arcaniax Brennian uses Feedbacky to **improve their Arceon Minecraft plugin**;
 
 ### ![](../.gitbook/assets/cs-head\_database.png) Head Database
 
-Arcaniax uses Feedbacky to **collect Head Database feedback**;
+Arcaniax Brennian uses Feedbacky to **collect Head Database feedback**;
 
 > I gather feedback and new feature concepts that people would want in the Head Database plugin so I can improve it and also easily see what my customers want in the plugin.
 
 * [Official board](https://app.feedbacky.net/b/HeadDatabase)
 
-### ****![](../.gitbook/assets/cs-ajparkour.png) **ajParkour**
+### ![](../.gitbook/assets/cs-ajparkour.png) **ajParkour**
 
 ajgeiss0702 uses Feedbacky to **make his plugin better**;
 
@@ -50,7 +50,7 @@ Agarwalpiryank uses Feedbacky to **get staff feedback**;
 
 ### ![](../.gitbook/assets/cs-murdermystery.png) MurderMystery
 
-&#x20;Tigerpanzer\_02 uses Feedbacky to **meet is customers' needs**;
+Tigerpanzer\_02 uses Feedbacky to **meet is customers' needs**;
 
 > With Feedbacky we can collect and sort the ideas of the customers in a structured way so that we always have an overview of which idea is most desired by all. The MurderMystery board lets us collect user feedback to improve our features and the quality over time.
 
@@ -62,8 +62,8 @@ Case studies from people who self-host their own Feedbacky instance.
 
 ### ![](<../.gitbook/assets/image (4).png>)Exvoid Network
 
-&#x20;Matou0014 uses Feedbacky to **power their community**;
+Matou0014 uses Feedbacky to **power their community**;
 
-> Planning a gaming community and managing game servers as well is not always an easy feat. With Feedbacky, my team can keep track of each suggestions and bug reports, enabling us to always improve our work.&#x20;
+> Planning a gaming community and managing game servers as well is not always an easy feat. With Feedbacky, my team can keep track of each suggestions and bug reports, enabling us to always improve our work.
 
 * [Official instance](https://feedback.exvoid.net/b/project)

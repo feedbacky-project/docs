@@ -4,78 +4,28 @@ description: Configure your Feedbacky instance to your needs.
 
 # Configuring
 
-## Configuring
+Open your `.env` file and edit the environment variables to fit your needs.
 
-Environment variables must be edited in order for your instance to properly work.
-
-{% hint style="info" %}
-Each variables already have their own descriptions but we will go into further details for some.&#x20;
-{% endhint %}
-
-1\. Edit the `.env` file.
-
-```
+```bash
 sudo nano .env
 ```
 
-### Networking
+## Networking
 
-| `REACT_APP_SERVER_IP_ADDRESS` | The IP address or domain where Feedbacky will be hosted. |
-| ----------------------------- | -------------------------------------------------------- |
-| `CLIENT_APP_PORT`             | Port for the client application, by default it is 8090.  |
-| `SERVER_APP_PORT`             | Port for the server application, by default it is 8095.  |
+| `REACT_APP_SERVER_IP_ADDRESS` | The IP address of your Virtual Private Server (VPS) or dedicated hardware or a domain. |
+| ----------------------------- | -------------------------------------------------------------------------------------- |
+| `CLIENT_APP_PORT`             | Port for the client application, by default it is  8090.                               |
+| `SERVER_APP_PORT`             | Port for the server application, by default it is 8095.                                |
 
-Follow this guide if you want to use a domain;
+### Domain
 
-{% content-ref url="../../temporary-archival/domain-setup.md" %}
-[domain-setup.md](../../temporary-archival/domain-setup.md)
+You can use your own domain with Feedbacky, follow the guide below.&#x20;
+
+{% content-ref url="../domain-setup.md" %}
+[domain-setup.md](../domain-setup.md)
 {% endcontent-ref %}
 
-{% hint style="info" %}
-<mark style="color:blue;">**Address Format**</mark>
-
-Using an invalid IP address format will stop you from accessing your own instance.&#x20;
-
-Let's say that our IP address is `188.222.333.22`, the valid format will look like this; ``&#x20;
-
-****
-
-{% hint style="danger" %}
-#### <mark style="color:red;">**Invalid**</mark>
-
-_Do not leave a trailing (**/**) slash at the end;_
-
-`http://188.222.333.22:8090/`&#x20;
-{% endhint %}
-
-{% hint style="danger" %}
-#### <mark style="color:red;">**Invalid**</mark>
-
-_The protocol (**http**) is missing;_
-
-`88.222.333.22:8090`
-{% endhint %}
-
-{% hint style="danger" %}
-#### <mark style="color:red;">**Invalid**</mark>
-
-_The port is missing (can be skipped if you use a domain);_
-
-`http://188.222.333.22`
-{% endhint %}
-
-
-
-{% hint style="success" %}
-#### <mark style="color:green;">**Valid**</mark>
-
-_The protocol and port are present with no trailing slash;_
-
-`http://188.222.333.22:8090`
-{% endhint %}
-{% endhint %}
-
-### Security
+## Security
 
 | `JWT_SECRET` | A random generated token used for authentication purposes. |
 | ------------ | ---------------------------------------------------------- |
@@ -94,14 +44,14 @@ Any other JWT secret token generation can also be used.
 For extra security, random ASCII characters are recommended. Remember, **do not share** your token with anyone else!
 {% endhint %}
 
-### Database
+## Database
 
 | `MYSQL_USERNAME` | The username set during the database setup process.    |
 | ---------------- | ------------------------------------------------------ |
 | `MYSQL_PASSWORD` | The password set during the database setup process.    |
 | `MYSQL_URL`      | Connection information that will be used by Feedbacky. |
 
-### OAuth
+## OAuth
 
 {% tabs %}
 {% tab title="Discord" %}
@@ -157,8 +107,6 @@ Follow these steps to use the GitLab OAuth.
 
 2\. Create a new OAuth application.&#x20;
 
-{% embed url="https://cdn.feedbacky.net/static/mp4/discord-oauth-setup.mp4" %}
-
 3\. Add a new redirect with the IP address or domain set [here](configuring.md#networking) and include `/auth/gitlab` at the end.
 
 4\. Fill the necessary variables with your newly created Discord OAuth application.
@@ -171,7 +119,7 @@ Follow these steps to use the GitLab OAuth.
 {% endtab %}
 {% endtabs %}
 
-### Mail
+## Mail
 
 | `MAIL_SERVICE_TYPE` | Choose one of the options below. |
 | ------------------- | -------------------------------- |
@@ -232,7 +180,7 @@ Your base URL should look something like this;
 {% endtab %}
 {% endtabs %}
 
-### Image Compression
+## Image Compression
 
 | `IMAGE_COMPRESSION_ENABLED` | If you wish to use an Image compression service, `false` by default. |
 | --------------------------- | -------------------------------------------------------------------- |
@@ -255,85 +203,8 @@ _Pricing included for your convenience and may be out of date._
 {% endtab %}
 {% endtabs %}
 
+## Integrations
 
-
-This will take a few minutes depending on your hardware capabilities, your CPU usage will also peak during this process.
-
-```
-# >>           CLIENT SIDE VARIABLES CONFIGURATION       <<
-# Domain or IP address where Feedbacky is hosted, CLIENT_APP_PORT is required here if you don't use port 80 (web port) or domain
-REACT_APP_SERVER_IP_ADDRESS=http://example.com
-# Name of your self hosted Feedbacky service
-REACT_APP_SERVICE_NAME=Feedbacky
-# Link to default user avatar image, use %nick% placeholder to replace with User nickname
-REACT_APP_DEFAULT_USER_AVATAR=https://static.plajer.xyz/avatar/generator/%nick%
-
-# >>            GENERAL VARIABLES CONFIGURATION          <<
-# Port where client application will run, if this port is used replace it with different one
-CLIENT_APP_PORT=8090
-# Port where server application will run, if this port is used replace it with different one
-SERVER_APP_PORT=8095
-# Secret token for authentication purposes, you can generate one here https://www.grc.com/passwords.htm
-JWT_SECRET=secretPass
-
-# >>         SQL DATABASE VARIABLES CONFIGURATION        <<
-# Database credentials
-MYSQL_USERNAME=username
-MYSQL_PASSWORD=passwd
-# Replace <ip_address> <port> and <database_name> with proper values
-MYSQL_URL=jdbc:mysql://<ip_address>:<port>/<database_name>?useSSL=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
-
-# >>             LOGIN INTEGRATIONS CONFIGURATION        <<
-# Feedbacky is passwordless and relies on 3rd party providers to log in, please enable at least 1 of providers below.
-# All filled values for each OAuth application will count as an enabled login integration.
-
-# Discord (https://discordapp.com/) login integration enabled
-# To create OAuth application go here https://discordapp.com/developers/applications
-OAUTH_DISCORD_REDIRECT_URI=
-OAUTH_DISCORD_CLIENT_ID=
-OAUTH_DISCORD_CLIENT_SECRET=
-# Allow users to log in just using email address.
-SETTINGS_MAIL_LOGIN_ENABLED=false
-
-# For Google, GitHub, GitLab and other OAuth integrations please refer to https://docs.feedbacky.net and add any variables manually.
-
-# >>       MAIL SENDING FEATURE VARIABLES CONFIGURATION (optional)      <<
-# Name of mail sender
-MAIL_SENDER="Feedbacky <no-reply@feedbacky.net>"
-# Currently available mail services:
-# * mailgun - https://www.mailgun.com/ (credit card required to set up account) (5k mails for 3 months, then $0.80 per 1k mails)
-# * sendgrid - https://sendgrid.com/ (100 mails per day)
-# * smtp - your own SMTP server for sending mails
-# * (blank) - for no mail configuration
-MAIL_SERVICE_TYPE=
-# API key for mail service selected above (not for SMTP)
-MAIL_SERVICE_API_KEY=apiKey
-# API url for mail service
-# For Mailgun: https://api.mailgun.net/v3/<YOUR DOMAIN>/messages (more here https://documentation.mailgun.com/en/latest/api-intro.html#base-url-1)
-# For Sendgrid: https://api.sendgrid.com/v3/mail/send
-MAIL_SERVICE_API_BASE_URL=baseUrl
-# SMTP server credentials
-MAIL_SMTP_USERNAME=username
-MAIL_SMTP_PASSWORD=passwd
-MAIL_SMTP_HOST=host.com
-MAIL_SMTP_PORT=587
-
-# >>        IMAGES COMPRESSION VARIABLES CONFIGURATION (optional)       <<
-# Is image compression for images enabled? If yes credentials below must be valid.
-IMAGE_COMPRESSION_ENABLED=false
-# Currently available compressors:
-# * cheetaho - https://cheetaho.com/ (free 500 compressions per month)
-IMAGE_COMPRESSION_TYPE=cheetaho
-# API key from https://cheetaho.com/ service
-IMAGE_COMPRESSION_CHEETAHO_API_KEY=apiKey
-```
-
-Not yet available for self-hosted instance;
-
-```
-# >>        INTEGRATIONS VARIABLES CONFIGURATION
-# GitHub x Feedbacky integration, convert ideas to GitHub ideas.
-INTEGRATION_GITHUB_CLIENT_ID=
-INTEGRATION_GITHUB_CLIENT_SECRET=
-INTEGRATION_GITHUB_REDIRECT_URI=
-```
+{% hint style="info" %}
+Integrations are only available for cloud-instance users at the moment!
+{% endhint %}

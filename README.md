@@ -12,8 +12,7 @@ coverY: 0
 
 ## Understand your users' needs.
 
-Collect feedback from people easily while also improving your business with ![](https://feedbacky.net/img/logo.webp) **Feedbacky**, a free and open-source software.\
-
+Collect feedback from people easily while also improving your business with ![](https://feedbacky.net/img/logo.webp) **Feedbacky**, a free and open-source software.
 
 ![](https://feedbacky.net/img/features/v1/board.webp)
 
@@ -29,7 +28,7 @@ This is the simplest way to get started with using Feedbacky, all you have to do
 
 Currently, cloud-hosted instances are entirely free with some quota limitations, you can read more about that [here](https://feedbacky.net/#pricing).
 
-_**➤**_ [_**Create your own board.**_](./#understand-your-users-needs.)_****_
+_**➤**_ [_**Create your own board.**_](https://app.feedbacky.net/create?source=Main\_Page)_****_
 
 #### Self-hosted
 
@@ -53,9 +52,9 @@ Come chat with the Feedbacky community in our Discord server, follow official an
 
 #### Contributing
 
-We encourage everyone to contribute, thus making Feedbacky better with the help of our community.&#x20;
+We encourage everyone to contribute, thus making Feedbacky better with the help of our community.
 
-Follow our _<mark style="background-color:blue;">Contributing guidelines</mark>_ if you are interested!
+Follow our [contributing guidelines](https://github.com/feedbacky-project/app/blob/master/CONTRIBUTING.md) if you are interested!
 
 ### Donating
 
@@ -63,11 +62,11 @@ Consider supporting the development of Feedbacky by making a donation!
 
 ### Sponsors
 
-| [![](https://cdn.feedbacky.net/static/img/partner-logo.png) **Senior Hosting**](https://billing.senior-host.com/link.php?id=1) | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><em>Get 10% off using code FEEDBACKY.</em></p> |
-| ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| [![](https://plugily.xyz/assets/img/android-chrome-512x512.png) **Plugily Projects**](https://plugily.xyz/?source=Feedbacky)   | Creating a better future by developing something beneficial for everyone.                                                 |
+| [![](https://cdn.feedbacky.net/static/img/partner-logo.png) **Senior Hosting**](https://billing.senior-host.com/link.php?id=1) | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><strong>Get 10% off using code <code>FEEDBACKY</code>!</strong></p> |
+| ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://plugily.xyz/assets/img/android-chrome-512x512.png) **Plugily Projects**](https://plugily.xyz/?source=Feedbacky)   | Creating a better future by developing something beneficial for everyone.                                                                      |
 
-_Become a Feedbacky_ [_sponsor_](broken-reference)_._
+_Become a Feedbacky_ [_sponsor_](project-overview/donating.md#sponsoring)_._
 
 ### Legal
 
