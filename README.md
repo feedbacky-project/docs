@@ -14,7 +14,9 @@ coverY: 0
 
 Collect feedback from people easily while also improving your business with ![](https://feedbacky.net/img/logo.webp) **Feedbacky**, a free and open-source software.
 
+![](.gitbook/assets/promo2.png)
 
+![](.gitbook/assets/promo1.png) ![](.gitbook/assets/promo3.png)
 
 Consider leaving a ⭐️ in our [repository](https://github.com/feedbacky-project/app) if you enjoy Feedbacky!
 
