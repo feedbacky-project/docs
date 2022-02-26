@@ -7,7 +7,7 @@ description: Changelogs for legacy versions.
 {% hint style="info" %}
 <mark style="color:blue;">**Deprecation notice**</mark>
 
-This section will be preserved for historical purposes but will no longer be updated with current Feedbacky releases.&#x20;
+This section will be preserved for historical purposes but will no longer be updated with current Feedbacky releases.
 
 You can follow up to date [changelogs](https://app.feedbacky.net/b/feedbacky-official/changelog) on our official board.
 {% endhint %}
@@ -28,7 +28,7 @@ You can follow up to date [changelogs](https://app.feedbacky.net/b/feedbacky-off
 
 ## Version `0.3.0-beta`
 
-This version was Initially planned to be released as 0.2.1 but since we removed Private Boards it should be marked as a bigger release.&#x20;
+This version was Initially planned to be released as 0.2.1 but since we removed Private Boards it should be marked as a bigger release.
 
 **TL;DR** - See full [**changelog**](https://github.com/feedbacky-project/app/blob/master/CHANGELOG.md#030-beta-june-9-2020).
 
@@ -53,7 +53,7 @@ Private Boards feature was removed due to being unpopular and unused feature and
 
 From now on Feedbacky users can `Subscribe` to ideas to receive mail notifications. Users who create new ideas from now will automatically subscribe to their idea.
 
-![Mail notification example](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-10-22.478Z.png)
+![Mail notification example](../.gitbook/assets/0.2.0\_1.png)
 
 Users can receive notifications about:
 
@@ -73,7 +73,7 @@ New feature called **Roadmaps** got implemented. Roadmaps serve the purpose of i
 
 By default every tag is visible in the roadmap but this can be edited so tags can be ignored from the roadmap view.
 
-![New roadmap feature preview](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-24-31.072Z.png)
+![New roadmap feature preview](../.gitbook/assets/0.2.0\_2.png)
 
 ### SendGrid Mail Provider Support
 
@@ -84,7 +84,7 @@ Besides Mailgun and own SMTP server you can use [Twilio SendGrid](https://sendgr
 UI and dark mode received several small changes to ensure the best experience when using Feedbacky.\
 From more noticeable things Moderation comments icons were changed, board admin panel and profile page menus design got changed.
 
-![Board admin panel menu design update (old left, new right)](<../.gitbook/assets/ui change 1.png>)
+![Board admin panel menu design update (old left, new right)](../.gitbook/assets/0.2.0\_3.png)
 
 ### Bug Fixes for Stability and Other Changes!
 
@@ -104,4 +104,4 @@ And a bunch of other changes:
 * All dependencies of backend and frontend were updated to their latest stable versions
 * Server side messages when editing or updating stuff will now return more user friendly messages on failure
 
-![What user sees when app crashes, not a blank page anymore](../.gitbook/assets/Firefox\_Screenshot\_2020-06-05T19-52-37.296Z.png)
+![What user sees when app crashes, not a blank page anymore](../.gitbook/assets/0.2.0\_4.png)

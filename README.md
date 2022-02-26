@@ -1,12 +1,12 @@
 ---
 description: Quick glance at Feedbacky.
-cover: .gitbook/assets/feedbacky_header.png
+cover: .gitbook/assets/banner.png
 coverY: 0
 ---
 
 # Introduction
 
-![](https://cdn.feedbacky.net/static/img/product-brand.png)
+![](.gitbook/assets/header.png)
 
 [![Docker](https://img.shields.io/static/v1?style=for-the-badge\&logoColor=white\&logo=Docker\&label=\&message=DOCKER%20HUB\&color=0db7ed)](https://hub.docker.com/u/plajer) [![Release](https://img.shields.io/github/v/release/feedbacky-project/app?include\_prereleases\&style=for-the-badge\&labelColor=ecf0f1\&color=007bff)](https://github.com/feedbacky-project/app/releases) [![License](https://img.shields.io/github/license/feedbacky-project/app.svg?style=for-the-badge\&labelColor=ecf0f1\&color=007bff)](https://github.com/feedbacky-project/app/blob/master/LICENSE.txt) [![Contributors](https://img.shields.io/github/contributors/feedbacky-project/app.svg?style=for-the-badge\&labelColor=ecf0f1\&color=007bff)](https://github.com/feedbacky-project/app/graphs/contributors) [![Discord](https://img.shields.io/badge/dynamic/json?style=for-the-badge\&logoColor=white\&logo=Discord\&labelColor=5865F2\&label=\&color=5865F2\&suffix=%20MEMBERS\&query=approximate\_member\_count\&url=https://discord.com/api/invites/6qCnKh5?with\_counts=true\&link=)](https://discord.com/invite/6qCnKh5)
 
@@ -14,7 +14,7 @@ coverY: 0
 
 Collect feedback from people easily while also improving your business with ![](https://feedbacky.net/img/logo.webp) **Feedbacky**, a free and open-source software.
 
-![](https://feedbacky.net/img/features/v1/board.webp)
+
 
 Consider leaving a ⭐️ in our [repository](https://github.com/feedbacky-project/app) if you enjoy Feedbacky!
 
@@ -62,9 +62,9 @@ Consider supporting the development of Feedbacky by making a donation!
 
 ### Sponsors
 
-| [![](https://cdn.feedbacky.net/static/img/partner-logo.png) **Senior Hosting**](https://billing.senior-host.com/link.php?id=1) | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><strong>Get 10% off using code <code>FEEDBACKY</code>!</strong></p> |
-| ------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![](https://plugily.xyz/assets/img/android-chrome-512x512.png) **Plugily Projects**](https://plugily.xyz/?source=Feedbacky)   | Creating a better future by developing something beneficial for everyone.                                                                      |
+| [![](.gitbook/assets/sponsor-seniorhosting.png) **Senior Hosting**](https://billing.senior-host.com/link.php?id=1)           | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><strong>Get 10% off using code <code>FEEDBACKY</code>!</strong></p> |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://plugily.xyz/assets/img/android-chrome-512x512.png) **Plugily Projects**](https://plugily.xyz/?source=Feedbacky) | Creating a better future by developing something beneficial for everyone.                                                                      |
 
 _Become a Feedbacky_ [_sponsor_](project-overview/donating.md#sponsoring)_._
 

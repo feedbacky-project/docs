@@ -18,30 +18,30 @@ Cloud instance users are limited to a quota of 25 tags while self-hosted instanc
 
 Tags are a way to help you organize ideas, they can be set to be used by anyone or only by your board administrators or set to be ignored in your board's Roadmap.
 
-![](../../.gitbook/assets/tags\_overview.png)
+![](broken-reference)
 
 ## Usage
 
 To create a new tag, click on the **"Add New"** button.
 
-![](../../.gitbook/assets/admin\_tags\_create.png)
+![](broken-reference)
 
 ### Public Use
 
 Ticking this setting will enable the use of public tag, board users will be able to select them when creating a new idea.
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](broken-reference)
 
 ### Roadmap Ignored
 
 Ticking this setting will disable the display of ideas with a tag having the option enabled in the Roadmap page of your board.
 
-![](<../../.gitbook/assets/image (4) (1) (1) (1).png>)
+![](broken-reference)
 
 Roadmap Ignored tag assigned to an idea;
 
-![](<../../.gitbook/assets/image (1).png>)
+![](broken-reference)
 
 Roadmap doesn't show the idea;
 
-![](<../../.gitbook/assets/image (3) (1) (1).png>)
+![](broken-reference)

@@ -39,15 +39,15 @@ Please consider [donating](../../project-overview/donating.md) to Feedbacky!
 If you plan on using a panel with Feedbacky, please read this [FAQ section](../../project-overview/faq.md#can-i-host-feedbacky-on-x-panel).
 {% endhint %}
 
-| Operating System | Version                                        | Status | Notes                                 |
-| ---------------- | ---------------------------------------------- | :----: | ------------------------------------- |
-| **Ubuntu**       | "Focal" 20.04                                  |    ✅   | Installation guide based on Focal.    |
-|                  | "Bionic" 18.04                                 |    ✅   |                                       |
-| **Debian**       | "Bullseye" 11                                  |    ✅   |                                       |
-| **Windows**      | WSL2                                           |    ✅   | _Should work, not tested!_            |
-|                  | <p>​Server 2022 </p><p><em>Windows 10</em></p> |   🔧   | Working but not officially supported. |
-|                  | <p>​Server 2019</p><p><em>Windows 10</em></p>  |   🔧   | Working but not officially supported. |
-| **Mac OS**       |                                                |    ❓   | Unknown and not officially supported. |
+| Operating System | Version                                       | Status | Notes                                 |
+| ---------------- | --------------------------------------------- | :----: | ------------------------------------- |
+| **Ubuntu**       | "Focal" 20.04                                 |    ✅   | Installation guide based on Focal.    |
+|                  | "Bionic" 18.04                                |    ✅   |                                       |
+| **Debian**       | "Bullseye" 11                                 |    ✅   |                                       |
+| **Windows**      | WSL2                                          |    ✅   | _Should work, not tested!_            |
+|                  | <p>​Server 2022</p><p><em>Windows 10</em></p> |   🔧   | Working but not officially supported. |
+|                  | <p>​Server 2019</p><p><em>Windows 10</em></p> |   🔧   | Working but not officially supported. |
+| **Mac OS**       |                                               |    ❓   | Unknown and not officially supported. |
 
 ## Docker
 
@@ -115,7 +115,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-10\. Test that Docker Compose was successfully installed.&#x20;
+10\. Test that Docker Compose was successfully installed.
 
 ```bash
 docker-compose --version
@@ -157,9 +157,9 @@ sudo mysql_secure_installation
 
 The script will ask you to set a root password, press `N` to skip it. The root password is already tied to the system on Ubuntu and changing it could result in MariaDB breaking.
 
-### Additional Configuration
+#### Additional Configuration
 
-Docker will treat your container as a remote machine, we need to change the value of `bind-address`  in order to accept non localhost connections.
+Docker will treat your container as a remote machine, we need to change the value of `bind-address` in order to accept non localhost connections.
 
 4\. Edit your `50-server.cnf`.
 
@@ -189,7 +189,7 @@ sudo systemctl restart mariadb-server
 
 A webserver is needed in order to point a domain to your instance. Any will suffice as long as they support reverse proxy.
 
-We have a guide for both Apache and Nginx, choose the one you prefer.&#x20;
+We have a guide for both Apache and Nginx, choose the one you prefer.
 
 ### Apache
 
@@ -297,7 +297,7 @@ sudo apt install -y python3-certbot-nginx
 
 _**Optional**_
 
-During the startup process Feedbacky will use your current terminal window and unless you SSH again in your server with a new session, you won't be able to do anything else.&#x20;
+During the startup process Feedbacky will use your current terminal window and unless you SSH again in your server with a new session, you won't be able to do anything else.
 
 The solution to this is by using a terminal multiplexer, allowing you to run multiple sessions under a single window.
 
