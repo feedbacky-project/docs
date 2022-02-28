@@ -8,7 +8,7 @@ description: See how Feedbacky helps others with their products.
 
 Case studies from people who have their board hosted on our cloud instance.
 
-### Discord Tickets
+### ![](../.gitbook/assets/case-discord\_ticket.png) Discord Tickets
 
 eartharoid uses Feedbacky to **collect bot users' suggestions**;
 
@@ -16,7 +16,7 @@ eartharoid uses Feedbacky to **collect bot users' suggestions**;
 
 * [Official board](https://app.feedbacky.net/b/dsctickets)
 
-### Arceon
+### ![](../.gitbook/assets/case-arceon.png) Arceon
 
 Arcaniax Brennian uses Feedbacky to **improve their Arceon Minecraft plugin**;
 
@@ -24,7 +24,7 @@ Arcaniax Brennian uses Feedbacky to **improve their Arceon Minecraft plugin**;
 
 * [Official board](https://app.feedbacky.net/b/arceon)
 
-### Head Database
+### ![](../.gitbook/assets/case-head\_database.png) Head Database
 
 Arcaniax Brennian uses Feedbacky to **collect Head Database feedback**;
 
@@ -32,7 +32,7 @@ Arcaniax Brennian uses Feedbacky to **collect Head Database feedback**;
 
 * [Official board](https://app.feedbacky.net/b/HeadDatabase)
 
-### **ajParkour**
+### ![](../.gitbook/assets/case-ajparkour.png) **ajParkour**
 
 ajgeiss0702 uses Feedbacky to **make his plugin better**;
 
@@ -40,7 +40,7 @@ ajgeiss0702 uses Feedbacky to **make his plugin better**;
 
 * [Official board](https://app.feedbacky.net/b/ajparkour?source=Featured\_Board)
 
-### Senior Teams
+### ![](../.gitbook/assets/case-seniorteams.png) Senior Teams
 
 Agarwalpiryank uses Feedbacky to **get staff feedback**;
 
@@ -48,7 +48,7 @@ Agarwalpiryank uses Feedbacky to **get staff feedback**;
 
 * [Official board](https://app.feedbacky.net/b/Senior-Team-Freelancer)
 
-### MurderMystery
+### ![](../.gitbook/assets/case-murdermystery.png) MurderMystery
 
 Tigerpanzer\_02 uses Feedbacky to **meet is customers' needs**;
 
@@ -60,7 +60,7 @@ Tigerpanzer\_02 uses Feedbacky to **meet is customers' needs**;
 
 Case studies from people who self-host their own Feedbacky instance.
 
-### Exvoid Network
+### ![](../.gitbook/assets/case\_exvoidnet.png)Exvoid Network
 
 Matou0014 uses Feedbacky to **power their community**;
 

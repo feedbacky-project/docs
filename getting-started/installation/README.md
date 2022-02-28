@@ -7,9 +7,8 @@ description: Self-hosting your own Feedbacky instance.
 {% hint style="success" %}
 <mark style="color:green;">**Looking for an affordable hosting provider?**</mark>
 
-Feedbacky is in parternship with Senior Hosting to offer you affordable, high-performance VPS with Minecraft/Discord bot hosting.
-
-_Get 10% off using code `FEEDBACKY`_
+We've partnered with Senior Hosting to offer you affordable, high-performance VPS with Minecraft/Discord bot hosting.\
+**Get 10% off using code `FEEDBACKY`!**
 
 [Check out the offer!](https://billing.senior-host.com/link.php?id=1)
 {% endhint %}

@@ -12,7 +12,7 @@ coverY: 0
 
 ## Understand your users' needs.
 
-Collect feedback from people easily while also improving your business with **Feedbacky**, a free and open-source software.
+Collect feedback from people easily while also improving your business with ![](https://feedbacky.net/img/logo.webp) **Feedbacky**, a free and open-source software.
 
 ![](.gitbook/assets/promo2.png)
 
@@ -64,9 +64,9 @@ Consider supporting the development of Feedbacky by making a donation!
 
 ### Sponsors
 
-| [**Senior Hosting**](https://billing.senior-host.com/link.php?id=1) | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><strong>Get 10% off using code <code>FEEDBACKY</code>!</strong></p> |
-| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [**Plugily Projects**](https://plugily.xyz/?source=Feedbacky)       | Creating a better future by developing something beneficial for everyone.                                                                      |
+| [![](.gitbook/assets/sponsor-seniorhosting.png) **Senior Hosting**](https://billing.senior-host.com/link.php?id=1)           | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><strong>Get 10% off using code <code>FEEDBACKY</code>!</strong></p> |
+| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![](https://plugily.xyz/assets/img/android-chrome-512x512.png) **Plugily Projects**](https://plugily.xyz/?source=Feedbacky) | Creating a better future by developing something beneficial for everyone.                                                                      |
 
 _Become a Feedbacky_ [_sponsor_](project-overview/donating.md#sponsoring)_._
 
