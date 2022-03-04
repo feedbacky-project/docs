@@ -30,13 +30,19 @@ This is the simplest way to get started with using Feedbacky, all you have to do
 
 Currently, cloud-hosted instances are entirely free with some quota limitations, you can read more about that [here](https://feedbacky.net/#pricing).
 
-_**➤**_ [_**Create your own board.**_](https://app.feedbacky.net/create?source=Main\_Page)_****_
+_Create your first board;_
+
+{% embed url="https://app.feedbacky.net/create?source=Main_Page" %}
 
 #### Self-hosted
 
 Host Feedbacky on your own hardware or with a Virtual Private Server (VPS), we have a complete guide covering all the necessary steps that is also simple for Linux newbies.
 
-_**➤**_ [_**Getting started with self-hosting.**_](broken-reference)_****_
+_Get started with self-hosting Feedbacky;_
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 ### Case Studies
 

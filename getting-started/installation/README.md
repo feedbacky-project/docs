@@ -156,7 +156,7 @@ sudo mysql_secure_installation
 
 The script will ask you to set a root password, press `N` to skip it. The root password is already tied to the system on Ubuntu and changing it could result in MariaDB breaking.
 
-#### Additional Configuration
+**Additional Configuration**
 
 Docker will treat your container as a remote machine, we need to change the value of `bind-address` in order to accept non localhost connections.
 
@@ -253,6 +253,12 @@ sudo systemctl status nginx
 ```
 
 </details>
+
+### Caddy
+
+{% hint style="info" %}
+Coming soon!
+{% endhint %}
 
 ## Certbot
 
