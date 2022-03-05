@@ -1,8 +1,10 @@
 ---
-description: A quick glance at Feedbacky.
+description: Quick glance at Feedbacky.
+cover: .gitbook/assets/banner.png
+coverY: 0
 ---
 
-# Introduction
+# Introduction (old)
 
 ![](.gitbook/assets/header.png)
 
@@ -12,11 +14,11 @@ description: A quick glance at Feedbacky.
 
 Collect feedback from people easily while also improving your business with ![](https://feedbacky.net/img/logo.webp) **Feedbacky**, a free and open-source software.
 
-![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FN9oapin8j8o5U1vazEdZ%2Fuploads%2FZau0nSsWF4lRfcYqG3PP%2Fpromo3.png?alt=media)
+![](.gitbook/assets/promo2.png)
 
-![](.gitbook/assets/promo1.png) ![](.gitbook/assets/promo2.png)
+![](.gitbook/assets/promo1.png) ![](.gitbook/assets/promo3.png)
 
-**​Consider leaving a ⭐️ in our** [**repository**](https://github.com/feedbacky-project/app) **if you enjoy Feedbacky!**
+Consider leaving a ⭐️ in our [repository](https://github.com/feedbacky-project/app) if you enjoy Feedbacky!
 
 ### Getting Started
 
@@ -26,13 +28,17 @@ Interested in having your own Feedbacky instance? Awesome! There are 2 ways in w
 
 This is the simplest way to get started with using Feedbacky, all you have to do is create a board and we will handle the hosting.
 
-{% embed url="https://app.feedbacky.net/create?source=Main_Page" %}
-
 Currently, cloud-hosted instances are entirely free with some quota limitations, you can read more about that [here](https://feedbacky.net/#pricing).
+
+_Create your first board;_
+
+{% embed url="https://app.feedbacky.net/create?source=Main_Page" %}
 
 #### Self-hosted
 
 Host Feedbacky on your own hardware or with a Virtual Private Server (VPS), we have a complete guide covering all the necessary steps that is also simple for Linux newbies.
+
+_Get started with self-hosting Feedbacky;_
 
 {% content-ref url="getting-started/installation/" %}
 [installation](getting-started/installation/)
@@ -50,19 +56,17 @@ See how Feedbacky helps others with their products.
 
 Come chat with the Feedbacky community in our Discord server, follow official announcements and polls if you need support our friendly staff can assist you.
 
-![](https://invidget.switchblade.xyz/6qCnKh5)
+[![DiscordInvite](https://discordapp.com/api/guilds/614568773940150288/widget.png?style=banner3)](https://discord.com/invite/6qCnKh5)
 
-**Contributing**
+#### Contributing
 
 We encourage everyone to contribute, thus making Feedbacky better with the help of our community.
 
 Follow our [contributing guidelines](https://github.com/feedbacky-project/app/blob/master/CONTRIBUTING.md) if you are interested!
 
-
-
 ### Donating
 
-Support the development of Feedbacky by making a donation, anything helps!
+Consider supporting the development of Feedbacky by making a donation!
 
 ### Sponsors
 
@@ -70,7 +74,7 @@ Support the development of Feedbacky by making a donation, anything helps!
 | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | [![](https://plugily.xyz/assets/img/android-chrome-512x512.png) **Plugily Projects**](https://plugily.xyz/?source=Feedbacky) | Creating a better future by developing something beneficial for everyone.                                                                      |
 
-_Considering becoming a Feedbacky sponsor?_ [_Check this out_](project-overview/donating.md#sponsoring)_._
+_Become a Feedbacky_ [_sponsor_](project-overview/donating.md#sponsoring)_._
 
 ### Legal
 
