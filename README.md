@@ -10,7 +10,7 @@ description: A quick glance at Feedbacky.
 
 ## Understand your users' needs.
 
-Collect feedback from people easily while also improving your business with ![](https://feedbacky.net/img/logo.webp) **Feedbacky**, a free and open-source software.
+Collect feedback from people easily while also improving your business with Feedbacky, a free and open-source software.
 
 ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2FN9oapin8j8o5U1vazEdZ%2Fuploads%2FZau0nSsWF4lRfcYqG3PP%2Fpromo3.png?alt=media)
 
@@ -20,19 +20,19 @@ Collect feedback from people easily while also improving your business with ![](
 
 ### Getting Started
 
-Interested in having your own Feedbacky instance? Awesome! There are 2 ways in which you can do so;
+Interested in having your own Feedbacky instance? Awesome! There are two ways that you can proceed.
 
-#### Cloud-hosted
+**1. Cloud-hosted**
 
-This is the simplest way to get started with using Feedbacky, all you have to do is create a board and we will handle the hosting.
+The simplest way to get started with using Feedbacky, all you have to do is create a board and we will handle the hosting.
 
 {% embed url="https://app.feedbacky.net/create?source=Main_Page" %}
 
 Currently, cloud-hosted instances are entirely free with some quota limitations, you can read more about that [here](https://feedbacky.net/#pricing).
 
-#### Self-hosted
+**2. Self-hosted**
 
-Host Feedbacky on your own hardware or with a Virtual Private Server (VPS), we have a complete guide covering all the necessary steps that is also simple for Linux newbies.
+Host Feedbacky on your own hardware or with a Virtual Private Server (VPS). We have a complete guide covering the necessaries that is also friendly for Linux newbies!
 
 {% content-ref url="getting-started/installation/" %}
 [installation](getting-started/installation/)
@@ -40,7 +40,7 @@ Host Feedbacky on your own hardware or with a Virtual Private Server (VPS), we h
 
 ### Case Studies
 
-See how Feedbacky helps others with their products.
+Feedbacky was created to help others, see how we helped others with their projects/products.
 
 {% content-ref url="project-overview/case-studies.md" %}
 [case-studies.md](project-overview/case-studies.md)
@@ -52,36 +52,27 @@ Come chat with the Feedbacky community in our Discord server, follow official an
 
 ![](https://invidget.switchblade.xyz/6qCnKh5)
 
-**Contributing**
+### **Contributing**
 
 We encourage everyone to contribute, thus making Feedbacky better with the help of our community.
 
 Follow our [contributing guidelines](https://github.com/feedbacky-project/app/blob/master/CONTRIBUTING.md) if you are interested!
 
+### Funding
 
+Support the development of Feedbacky by making a [donation](./#donating) or by becoming a Feedbacky sponsor, [check it out](project-overview/donating.md#sponsoring)!
 
-### Donating
-
-Support the development of Feedbacky by making a donation, anything helps!
-
-### Sponsors
-
-| [![](.gitbook/assets/sponsor-seniorhosting.png) **Senior Hosting**](https://billing.senior-host.com/link.php?id=1)           | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><strong>Get 10% off using code <code>FEEDBACKY</code>!</strong></p> |
-| ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![](https://plugily.xyz/assets/img/android-chrome-512x512.png) **Plugily Projects**](https://plugily.xyz/?source=Feedbacky) | Creating a better future by developing something beneficial for everyone.                                                                      |
-
-_Considering becoming a Feedbacky sponsor?_ [_Check this out_](project-overview/donating.md#sponsoring)_._
+| Sponsors                                                            | About                                                                                                                                          |
+| ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| [**Senior Hosting**](https://billing.senior-host.com/link.php?id=1) | <p>Affordable, high-performance VPS with Minecraft/Discord bot hosting.<br><strong>Get 10% off using code <code>FEEDBACKY</code>!</strong></p> |
+| [**Plugily Projects**](https://plugily.xyz/?source=Feedbacky)       | Creating a better future by developing something beneficial for everyone.                                                                      |
 
 ### Legal
 
-#### Attributions
+**© 2022 Plajer**
 
 * Some SVG illustrations are provided by [unDraw](https://undraw.co).
 * Design system used in project is provided by [Bootstrap](https://getbootstrap.com).
-
-#### License
-
-**© 2022 Plajer**
 
 Feedbacky is distributed under the MIT License.
 
