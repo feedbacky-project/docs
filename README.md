@@ -71,8 +71,8 @@ Support the development of Feedbacky by making a [donation](./#donating) or by b
 
 **© 2022 Plajer**
 
-* Some SVG illustrations are provided by [unDraw](https://undraw.co).
-* Design system used in project is provided by [Bootstrap](https://getbootstrap.com).
+* Some SVG illustrations are attributed to [unDraw](https://undraw.co).
+* Design system used in project is attributed to [Bootstrap](https://getbootstrap.com).
 
 Feedbacky is distributed under the MIT License.
 
