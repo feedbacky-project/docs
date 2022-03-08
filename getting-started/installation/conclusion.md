@@ -4,7 +4,7 @@ description: What you learned while following this guide.
 
 # Conclusion
 
-## 🎉  Congratulations!
+## 🎉 Congratulations!
 
 You have completed the Feedbacky self-hosting installation guide! You can start your newly created instance with the command below.
 
@@ -14,26 +14,12 @@ sudo docker-compose up
 
 This will take a few minutes depending on your hardware capabilities, your CPU usage will also peak during this process.
 
-You can reach us with one of the support links if you encountered any issue along the way.&#x20;
+You can reach us with one of the support links if you encountered any issue along the way.
 
 {% hint style="info" %}
 <mark style="color:blue;">**Running in the background**</mark>
 
-1\. Create a new session. ****&#x20;
-
-```
-tmux new -S feedbacky
-```
-
-2\. Detach from the session.
-
-`CTRL` + `B` than press`D`.
-
-3\. Reattach to the session.
-
-```
-tmux attach-session -t feedbacky
-```
+See our How To [guide](../../how-to/run-in-the-background.md) covering the subject.
 {% endhint %}
 
 {% hint style="success" %}
@@ -44,7 +30,7 @@ Please consider [donating](../../project-overview/donating.md) to Feedbacky!
 
 By following the self-host guide you should also have learned the basics of;
 
-* Installing Docker with Compose, MariaDB and Apache or Nginx, optionally also tmux or Screen.
+* Installing Docker with Compose, MariaDB, Apache or Nginx and optionally also tmux or Screen.
 * Using the `apt` package manager on Ubuntu or any other Debian-based Linux distribution.
 * Editing files with the `nano` editor.
 * Configuring a MySQL user and table.
@@ -52,8 +38,8 @@ By following the self-host guide you should also have learned the basics of;
 
 ## What's Next
 
-Read our after installation handbook to get started with your new instance.&#x20;
+Read our after installation handbook to get started with your new instance.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="../updating-upgrading.md" %}
+[updating-upgrading.md](../updating-upgrading.md)
 {% endcontent-ref %}

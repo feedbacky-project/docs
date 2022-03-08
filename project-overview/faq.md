@@ -55,7 +55,7 @@ Unless you make a fork, implement your own edits and compile the necessary Docke
 
 ## How do I renew my domain?
 
-Certbot will not automatically renew your domain certificate, you can renew it yourself using this command.&#x20;
+Certbot will not automatically renew your domain certificate, you can renew it yourself using this command.
 
 ```
 certbot renew
@@ -84,3 +84,5 @@ sudo certbot renew
 sudo systemctl start nginx
 ```
 {% endhint %}
+
+## How can I run Feedbacky in the background?

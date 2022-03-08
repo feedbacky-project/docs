@@ -24,9 +24,9 @@ curl ipinfo.io/ip
 
 ## Port Forwarding
 
-Your webserver also needs to be accessible over the internet.&#x20;
+Your webserver also needs to be accessible over the internet.
 
-1\. Forward port `80`.&#x20;
+1\. Forward port `80`.
 
 ```bash
 sudo ufw allow 80/tcp
@@ -127,10 +127,10 @@ server {
 {% endtab %}
 {% endtabs %}
 
-| `{DOMAIN_NAME}`            | Your fully qualified domain domain, example; **feedbacky.app.cool**.                    |
-| -------------------------- | --------------------------------------------------------------------------------------- |
-| `{SERVER_IP}` (Nginx)      | The IP address (not public) of your Virtual Private Server (VPS) or dedicated hardware. |
-| `{CLIENT_APP_PORT}`(Nginx) | The client port located in your `.env` file, by default it is 8090.                     |
+| `{DOMAIN_NAME}`       | Your fully qualified domain domain, example; `feedbacky.app.cool`.                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `{SERVER_IP}`\*       | <p>*<em><strong>Nginx</strong></em></p><p>The IP address (not public) of your Virtual Private Server (VPS) or dedicated hardware.</p> |
+| `{CLIENT_APP_PORT}`\* | <p>*<em><strong>Nginx</strong></em></p><p>The client port located in your <code>.env</code> file, by default it is 8090.</p>          |
 
 4\. Save the file with `CTRL` + `S` and exit nano with `CTRL` + `C`.
 
@@ -144,7 +144,7 @@ server {
 sudo a2enmod proxy ssl
 ```
 
-****
+***
 
 {% hint style="info" %}
 <mark style="color:blue;">**Breakdown**</mark>
@@ -171,7 +171,7 @@ sudo ln -s /etc/nginx/sites-available/{DOMAIN_NAME}.conf /etc/nginx/sites-enable
 {% hint style="info" %}
 <mark style="color:blue;">**Breakdown**</mark>
 
-Each time you will edit your Virtual Host located in `/etc/nginx/sites-available` it will also update the one created in `/etc/nginx/sites-enabled`.&#x20;
+Each time you will edit your Virtual Host located in `/etc/nginx/sites-available` it will also update the one created in `/etc/nginx/sites-enabled`.
 {% endhint %}
 {% endtab %}
 {% endtabs %}
@@ -194,7 +194,7 @@ sudo service nginx reload
 
 ## Generating a Certificate
 
-Generate your domain SSL certificate.&#x20;
+Generate your domain SSL certificate.
 
 {% tabs %}
 {% tab title="Apache" %}

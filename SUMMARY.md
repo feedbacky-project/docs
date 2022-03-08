@@ -43,6 +43,7 @@
 
 ## How To
 
+* [Run in the background](how-to/run-in-the-background.md)
 * [Moderate your board](how-to/moderate-your-board.md)
 * [Add OAuth Providers](how-to/add-oauth-providers.md)
 
