@@ -40,7 +40,7 @@ Host Feedbacky on your own hardware or with a Virtual Private Server (VPS). We h
 
 ### Case Studies
 
-Feedbacky was created to help others, see how we helped others with their projects/products.
+We created Feedbacky to help others, read the case studies of people who are using it to improve their projects/products.
 
 {% content-ref url="project-overview/case-studies.md" %}
 [case-studies.md](project-overview/case-studies.md)
