@@ -14,12 +14,12 @@ sudo nano .env
 
 | `REACT_APP_SERVER_IP_ADDRESS` | The IP address of your Virtual Private Server (VPS) or dedicated hardware or a domain. |
 | ----------------------------- | -------------------------------------------------------------------------------------- |
-| `CLIENT_APP_PORT`             | Port for the client application, by default it is  8090.                               |
+| `CLIENT_APP_PORT`             | Port for the client application, by default it is 8090.                                |
 | `SERVER_APP_PORT`             | Port for the server application, by default it is 8095.                                |
 
 ### Domain
 
-You can use your own domain with Feedbacky, follow the guide below.&#x20;
+You can use your own domain with Feedbacky, follow the guide below.
 
 {% content-ref url="../domain-setup.md" %}
 [domain-setup.md](../domain-setup.md)
@@ -30,15 +30,11 @@ You can use your own domain with Feedbacky, follow the guide below.&#x20;
 | `JWT_SECRET` | A random generated token used for authentication purposes. |
 | ------------ | ---------------------------------------------------------- |
 
-{% tabs %}
-{% tab title="GRC" %}
 Use this link to generate one yourself;
 
 {% embed url="https://www.grc.com/passwords.htm" %}
-
 Any other JWT secret token generation can also be used.
-{% endtab %}
-{% endtabs %}
+{% endembed %}
 
 {% hint style="warning" %}
 For extra security, random ASCII characters are recommended. Remember, **do not share** your token with anyone else!
@@ -51,30 +47,22 @@ For extra security, random ASCII characters are recommended. Remember, **do not 
 | `MYSQL_PASSWORD` | The password set during the database setup process.    |
 | `MYSQL_URL`      | Connection information that will be used by Feedbacky. |
 
+{% hint style="warning" %}
+Remember that Docker will treat your container as a remote machine, using `localhost` or `0.0.0.0` won't work in your _`MYSQL_URL`_ variable. Use the IP address of your dedicated hardware or VPS instead!
+{% endhint %}
+
 ## OAuth
 
-{% tabs %}
-{% tab title="Discord" %}
 Follow these steps to use the Discord OAuth.
 
 1\. Access Discord's [Developer Portal](https://discord.com/developers/applications).
 
-2\. Create a new OAuth application.&#x20;
+2\. Create a new OAuth application.
 
 {% embed url="https://cdn.feedbacky.net/static/mp4/discord-oauth-setup.mp4" %}
-
 3\. Add a new redirect with the IP address or domain set [here](configuring.md#networking) and include `/auth/discord` at the end.
+{% endembed %}
 
-4\. Fill the necessary variables with your newly created Discord OAuth application.
-
-| `OAUTH_DISCORD_ENABLED`      | Disabled by default, to use Discord OAuth change to `true`.    |
-| ---------------------------- | -------------------------------------------------------------- |
-| `OAUTH_DISCORD_REDIRECT_URI` | Your instance domain with `/auth/discord` included at the end. |
-| `OAUTH_DISCORD_CLIENT_ID`    | Your OAuth client ID.                                          |
-| `OAUTH_DISCORD_SECRET`       | Your OAuth client secret.                                      |
-{% endtab %}
-
-{% tab title="Github" %}
 Follow these steps to use the GitHub OAuth.
 
 1\. Access GitHub's [Developer settings](https://github.com/settings/developers).
@@ -82,30 +70,18 @@ Follow these steps to use the GitHub OAuth.
 2\. Create a new OAuth application.
 
 {% embed url="https://cdn.feedbacky.net/static/mp4/github-oauth-setup.mp4" %}
-
 3\. Fill the **Authorization callback URL** with the IP address or domain set [here](configuring.md#networking) and include `/auth/github` at the end.
+{% endembed %}
 
-4\. Fill the necessary variables with your newly created GitHub OAuth application.
-
-| `OAUTH_GITHUB_ENABLED`       | Disabled by default, to use GitHub OAuth change to `true`.    |
-| ---------------------------- | ------------------------------------------------------------- |
-| `OAUTH_GITHUB_REDIRECT_URI`  | Your instance domain with `/auth/github` included at the end. |
-| `OAUTH_GITHUB_CLIENT_ID`     | Your OAuth client ID.                                         |
-| `OAUTH_GITHUB_CLIENT_SECRET` | Your OAuth client secret.                                     |
-{% endtab %}
-
-{% tab title="Google" %}
 {% hint style="danger" %}
 The Google OAuth guide is not yet available.
 {% endhint %}
-{% endtab %}
 
-{% tab title="GitLab" %}
 Follow these steps to use the GitLab OAuth.
 
 1\. Access GitLab's [Developer Portal](https://gitlab.com/-/profile/applications).
 
-2\. Create a new OAuth application.&#x20;
+2\. Create a new OAuth application.
 
 3\. Add a new redirect with the IP address or domain set [here](configuring.md#networking) and include `/auth/gitlab` at the end.
 
@@ -116,8 +92,6 @@ Follow these steps to use the GitLab OAuth.
 | `OAUTH_GITLAB_REDIRECT_URI` | Your instance domain with `/auth/gitlab` included at the end. |
 | `OAUTH_GITLAB_CLIENT_ID`    | Your OAuth client ID.                                         |
 | `OAUTH_GITLAB_SECRET`       | Your OAuth client secret.                                     |
-{% endtab %}
-{% endtabs %}
 
 ## Mail
 
@@ -144,8 +118,6 @@ A credit card is also required for sign up.
 
 _Pricing included for your convenience and may be out of date._
 
-
-
 | `MAIL_MAILGUN_API_KEY`      | Your Mailgun API key.  |
 | --------------------------- | ---------------------- |
 | `MAIL_MAILGUN_API_BASE_URL` | Your Mailgun base URL. |
@@ -161,12 +133,10 @@ Your base URL should look something like this;
 [SendGrid](https://sendgrid.com) is a mail provider supported by Feedbacky.
 
 {% hint style="info" %}
-Send up to 100 mails per day for _free_ and _forever_.&#x20;
+Send up to 100 mails per day for _free_ and _forever_.
 {% endhint %}
 
 _Pricing included for your convenience and may be out of date._
-
-
 
 | `MAIL_SENDGRID_API_KEY`      | Your SendGrid API key.  |
 | ---------------------------- | ----------------------- |
@@ -195,8 +165,6 @@ Compress up to 500 images for _free_ each months.
 {% endhint %}
 
 _Pricing included for your convenience and may be out of date._
-
-
 
 | `IMAGE_COMPRESSION_CHEETAHO_API_KEY` | Your CheetahO API key. |
 | ------------------------------------ | ---------------------- |
