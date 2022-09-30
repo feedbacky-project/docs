@@ -53,8 +53,8 @@ Remember that Docker will treat your container as a remote machine, using `local
 
 ## OAuth
 
-{% tabs %}
-{% tab title="Discord" %}
+#### Discord
+
 Follow these steps in order to use the Discord OAuth with Feedbacky;
 
 1. Access Discord's [Developer Portal](https://discord.com/developers/applications).
@@ -67,12 +67,10 @@ Follow these steps in order to use the Discord OAuth with Feedbacky;
 | `OAUTH_DISCORD_CLIENT_ID`    | Your OAuth client ID.                                          |
 | `OAUTH_DISCORD_SECRET`       | Your OAuth client secret.                                      |
 
-
-
 {% embed url="https://cdn.feedbacky.net/static/mp4/discord-oauth-setup.mp4" %}
-{% endtab %}
 
-{% tab title="GitHub" %}
+#### GitHub
+
 Follow these steps in order to use the GitHub OAuth with Feedbacky;
 
 1. Access GitHub's [Developer settings](https://github.com/settings/developers).
@@ -85,31 +83,27 @@ Follow these steps in order to use the GitHub OAuth with Feedbacky;
 | `OAUTH_GITHUB_CLIENT_ID`    | Your OAuth client ID.                                         |
 | `OAUTH_GITHUB_SECRET`       | Your OAuth client secret.                                     |
 
-
-
 {% embed url="https://cdn.feedbacky.net/static/mp4/github-oauth-setup.mp4" %}
-{% endtab %}
 
-{% tab title="GitLab" %}
+#### GitLab
+
 Follow these steps in order to use the GitLab OAuth with Feedbacky;
 
 1. Access GitLab's [Developer Portal](https://gitlab.com/-/profile/applications).
 2. Create a new OAuth application.
 3. Add a new redirect with the IP address or domain set [here](configuring.md#networking) and include `/auth/gitlab` at the end.
-4. &#x20;Add the variables in the table below in your `.env` file.
+4. Add the variables in the table below in your `.env` file.
 
 | `OAUTH_GITLAB_REDIRECT_URI` | Your instance domain with `/auth/gitlab` included at the end. |
 | --------------------------- | ------------------------------------------------------------- |
 | `OAUTH_GITLAB_CLIENT_ID`    | Your OAuth client ID.                                         |
 | `OAUTH_GITLAB_SECRET`       | Your OAuth client secret.                                     |
-{% endtab %}
 
-{% tab title="Google" %}
+#### Google
+
 {% hint style="danger" %}
 The Google OAuth guide is not yet available.
 {% endhint %}
-{% endtab %}
-{% endtabs %}
 
 ## Mail
 
