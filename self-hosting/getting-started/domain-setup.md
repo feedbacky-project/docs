@@ -2,7 +2,11 @@
 description: Use your own domain with Feedbacky.
 ---
 
-# Domain Setup
+# Webserver Setup
+
+{% hint style="warning" %}
+Content being rewritten, some information might be missing.
+{% endhint %}
 
 ## Record
 
@@ -24,19 +28,29 @@ curl ipinfo.io/ip
 
 ## Port Forwarding
 
-Your webserver also needs to be accessible over the internet.
+## Firewall setup
 
-1\. Forward port `80`.
+Uncomplicated Firewall (UFW) is the default Firewall on Ubuntu 20.04, it is disabled by default.
 
-```bash
-sudo ufw allow 80/tcp
-```
-
-2\. Forward port `443`.
+1\. Enable Uncomplicated Firewall (UFW).
 
 ```bash
-sudo ufw allow 443/tcp
+sudo ufw enable
 ```
+
+2\. Forward the Feedbacky server port.
+
+```bash
+sudo ufw allow 8095, 80, 443 proto tcp
+```
+
+{% hint style="info" %}
+If you plan on using a different port, make sure that you change the value of the `SERVER_APP_PORT` variable when [configuring](configuring.md)!
+{% endhint %}
+
+{% hint style="success" %}
+Make sure that you also create a port forwarding rule in your router settings page. If you are using a Virtual Private Server (VPS) check with your provider.
+{% endhint %}
 
 ## Virtual Hosts
 

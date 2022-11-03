@@ -2,7 +2,7 @@
 description: Configure your Feedbacky instance to your needs.
 ---
 
-# Configuring
+# Environment Variables
 
 Open your `.env` file and edit the environment variables to fit your needs.
 
@@ -21,8 +21,8 @@ sudo nano .env
 
 You can use your own domain with Feedbacky, follow the guide below.
 
-{% content-ref url="../domain-setup.md" %}
-[domain-setup.md](../domain-setup.md)
+{% content-ref url="domain-setup.md" %}
+[domain-setup.md](domain-setup.md)
 {% endcontent-ref %}
 
 ## Security

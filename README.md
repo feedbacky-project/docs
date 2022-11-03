@@ -34,8 +34,8 @@ Currently, cloud-hosted instances are entirely free with some quota limitations,
 
 Host Feedbacky on your own hardware or with a Virtual Private Server (VPS). We have a complete guide covering the necessaries that is also friendly for Linux newbies!
 
-{% content-ref url="getting-started/installation/" %}
-[installation](getting-started/installation/)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### Case Studies

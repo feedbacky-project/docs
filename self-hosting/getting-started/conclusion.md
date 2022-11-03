@@ -9,7 +9,7 @@ description: What you learned while following this guide.
 You have completed the Feedbacky self-hosting installation guide! You can start your newly created instance with the command below.
 
 ```bash
-sudo docker-compose up
+sudo docker compose up -d
 ```
 
 This will take a few minutes depending on your hardware capabilities, your CPU usage will also peak during this process.
