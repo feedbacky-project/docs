@@ -24,7 +24,7 @@
   * [Configuring](getting-started/installation/configuring.md)
   * [Conclusion](getting-started/installation/conclusion.md)
 * [Domain Setup](getting-started/domain-setup.md)
-* [Updating/Upgrading](getting-started/updating-upgrading.md)
+* [Updating and Migrating](getting-started/updating-upgrading.md)
 
 ## Handbook
 
