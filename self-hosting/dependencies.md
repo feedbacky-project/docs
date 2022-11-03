@@ -4,8 +4,8 @@ description: Necessary packages in order for Feedbacky to work
 
 # Dependencies
 
-{% hint style="info" %}
-This is section&#x20;
+{% hint style="warning" %}
+Make sure that you have all the necessary packages installed, Feedbacky will not properly work if not.
 {% endhint %}
 
 ## Docker
@@ -16,7 +16,7 @@ Docker will run the infrastructure necessary for Feedbacky to work.
 
 ### Installing <mark style="color:green;">↴</mark>
 
-1\. Update your system.&#x20;
+1\. Update your system.
 
 {% hint style="success" %}
 Before installing any package, it is good practice to always update your system.
