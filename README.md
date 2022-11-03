@@ -34,13 +34,13 @@ Currently, cloud-hosted instances are entirely free with some quota limitations,
 
 Host Feedbacky on your own hardware or with a Virtual Private Server (VPS). We have a complete guide covering the necessaries that is also friendly for Linux newbies!
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="getting-started/installation/" %}
+[installation](getting-started/installation/)
 {% endcontent-ref %}
 
 ### Case Studies
 
-We created Feedbacky to help others, read the case studies of people who are using it to improve their projects/products.
+Feedbacky was created to help others, see how we helped others with their projects/products.
 
 {% content-ref url="project-overview/case-studies.md" %}
 [case-studies.md](project-overview/case-studies.md)
