@@ -17,14 +17,15 @@
 * [Github](https://github.com/feedbacky-project/app)
 * [Status](https://status.feedbacky.net)
 
-## Getting Started
+## Self Hosting
 
-* [Installation](getting-started/installation/README.md)
-  * [Initial Setup](getting-started/installation/initial-setup.md)
-  * [Configuring](getting-started/installation/configuring.md)
-  * [Conclusion](getting-started/installation/conclusion.md)
-* [Domain Setup](getting-started/domain-setup.md)
-* [Updating/Upgrading](getting-started/updating-upgrading.md)
+* [Getting Started](self-hosting/getting-started/README.md)
+  * [Database Setup](self-hosting/getting-started/database-setup.md)
+  * [Webserver Setup](self-hosting/getting-started/domain-setup.md)
+  * [Environment Variables](self-hosting/getting-started/configuring.md)
+  * [Conclusion](self-hosting/getting-started/conclusion.md)
+* [Dependencies](self-hosting/dependencies.md)
+* [Maintenance](self-hosting/updating-upgrading.md)
 
 ## Handbook
 
@@ -43,6 +44,7 @@
 
 ## How To
 
+* [Run in the background](how-to/run-in-the-background.md)
 * [Moderate your board](how-to/moderate-your-board.md)
 * [Add OAuth Providers](how-to/add-oauth-providers.md)
 
