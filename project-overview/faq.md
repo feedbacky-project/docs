@@ -84,5 +84,3 @@ sudo certbot renew
 sudo systemctl start nginx
 ```
 {% endhint %}
-
-## How can I run Feedbacky in the background?
